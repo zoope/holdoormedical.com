@@ -15,6 +15,9 @@ export default defineConfig({
   },
   outputPath: '/docs',
   publicPath: './',
+  theme: {
+    '@primary-color': '#D84148',
+  },
   routes: [
     {
       path: '/',

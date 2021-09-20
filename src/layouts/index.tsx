@@ -28,20 +28,35 @@ export default (props: any) => {
   return (
     <>
       <header className={style.header}>
-        <Menu mode="horizontal">
-          <Menu.Item key="home" onClick={() => pushRoute('/')}>
-            HOME
-          </Menu.Item>
-          <Menu.Item key="products" onClick={() => pushRoute('/products')}>
-            PRODUCTS
-          </Menu.Item>
-          <Menu.Item key="contact_us" onClick={() => pushRoute('/contact_us')}>
-            CONTACT
-          </Menu.Item>
-        </Menu>
+        <div className={style.container}>
+          <div className={style.logo}>
+            <img
+              src="https://www.hycel-medical.com/wp-content/themes/hycel/img/HYCEL-logo.png"
+              alt=""
+            />
+          </div>
+          <Menu mode="horizontal" className={style.menu}>
+            <Menu.Item key="home" onClick={() => pushRoute('/')}>
+              HOME
+            </Menu.Item>
+            <Menu.Item key="products" onClick={() => pushRoute('/products')}>
+              PRODUCTS
+            </Menu.Item>
+            <Menu.Item
+              key="contact_us"
+              onClick={() => pushRoute('/contact_us')}
+            >
+              CONTACT
+            </Menu.Item>
+          </Menu>
+        </div>
       </header>
       <div className={style.content}>{children}</div>
-      <footer className={style.footer}>footer</footer>
+      <footer className={style.footer}>
+        <div className={style.container}>
+          <span>HOLDOOR MEDICAL 2021</span>
+        </div>
+      </footer>
     </>
   );
 };

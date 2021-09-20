@@ -1,6 +1,33 @@
+@import './base.less';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+}
+
 .header {
   height: 100px;
-  background-color: grey;
+
+  .container {
+    .container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 170px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    font-size: 16px;
+  }
 
   :global {
     .ant-menu-horizontal {
@@ -11,10 +38,17 @@
 }
 
 .content {
-  height: calc(100vh - 160px);
 }
 
 .footer {
   height: 60px;
-  background-color: grey;
+  background-color: rgb(45, 57, 63);
+  color: #a0a9b1;
+
+  .container {
+    .container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
