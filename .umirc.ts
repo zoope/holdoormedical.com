@@ -13,6 +13,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  outputPath: '/docs',
   routes: [
     {
       path: '/',
