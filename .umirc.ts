@@ -14,7 +14,7 @@ export default defineConfig({
     type: 'none',
   },
   outputPath: '/docs',
-  publicPath: './holdoormedical.com/',
+  publicPath: './',
   routes: [
     {
       path: '/',
