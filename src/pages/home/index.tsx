@@ -24,8 +24,8 @@ export default function Homepage() {
         </div>
       </section>
       <section className={style.category}>
-        {homeCfg.category.map((item) => (
-          <a className={style.item}>
+        {homeCfg.category.map((item, index) => (
+          <a className={style.item} key={index}>
             <div className={style.img}>
               <img src={item.image} />
             </div>

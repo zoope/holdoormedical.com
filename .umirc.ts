@@ -6,6 +6,7 @@ const productsRoutes = products.map((item) => ({
   path: `/product/${item.code}`,
   component: '@/pages/products/product/index',
   title: item.title,
+  exact: false,
 }));
 
 export default defineConfig({
@@ -14,7 +15,7 @@ export default defineConfig({
     type: 'none',
   },
   outputPath: '/docs',
-  publicPath: './',
+  publicPath: '/',
   theme: {
     '@primary-color': '#D84148',
   },

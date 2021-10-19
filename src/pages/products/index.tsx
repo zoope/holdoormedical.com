@@ -6,6 +6,7 @@ export default function ProductsPage() {
   const renderProducts = () => {
     return products.map((item: any) => (
       <a
+        key={item.code}
         onClick={() => history.push(`/product/${item.code}`)}
         style={{ marginRight: '20px' }}
       >

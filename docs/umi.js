@@ -49,7 +49,7 @@
     (n.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (n.p = './'),
+    (n.p = '/'),
     n((n.s = 0));
 })({
   '++zV': function (e, t, n) {
@@ -9041,7 +9041,7 @@
   },
   '8BOu': function (e) {
     e.exports = JSON.parse(
-      '[{"code":"100001","title":"test1","avatar":"http://www.baidu.com"},{"code":"100002","title":"test2","avatar":"http://www.baidu.com"}]',
+      '[{"code":"100001","title":"3-Diff Fully Automatic Hematology Analyzer","avatar":"/images/100001.jpeg","content":"<p><strong>3-Diff Fully Automatic Hematology Analyzer</strong></p><p><br/></p><p><strong>Parameters</strong><br/>21 reportable parameters: WBC, Gran#, Lym#, Mid#, <br/>Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH, MCHC, <br/>RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, P-LCR, P-LCC<br/>3 histograms for WBC, RBC and PLT</p><p><br/></p><p><strong>Principles </strong><br/>Impedance method for WBC, RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p><br/></p><p><strong>Throughput</strong><br/>Up to 60 tests per hour</p><p><br/></p>"},{"code":"100002","title":"test2","avatar":"http://www.baidu.com"}]',
     );
   },
   '8GlL': function (e, t, n) {
@@ -12415,21 +12415,25 @@
           }),
           Object(a['jsx'])('section', {
             className: i.a.category,
-            children: r.category.map((e) =>
-              Object(a['jsxs'])('a', {
-                className: i.a.item,
-                children: [
-                  Object(a['jsx'])('div', {
-                    className: i.a.img,
-                    children: Object(a['jsx'])('img', { src: e.image }),
-                  }),
-                  Object(a['jsx'])('div', {
-                    className: i.a.title,
-                    style: { color: e.color },
-                    children: e.title,
-                  }),
-                ],
-              }),
+            children: r.category.map((e, t) =>
+              Object(a['jsxs'])(
+                'a',
+                {
+                  className: i.a.item,
+                  children: [
+                    Object(a['jsx'])('div', {
+                      className: i.a.img,
+                      children: Object(a['jsx'])('img', { src: e.image }),
+                    }),
+                    Object(a['jsx'])('div', {
+                      className: i.a.title,
+                      style: { color: e.color },
+                      children: e.title,
+                    }),
+                  ],
+                },
+                t,
+              ),
             ),
           }),
         ],
@@ -20055,11 +20059,15 @@
       var e = window.products,
         t = () =>
           e.map((e) =>
-            Object(o['jsx'])('a', {
-              onClick: () => r['a'].push('/product/'.concat(e.code)),
-              style: { marginRight: '20px' },
-              children: e.title,
-            }),
+            Object(o['jsx'])(
+              'a',
+              {
+                onClick: () => r['a'].push('/product/'.concat(e.code)),
+                style: { marginRight: '20px' },
+                children: e.title,
+              },
+              e.code,
+            ),
           );
       return Object(o['jsx'])('div', { children: t() });
     }
@@ -24171,6 +24179,16 @@
       );
     }
     e.exports = n;
+  },
+  h3bx: function (e, t, n) {
+    e.exports = {
+      container: 'container___14IZT',
+      top: 'top___2VNkW',
+      content: 'content___1Ru3x',
+      back: 'back___3UOAN',
+      product: 'product___2CxcK',
+      image: 'image___BjPFl',
+    };
   },
   hBjN: function (e, t, n) {
     'use strict';
@@ -30145,14 +30163,14 @@
             {
               path: '/product/100001',
               component: n('u0j0').default,
-              title: 'test1',
-              exact: !0,
+              title: '3-Diff Fully Automatic Hematology Analyzer',
+              exact: !1,
             },
             {
               path: '/product/100002',
               component: n('u0j0').default,
               title: 'test2',
-              exact: !0,
+              exact: !1,
             },
           ],
         },
@@ -30918,16 +30936,48 @@
     'use strict';
     n.r(t),
       n.d(t, 'default', function () {
-        return o;
+        return u;
       });
-    var r = n('nKUr');
-    function o(e) {
-      return (
-        console.log(e),
-        Object(r['jsx'])('div', {
-          children: Object(r['jsx'])('h1', { children: e.title }),
-        })
-      );
+    var r = n('h3bx'),
+      o = n.n(r),
+      i = n('9kvl'),
+      a = n('nKUr');
+    function u(e) {
+      var t = () => {
+        i['a'].goBack();
+      };
+      return Object(a['jsxs'])('div', {
+        children: [
+          Object(a['jsx'])('section', {
+            className: o.a.top,
+            children: Object(a['jsxs'])('div', {
+              className: o.a.content,
+              children: [
+                Object(a['jsx'])('h1', { children: e.title }),
+                Object(a['jsx'])('div', {
+                  className: o.a.back,
+                  onClick: t,
+                  children: 'RETURN',
+                }),
+              ],
+            }),
+          }),
+          Object(a['jsxs'])('section', {
+            className: o.a.product,
+            children: [
+              Object(a['jsx'])('div', {
+                className: o.a.image,
+                children: Object(a['jsx'])('img', { src: e.avatar }),
+              }),
+              Object(a['jsx'])('div', {
+                className: o.a.content,
+                dangerouslySetInnerHTML: { __html: e.content },
+              }),
+            ],
+          }),
+          Object(a['jsx'])('section', { className: o.a.breadcrumbs }),
+        ],
+      });
     }
   },
   u8Dt: function (e, t, n) {
