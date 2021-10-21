@@ -7,7 +7,38 @@
   },
   {
     "code": "100002",
-    "title": "test2",
-    "avatar": "http://www.baidu.com"
+    "title": "3-Part Hematology Analyzer",
+    "avatar": "",
+    "content": "<p>Parameters<br/>21 reportable parameters: WBC, Gran#, Lym#, Mid#, <br/>Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH, MCHC, <br/>RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, P-LCR, P-LCC<br/>3 histograms for WBC, RBC and PLT</p><p>Principles <br/>Impedance method for WBC, RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to 60 tests per hour</p>"
+  },
+  {
+    "code": "100003",
+    "title": "Mini 5-Part Hematology Analyzer",
+    "avatar": "",
+    "content": "<p>Parameters<br/>23 reportable parameters:<br/>WBC, Neu#, Lym#, Mon#, Eos#, Bas#, Neu%, Lym%, <br/>Mon%, Eos%, Bas%, RBC, HGB, HCT, MCV, MCH, <br/>MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Four 2D scattergrams for WBC differention</p><p>Principles<br/>Flow Cytometry (FCM) + Tri-angle laser scatter + <br/>Chemical staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to 60 tests per hour</p>"
+  },
+  {
+    "code": "100004",
+    "title": "5-Part Hematology Analyzer",
+    "avatar": "",
+    "content": "<p>Parameters<br/>25 reportable parameters: WBC, Neu#, Lym#, Mon#, Eos#, <br/>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC, HGB, HCT, <br/>MCV, MCH, MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, <br/>P-LCR, P-LCC<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Three DIFF scattergrams and one BASO scattergram for <br/>WBC differention</p><p>Principles<br/>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical <br/>staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to 60 tests per hour</p>"
+  },
+  {
+    "code": "100005",
+    "title": "Hematology reagent",
+    "avatar": "",
+    "content": "<p>Mindray, Sysmex, Coulter, NIHON KOHDEN</p>"
+  },
+  {
+    "code": "100006",
+    "title": "Semi auto chemistry analyzer",
+    "avatar": "",
+    "content": "<p>7&quot; inch true color touch screen<br/>Flow cell&amp;cuvette testing mode<br/>Multifunctional incubator &amp; blood coagulation function<br/>Huge storage of more ythan 300 programs &amp; 200000 sample results</p>"
+  },
+  {
+    "code": "100007",
+    "title": "Fully auto chemistry analyzer",
+    "avatar": "",
+    "content": "<p>Throughput: 120/200/400/800 T/H<br/>Automatic liquid level sensing, anti-collision protection.<br/>Integrated full closed optical system, multi wavelength simultaneous detection.</p>"
   }
 ]
