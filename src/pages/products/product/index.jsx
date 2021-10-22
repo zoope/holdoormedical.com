@@ -1,23 +1,12 @@
 import styles from './index.less';
-import { history } from 'umi';
+import SubHeader from '../../../layouts/sub-header';
 
-export default function Homepage(props: any) {
+export default function Product(props) {
   // console.log(props);
-
-  const handleBack = () => {
-    history.goBack();
-  };
 
   return (
     <div>
-      <section className={styles.top}>
-        <div className={styles.content}>
-          <h1>{props.title}</h1>
-          <div className={styles.back} onClick={handleBack}>
-            RETURN
-          </div>
-        </div>
-      </section>
+      <SubHeader title={props.title} />
       <section className={styles.product}>
         <div className={styles.image}>
           <img src={props.avatar} />
