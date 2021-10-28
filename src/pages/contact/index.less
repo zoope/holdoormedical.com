@@ -6,7 +6,7 @@
     clear: both;
     text-align: center;
     background-color: #ffffff;
-    padding: 75px 0;
+    padding: 75px 0 0;
     .above {
       color: #c64945;
       font-weight: 600;
@@ -20,7 +20,7 @@
       text-transform: uppercase;
       padding-bottom: 15px;
       margin-bottom: 75px;
-      background-image: url(/images/trenner_rot.png);
+      background-image: url(/images/icon/trenner_rot.png);
       background-repeat: no-repeat;
       font-size: 32px;
       font-family: 'Raleway', sans-serif;
@@ -28,5 +28,38 @@
       font-weight: 300;
       color: rgb(45, 57, 63);
     }
+  }
+}
+
+.wrap {
+  .container();
+  display: flex;
+  justify-content: center;
+  padding-bottom: 75px;
+}
+
+.content {
+  color: #656565;
+  font-size: 14px;
+  width: 230px;
+  margin-left: -25px;
+
+  & > div {
+    background-position: left 2.5px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    padding-left: 25px;
+  }
+
+  .address {
+    background-image: url(/images/icon/house.jpg);
+  }
+
+  .tel {
+    background-image: url(/images/icon/phone.jpg);
+  }
+
+  .email {
+    background-image: url(/images/icon/mail.jpg);
   }
 }

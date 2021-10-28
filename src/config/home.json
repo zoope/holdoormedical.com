@@ -1,36 +1,4 @@
 {
   "banner": [],
-  "contact": [],
-  "category": [
-    {
-      "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg",
-      "title": "Hematology Analyzer",
-      "color": "#fd3125"
-    },
-    {
-      "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg",
-      "title": "Electrolyte Analyzer",
-      "color": "#4db0e0"
-    },
-    {
-      "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg",
-      "title": "Auto Chemistry Analyzer",
-      "color": "#d176b8"
-    },
-    {
-      "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg",
-      "title": "Protein Analyzer",
-      "color": "#feb445"
-    },
-    {
-      "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg",
-      "title": "Semi-auto Analyzers",
-      "color": "#be794a"
-    },
-    {
-      "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-veterinary.svg",
-      "title": "Veterinary",
-      "color": "#8ac94e"
-    }
-  ]
+  "contact": []
 }

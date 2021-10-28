@@ -1,7 +1,8 @@
 import styles from './index.less';
 import SubHeader from '../../layouts/sub-header';
+import Contact from './contact';
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <div className={styles.contact_us}>
       <SubHeader showBack={false} title="Contact" />
@@ -9,7 +10,9 @@ export default function Contact() {
         <div className={styles.above}>Contact</div>
         <h2>Get in touch with us</h2>
       </section>
-      <section></section>
+      <div className={styles.wrap}>
+        <Contact />
+      </div>
     </div>
   );
 }
