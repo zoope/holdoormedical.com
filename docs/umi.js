@@ -27414,7 +27414,7 @@
                     children: [
                       Object(c['jsx'])('div', {
                         className: o.a.title,
-                        children: 'Category',
+                        children: u.title,
                       }),
                       Object(c['jsx'])('div', {
                         className: o.a.content,

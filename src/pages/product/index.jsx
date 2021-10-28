@@ -25,7 +25,7 @@ export default function Product(props) {
             style={{ backgroundImage: `url(${productData.avatar})` }}
           />
           <div className={styles.text}>
-            <div className={styles.title}>Category</div>
+            <div className={styles.title}>{productData.title}</div>
             <div
               className={styles.content}
               dangerouslySetInnerHTML={{ __html: productData.content }}
