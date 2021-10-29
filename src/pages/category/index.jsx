@@ -41,11 +41,11 @@ export default function CategoryPage(props) {
             <div className={styles.title}>Category</div>
             {categoryData.children
               ? categoryData.children.map((subCategory) => (
-                  <div key={subCategory.code}>
+                  <li key={subCategory.code}>
                     <a href={`/category/${subCategory.code}`}>
                       {subCategory.title}
                     </a>
-                  </div>
+                  </li>
                 ))
               : null}
           </div>
