@@ -11007,25 +11007,15 @@
     var r = n('4Plf'),
       o = n.n(r),
       i = n('nKUr'),
-      a = [
-        { name: 'Sales', email: 'sales@holdoormedical.com' },
-        { name: 'Echo', email: 'echo@holdoormedical.com' },
-      ];
+      a = [{ name: 'Sales', email: 'sales@holdoormedical.com' }];
     function c() {
       return Object(i['jsxs'])('section', {
         className: o.a.content,
         children: [
-          Object(i['jsxs'])('div', {
+          Object(i['jsx'])('div', {
             className: o.a.address,
-            children: [
-              'Hycel Handelsges.m.b.H',
-              Object(i['jsx'])('br', {}),
-              'Concorde Business Park 3',
-              Object(i['jsx'])('br', {}),
-              'A-2320 Schwechat',
-              Object(i['jsx'])('br', {}),
-              'AUSTRIA',
-            ],
+            children:
+              'Room 3-1-2, No.62 Haiwaitan Flower Garden, Ningbo City, China',
           }),
           Object(i['jsx'])('div', {
             className: o.a.tel,

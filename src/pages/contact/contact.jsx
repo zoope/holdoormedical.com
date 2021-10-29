@@ -6,22 +6,13 @@ const emails = [
     name: 'Sales',
     email: 'sales@holdoormedical.com',
   },
-  {
-    name: 'Echo',
-    email: 'echo@holdoormedical.com',
-  },
 ];
 
 export default function Contact() {
   return (
     <section className={styles.content}>
       <div className={styles.address}>
-        Hycel Handelsges.m.b.H
-        <br />
-        Concorde Business Park 3<br />
-        A-2320 Schwechat
-        <br />
-        AUSTRIA
+        Room 3-1-2, No.62 Haiwaitan Flower Garden, Ningbo City, China
       </div>
       <div className={styles.tel}>+86 13245638872</div>
       <div className={styles.email}>

@@ -36,7 +36,7 @@ export default defineConfig({
   outputPath: '/docs',
   publicPath: '/',
   theme: {
-    '@primary-color': '#31C6A5',
+    '@primary-color': '#1faead',
   },
   routes: [
     {
