@@ -176,7 +176,7 @@
                   Object(l['jsx'])('div', {
                     className: u.a.logo,
                     children: Object(l['jsx'])('img', {
-                      src: 'https://www.hycel-medical.com/wp-content/themes/hycel/img/HYCEL-logo.png',
+                      src: '/images/icon/LOGO_home.png',
                       alt: '',
                     }),
                   }),

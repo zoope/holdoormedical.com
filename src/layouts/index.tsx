@@ -48,10 +48,7 @@ export default (props: any) => {
       <header className={style.header}>
         <div className={style.container}>
           <div className={style.logo}>
-            <img
-              src="https://www.hycel-medical.com/wp-content/themes/hycel/img/HYCEL-logo.png"
-              alt=""
-            />
+            <img src="/images/icon/LOGO_home.png" alt="" />
           </div>
           <Menu
             mode="horizontal"
