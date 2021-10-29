@@ -173,12 +173,15 @@
               children: Object(l['jsxs'])('div', {
                 className: u.a.container,
                 children: [
-                  Object(l['jsx'])('div', {
+                  Object(l['jsxs'])('div', {
                     className: u.a.logo,
-                    children: Object(l['jsx'])('img', {
-                      src: '/images/icon/LOGO_home.png',
-                      alt: '',
-                    }),
+                    children: [
+                      Object(l['jsx'])('img', {
+                        src: '/images/icon/logo.png',
+                        alt: '',
+                      }),
+                      Object(l['jsx'])('span', { children: 'Holdoor Medical' }),
+                    ],
                   }),
                   Object(l['jsxs'])(r['a'], {
                     mode: 'horizontal',
@@ -190,7 +193,7 @@
                         { onClick: () => o('/'), children: 'HOME' },
                         '/',
                       ),
-                      i.map((e) =>
+                      i[0].children.map((e) =>
                         Object(l['jsx'])(
                           r['a'].SubMenu,
                           {
@@ -1890,12 +1893,15 @@
               null === (t = n.match(/\/category\/([\d]*)/)) || void 0 === t
                 ? void 0
                 : t[1];
+          if (c) {
+            i[c].category;
+            (r = i[c].category.map((e) => ({
+              name: a[e].title,
+              path: '/category/'.concat(a[e].code),
+            }))),
+              r.unshift({ name: 'PRODUCTS', path: '/category/0' });
+          }
           return (
-            c &&
-              (r = i[c].category.map((e) => ({
-                name: a[e].title,
-                path: '/category/'.concat(a[e].code),
-              }))),
             u &&
               a[u].parent &&
               (r = a[u].parent.map((e) => ({
@@ -11024,15 +11030,19 @@
           Object(i['jsx'])('div', {
             className: o.a.email,
             children: a.map((e) =>
-              Object(i['jsxs'])('div', {
-                children: [
-                  Object(i['jsx'])('div', { children: e.name }),
-                  Object(i['jsx'])('a', {
-                    href: 'mailto:'.concat(e.email),
-                    children: e.email,
-                  }),
-                ],
-              }),
+              Object(i['jsxs'])(
+                'div',
+                {
+                  children: [
+                    Object(i['jsx'])('div', { children: e.name }),
+                    Object(i['jsx'])('a', {
+                      href: 'mailto:'.concat(e.email),
+                      children: e.email,
+                    }),
+                  ],
+                },
+                e.name,
+              ),
             ),
           }),
         ],
@@ -12678,7 +12688,7 @@
   },
   IpS4: function (e) {
     e.exports = JSON.parse(
-      '[{"code":"10001","title":"COVID-19","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg","color":"#fd3125","children":[{"code":"20001","title":"NAB Rapid Test"},{"code":"20002","title":"Ventilator"},{"code":"20003","title":"HFNC"},{"code":"20004","title":"Oxygen Concentrator"},{"code":"20005","title":"Fingertip pulse oximeter"},{"code":"20006","title":"VTM tube"}]},{"code":"10002","title":"IVD PRODUCT","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg","color":"#4db0e0","children":[{"code":"20007","title":"Hematology"},{"code":"20008","title":"Biochemistry"},{"code":"20009","title":"Urine chemistry"}]},{"code":"10003","title":"HEALTHCARE & MONITORING","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg","color":"#d176b8","children":[{"code":"20010","title":"Medical grade HEPA"},{"code":"20011","title":"Nursing Series"},{"code":"20013","title":"X-ray"}]},{"code":"10004","title":"LABORATORY EQUIPMENTS","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg","color":"#feb445","children":[{"code":"20014","title":"Centrifuge"},{"code":"20015","title":"UV Sterilizer"},{"code":"20016","title":"Electronic balance"},{"code":"20017","title":"PH Meter"},{"code":"20018","title":"Autoclave"},{"code":"20019","title":"Hot Air Drying Oven"},{"code":"20020","title":"Blood collection tube"},{"code":"20021","title":"Safety shower"}]},{"code":"10005","title":"VETERINARY","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg","color":"#be794a","children":[{"code":"20022","title":"Hematology Analyzer for Vet"}]}]',
+      '[{"code":"0","title":"PRODUCTS","children":[{"code":"10001","title":"COVID-19","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg","color":"#fd3125","children":[{"code":"20001","title":"NAB Rapid Test"},{"code":"20002","title":"Ventilator"},{"code":"20003","title":"HFNC"},{"code":"20004","title":"Oxygen Concentrator"},{"code":"20005","title":"Fingertip pulse oximeter"},{"code":"20006","title":"VTM tube"}]},{"code":"10002","title":"IVD PRODUCT","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg","color":"#4db0e0","children":[{"code":"20007","title":"Hematology"},{"code":"20008","title":"Biochemistry"},{"code":"20009","title":"Urine chemistry"}]},{"code":"10003","title":"HEALTHCARE & MONITORING","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg","color":"#d176b8","children":[{"code":"20010","title":"Medical grade HEPA"},{"code":"20011","title":"Nursing Series"},{"code":"20013","title":"X-ray"}]},{"code":"10004","title":"LABORATORY EQUIPMENTS","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg","color":"#feb445","children":[{"code":"20014","title":"Centrifuge"},{"code":"20015","title":"UV Sterilizer"},{"code":"20016","title":"Electronic balance"},{"code":"20017","title":"PH Meter"},{"code":"20018","title":"Autoclave"},{"code":"20019","title":"Hot Air Drying Oven"},{"code":"20020","title":"Blood collection tube"},{"code":"20021","title":"Safety shower"}]},{"code":"10005","title":"VETERINARY","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg","color":"#be794a","children":[{"code":"20022","title":"Hematology Analyzer for Vet"}]}]}]',
     );
   },
   IyRk: function (e, t) {
@@ -24220,6 +24230,7 @@
       a = n.n(i),
       c = n('nKUr');
     function u() {
+      var e = r[0].children;
       return Object(c['jsxs'])('div', {
         children: [
           Object(c['jsx'])('section', { className: a.a.banner }),
@@ -24231,14 +24242,20 @@
                 Object(c['jsxs'])('div', {
                   children: [
                     'We provide high quality medical instruments worldwide. ',
-                    Object(c['jsx'])('a', { children: 'more' }),
+                    Object(c['jsx'])('a', {
+                      href: '/category/0',
+                      children: 'more',
+                    }),
                   ],
                 }),
                 Object(c['jsxs'])('div', {
                   children: [
                     'Have a question? Call us today!',
                     Object(c['jsx'])('br', {}),
-                    Object(c['jsx'])('a', { children: '+43 650 630 76 70' }),
+                    Object(c['jsx'])('a', {
+                      href: 'tel:+8613245635572',
+                      children: '+86 13245635572',
+                    }),
                   ],
                 }),
                 Object(c['jsxs'])('div', {
@@ -24246,7 +24263,8 @@
                     'Need support? Send us an E-mail',
                     Object(c['jsx'])('br', {}),
                     Object(c['jsx'])('a', {
-                      children: 'support@hycel-medical.com',
+                      href: 'mailto:sales@holdoormedical.com',
+                      children: 'sales@holdoormedical.com',
                     }),
                   ],
                 }),
@@ -24255,7 +24273,7 @@
           }),
           Object(c['jsx'])('section', {
             className: a.a.category,
-            children: r.map((e, t) =>
+            children: e.map((e, t) =>
               Object(c['jsxs'])(
                 'a',
                 {
@@ -26122,23 +26140,27 @@
             : t[1],
         u = window.categoryCfg[o],
         l = window.products,
-        s = l.filter((e) => e.category.includes(o)),
+        s = '0' === o ? l : l.filter((e) => e.category.includes(o)),
         f = () =>
           s.map((e) =>
-            Object(c['jsxs'])('a', {
-              href: '/product/'.concat(e.code),
-              className: i.a.product,
-              children: [
-                Object(c['jsx'])('div', {
-                  className: i.a.img,
-                  style: { backgroundImage: 'url('.concat(e.avatar, ')') },
-                }),
-                Object(c['jsx'])('div', {
-                  className: i.a.name,
-                  children: e.title,
-                }),
-              ],
-            }),
+            Object(c['jsxs'])(
+              'a',
+              {
+                href: '/product/'.concat(e.code),
+                className: i.a.product,
+                children: [
+                  Object(c['jsx'])('div', {
+                    className: i.a.img,
+                    style: { backgroundImage: 'url('.concat(e.avatar, ')') },
+                  }),
+                  Object(c['jsx'])('div', {
+                    className: i.a.name,
+                    children: e.title,
+                  }),
+                ],
+              },
+              e.code,
+            ),
           );
       return Object(c['jsxs'])('div', {
         children: [
@@ -29779,6 +29801,18 @@
               path: '/contact_us',
               component: n('zsgb').default,
               title: 'contact us',
+              exact: !0,
+            },
+            {
+              path: '/category/0',
+              component: n('qDys').default,
+              title: 'products',
+              exact: !0,
+            },
+            {
+              path: '/category/0',
+              component: n('qDys').default,
+              title: 'PRODUCTS',
               exact: !0,
             },
             {

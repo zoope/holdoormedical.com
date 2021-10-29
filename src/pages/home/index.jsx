@@ -1,27 +1,32 @@
 import homeCfg from '@/config/home.json';
-import categoryCfg from '@/config/category.json';
+import categories from '@/config/category.json';
 import { history } from 'umi';
 
 import style from './index.less';
 
 export default function Homepage() {
+  const categoryCfg = categories[0].children;
+
   return (
     <div>
       <section className={style.banner}></section>
       <section className={style.contact}>
         <div className={style.container}>
           <div>
-            We provide high quality medical instruments worldwide. <a>more</a>
+            We provide high quality medical instruments worldwide.{' '}
+            <a href="/category/0">more</a>
           </div>
           <div>
             Have a question? Call us today!
             <br />
-            <a>+43 650 630 76 70</a>
+            <a href="tel:+8613245635572">+86 13245635572</a>
           </div>
           <div>
             Need support? Send us an E-mail
             <br />
-            <a>support@hycel-medical.com</a>
+            <a href="mailto:sales@holdoormedical.com">
+              sales@holdoormedical.com
+            </a>
           </div>
         </div>
       </section>

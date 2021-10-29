@@ -23,10 +23,12 @@ export default withRouter(function SubHeader({
     const categoryCode = pathname.match(/\/category\/([\d]*)/)?.[1];
 
     if (productCode) {
+      const category = productsCfg[productCode].category;
       arr = productsCfg[productCode].category.map((code) => ({
         name: categoryCfg[code].title,
         path: `/category/${categoryCfg[code].code}`,
       }));
+      arr.unshift({ name: 'PRODUCTS', path: '/category/0' });
     }
     if (categoryCode) {
       if (categoryCfg[categoryCode].parent) {

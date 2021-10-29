@@ -48,7 +48,8 @@ export default (props: any) => {
       <header className={style.header}>
         <div className={style.container}>
           <div className={style.logo}>
-            <img src="/images/icon/LOGO_home.png" alt="" />
+            <img src="/images/icon/logo.png" alt="" />
+            <span>Holdoor Medical</span>
           </div>
           <Menu
             mode="horizontal"
@@ -58,7 +59,7 @@ export default (props: any) => {
             <Menu.Item key="/" onClick={() => pushRoute('/')}>
               HOME
             </Menu.Item>
-            {categories.map((category) => (
+            {categories[0].children.map((category) => (
               <Menu.SubMenu
                 key={`/category/${category.code}`}
                 title={category.title}

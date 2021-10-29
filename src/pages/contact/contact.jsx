@@ -17,7 +17,7 @@ export default function Contact() {
       <div className={styles.tel}>+86 13245638872</div>
       <div className={styles.email}>
         {emails.map((email) => (
-          <div>
+          <div key={email.name}>
             <div>{email.name}</div>
             <a href={`mailto:${email.email}`}>{email.email}</a>
           </div>

@@ -49,6 +49,11 @@ export default defineConfig({
           component: '@/pages/contact/index',
           title: 'contact us',
         },
+        {
+          path: '/category/0',
+          component: '@/pages/category/index',
+          title: 'products',
+        },
         ...categoriesRoutes,
         ...productsRoutes,
       ],

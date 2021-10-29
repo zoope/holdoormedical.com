@@ -1,125 +1,131 @@
 [
   {
-    "code": "10001",
-    "title": "COVID-19",
-    "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg",
-    "color": "#fd3125",
+    "code": "0",
+    "title": "PRODUCTS",
     "children": [
       {
-        "code": "20001",
-        "title": "NAB Rapid Test"
+        "code": "10001",
+        "title": "COVID-19",
+        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg",
+        "color": "#fd3125",
+        "children": [
+          {
+            "code": "20001",
+            "title": "NAB Rapid Test"
+          },
+          {
+            "code": "20002",
+            "title": "Ventilator"
+          },
+          {
+            "code": "20003",
+            "title": "HFNC"
+          },
+          {
+            "code": "20004",
+            "title": "Oxygen Concentrator"
+          },
+          {
+            "code": "20005",
+            "title": "Fingertip pulse oximeter"
+          },
+          {
+            "code": "20006",
+            "title": "VTM tube"
+          }
+        ]
       },
       {
-        "code": "20002",
-        "title": "Ventilator"
+        "code": "10002",
+        "title": "IVD PRODUCT",
+        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg",
+        "color": "#4db0e0",
+        "children": [
+          {
+            "code": "20007",
+            "title": "Hematology"
+          },
+          {
+            "code": "20008",
+            "title": "Biochemistry"
+          },
+          {
+            "code": "20009",
+            "title": "Urine chemistry"
+          }
+        ]
       },
       {
-        "code": "20003",
-        "title": "HFNC"
+        "code": "10003",
+        "title": "HEALTHCARE & MONITORING",
+        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg",
+        "color": "#d176b8",
+        "children": [
+          {
+            "code": "20010",
+            "title": "Medical grade HEPA"
+          },
+          {
+            "code": "20011",
+            "title": "Nursing Series"
+          },
+          {
+            "code": "20013",
+            "title": "X-ray"
+          }
+        ]
       },
       {
-        "code": "20004",
-        "title": "Oxygen Concentrator"
+        "code": "10004",
+        "title": "LABORATORY EQUIPMENTS",
+        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg",
+        "color": "#feb445",
+        "children": [
+          {
+            "code": "20014",
+            "title": "Centrifuge"
+          },
+          {
+            "code": "20015",
+            "title": "UV Sterilizer"
+          },
+          {
+            "code": "20016",
+            "title": "Electronic balance"
+          },
+          {
+            "code": "20017",
+            "title": "PH Meter"
+          },
+          {
+            "code": "20018",
+            "title": "Autoclave"
+          },
+          {
+            "code": "20019",
+            "title": "Hot Air Drying Oven"
+          },
+          {
+            "code": "20020",
+            "title": "Blood collection tube"
+          },
+          {
+            "code": "20021",
+            "title": "Safety shower"
+          }
+        ]
       },
       {
-        "code": "20005",
-        "title": "Fingertip pulse oximeter"
-      },
-      {
-        "code": "20006",
-        "title": "VTM tube"
-      }
-    ]
-  },
-  {
-    "code": "10002",
-    "title": "IVD PRODUCT",
-    "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg",
-    "color": "#4db0e0",
-    "children": [
-      {
-        "code": "20007",
-        "title": "Hematology"
-      },
-      {
-        "code": "20008",
-        "title": "Biochemistry"
-      },
-      {
-        "code": "20009",
-        "title": "Urine chemistry"
-      }
-    ]
-  },
-  {
-    "code": "10003",
-    "title": "HEALTHCARE & MONITORING",
-    "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg",
-    "color": "#d176b8",
-    "children": [
-      {
-        "code": "20010",
-        "title": "Medical grade HEPA"
-      },
-      {
-        "code": "20011",
-        "title": "Nursing Series"
-      },
-      {
-        "code": "20013",
-        "title": "X-ray"
-      }
-    ]
-  },
-  {
-    "code": "10004",
-    "title": "LABORATORY EQUIPMENTS",
-    "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg",
-    "color": "#feb445",
-    "children": [
-      {
-        "code": "20014",
-        "title": "Centrifuge"
-      },
-      {
-        "code": "20015",
-        "title": "UV Sterilizer"
-      },
-      {
-        "code": "20016",
-        "title": "Electronic balance"
-      },
-      {
-        "code": "20017",
-        "title": "PH Meter"
-      },
-      {
-        "code": "20018",
-        "title": "Autoclave"
-      },
-      {
-        "code": "20019",
-        "title": "Hot Air Drying Oven"
-      },
-      {
-        "code": "20020",
-        "title": "Blood collection tube"
-      },
-      {
-        "code": "20021",
-        "title": "Safety shower"
-      }
-    ]
-  },
-  {
-    "code": "10005",
-    "title": "VETERINARY",
-    "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg",
-    "color": "#be794a",
-    "children": [
-      {
-        "code": "20022",
-        "title": "Hematology Analyzer for Vet"
+        "code": "10005",
+        "title": "VETERINARY",
+        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg",
+        "color": "#be794a",
+        "children": [
+          {
+            "code": "20022",
+            "title": "Hematology Analyzer for Vet"
+          }
+        ]
       }
     ]
   }

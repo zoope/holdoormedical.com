@@ -13,13 +13,18 @@ export default function CategoryPage(props) {
 
   const products = window.products;
 
-  const productList = products.filter((product) =>
-    product.category.includes(categoryCode),
-  );
+  const productList =
+    categoryCode === '0'
+      ? products
+      : products.filter((product) => product.category.includes(categoryCode));
 
   const renderProducts = () => {
     return productList.map((item) => (
-      <a href={`/product/${item.code}`} className={styles.product}>
+      <a
+        href={`/product/${item.code}`}
+        className={styles.product}
+        key={item.code}
+      >
         <div
           className={styles.img}
           style={{ backgroundImage: `url(${item.avatar})` }}
