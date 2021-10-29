@@ -13,10 +13,9 @@ export default function CategoryPage(props) {
 
   const products = window.products;
 
-  const productList =
-    categoryCode === '0'
-      ? products
-      : products.filter((product) => product.category.includes(categoryCode));
+  const productList = products.filter((product) =>
+    product.category.includes(categoryCode),
+  );
 
   const renderProducts = () => {
     return productList.map((item) => (

@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import styles from './index.less';
 import { history } from 'umi';
 import { Breadcrumb } from 'antd';
@@ -28,7 +29,6 @@ export default withRouter(function SubHeader({
         name: categoryCfg[code].title,
         path: `/category/${categoryCfg[code].code}`,
       }));
-      arr.unshift({ name: 'PRODUCTS', path: '/category/0' });
     }
     if (categoryCode) {
       if (categoryCfg[categoryCode].parent) {
@@ -49,16 +49,18 @@ export default withRouter(function SubHeader({
   };
 
   return (
-    <section className={styles.top}>
-      <div className={styles.content}>
-        <h1>{title}</h1>
-        {showBack && (
-          <div className={styles.back} onClick={handleBack}>
-            RETURN
-          </div>
-        )}
-      </div>
-      <div className={styles.breadcrumb}>
+    <Fragment>
+      <section className={styles.top}>
+        <div className={styles.content}>
+          <h1>{title}</h1>
+          {showBack && (
+            <div className={styles.back} onClick={handleBack}>
+              RETURN
+            </div>
+          )}
+        </div>
+      </section>
+      <section className={styles.breadcrumb}>
         <Breadcrumb>
           <Breadcrumb.Item>
             <a href="/">Home</a>
@@ -66,7 +68,7 @@ export default withRouter(function SubHeader({
           {breadcrumbs()}
           <Breadcrumb.Item>{title}</Breadcrumb.Item>
         </Breadcrumb>
-      </div>
-    </section>
+      </section>
+    </Fragment>
   );
 });

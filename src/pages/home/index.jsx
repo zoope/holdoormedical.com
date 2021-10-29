@@ -1,15 +1,45 @@
 import homeCfg from '@/config/home.json';
 import categories from '@/config/category.json';
 import { history } from 'umi';
+import React from 'react';
+import { Carousel } from 'antd';
 
 import style from './index.less';
 
 export default function Homepage() {
   const categoryCfg = categories[0].children;
 
+  const CarouselRef = React.useRef();
+  const next = () => {
+    CarouselRef.current.next();
+  };
+  const prev = () => {
+    CarouselRef.current.prev();
+  };
+
   return (
     <div>
-      <section className={style.banner}></section>
+      <section className={style.banner}>
+        <div className={style.bg}></div>
+        <div className={style.carousel}>
+          <span className={style['left-arrow']} onClick={prev}></span>
+          <span className={style['right-arrow']} onClick={next}></span>
+          <Carousel autoplay ref={CarouselRef}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+          </Carousel>
+        </div>
+      </section>
       <section className={style.contact}>
         <div className={style.container}>
           <div>
@@ -19,7 +49,7 @@ export default function Homepage() {
           <div>
             Have a question? Call us today!
             <br />
-            <a href="tel:+8613245635572">+86 13245635572</a>
+            <a href="tel:+8613245638872">+86 13245638872</a>
           </div>
           <div>
             Need support? Send us an E-mail
