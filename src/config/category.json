@@ -7,13 +7,7 @@
     "children": [
       {
         "code": "20001",
-        "title": "NAB Rapid Test",
-        "children": [
-          {
-            "code": "30002",
-            "title": "Ventilator111"
-          }
-        ]
+        "title": "NAB Rapid Test"
       },
       {
         "code": "20002",
