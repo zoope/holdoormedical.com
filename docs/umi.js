@@ -26447,6 +26447,8 @@
                     onClick: n,
                   }),
                   Object(Se['jsx'])(we, {
+                    autoplay: !0,
+                    autoplaySpeed: 5e3,
                     ref: t,
                     children: Oe.banner.map((e, t) =>
                       Object(Se['jsx'])(

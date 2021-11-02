@@ -24,7 +24,7 @@ export default function Homepage() {
         <div className={style.carousel}>
           <span className={style['left-arrow']} onClick={prev}></span>
           <span className={style['right-arrow']} onClick={next}></span>
-          <Carousel ref={CarouselRef}>
+          <Carousel autoplay autoplaySpeed={5000} ref={CarouselRef}>
             {homeCfg.banner.map((item, index) => (
               <div className={style.item} key={index}>
                 <div className={style.wrap}>
