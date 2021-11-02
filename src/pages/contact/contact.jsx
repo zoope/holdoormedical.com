@@ -14,7 +14,8 @@ export default function Contact(props) {
       <div className={styles.address}>
         Room 3-1-2, No.62 Haiwaitan Flower Garden, Ningbo City, China
       </div>
-      <div className={styles.tel}>+86 13245638872</div>
+      <div className={styles.tel}>Tel: +86-574-87026300</div>
+      <div className={styles.phone}>Mobil: +86 13245638872</div>
       <div className={styles.email}>
         {emails.map((email) => (
           <div key={email.name}>

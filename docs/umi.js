@@ -3099,6 +3099,7 @@
       big: 'big___Y9MjE',
       address: 'address___3daMT',
       tel: 'tel___2460T',
+      phone: 'phone___WfQE1',
       email: 'email___3yLVe',
     };
   },
@@ -11048,7 +11049,11 @@
           }),
           Object(i['jsx'])('div', {
             className: o.a.tel,
-            children: '+86 13245638872',
+            children: 'Tel: +86-574-87026300',
+          }),
+          Object(i['jsx'])('div', {
+            className: o.a.phone,
+            children: 'Mobil: +86 13245638872',
           }),
           Object(i['jsx'])('div', {
             className: o.a.email,
