@@ -6,12 +6,12 @@
       {
         "code": "10001",
         "title": "COVID-19",
-        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg",
-        "color": "#fd3125",
+        "image": "/images/icon/COVID-19.PNG",
+        "color": "#1faead",
         "children": [
           {
             "code": "20001",
-            "title": "NAB Rapid Test"
+            "title": "COVID-19 Combined Rapid Test"
           },
           {
             "code": "20002",
@@ -38,8 +38,8 @@
       {
         "code": "10002",
         "title": "IVD PRODUCT",
-        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg",
-        "color": "#4db0e0",
+        "image": "/images/icon/IVD  PRODUCT.PNG",
+        "color": "#1faead",
         "children": [
           {
             "code": "20007",
@@ -58,8 +58,8 @@
       {
         "code": "10003",
         "title": "HEALTHCARE & MONITORING",
-        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg",
-        "color": "#d176b8",
+        "image": "/images/icon/HEALTHCARE& MONITORING.PNG",
+        "color": "#1faead",
         "children": [
           {
             "code": "20010",
@@ -78,8 +78,8 @@
       {
         "code": "10004",
         "title": "LABORATORY EQUIPMENTS",
-        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg",
-        "color": "#feb445",
+        "image": "/images/icon/LABORATORY EQUIPMENT.PNG",
+        "color": "#1faead",
         "children": [
           {
             "code": "20014",
@@ -108,18 +108,14 @@
           {
             "code": "20020",
             "title": "Blood collection tube"
-          },
-          {
-            "code": "20021",
-            "title": "Safety shower"
           }
         ]
       },
       {
         "code": "10005",
         "title": "VETERINARY",
-        "image": "https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg",
-        "color": "#be794a",
+        "image": "/images/icon/VETERINARY.PNG",
+        "color": "#1faead",
         "children": [
           {
             "code": "20022",

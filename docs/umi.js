@@ -820,19 +820,19 @@
             n = e.alignPoint;
           return 'minOverlayWidthMatchTrigger' in e ? t : !n;
         },
-        H = function () {
+        V = function () {
           var t = e.openClassName;
           return void 0 !== t ? t : ''.concat(c, '-open');
         },
-        z = function () {
+        H = function () {
           var t = e.children,
             n = t.props ? t.props : {},
-            r = u()(n.className, H());
+            r = u()(n.className, V());
           return R && t ? a['cloneElement'](t, { className: r }) : t;
         },
-        V = O;
+        z = O;
       return (
-        V || -1 === C.indexOf('contextMenu') || (V = ['click']),
+        z || -1 === C.indexOf('contextMenu') || (z = ['click']),
         a['createElement'](
           g['a'],
           Object.assign({}, T, {
@@ -846,7 +846,7 @@
             builtinPlacements: v,
             action: C,
             showAction: w,
-            hideAction: V || [],
+            hideAction: z || [],
             popupPlacement: p,
             popupAlign: f,
             popupTransitionName: l,
@@ -857,7 +857,7 @@
             onPopupVisibleChange: D,
             getPopupContainer: m,
           }),
-          z(),
+          H(),
         )
       );
     }
@@ -933,9 +933,9 @@
       F = n('JX7q'),
       U = n('Ji7U'),
       B = n('LK+K'),
-      H = n('BU3w'),
-      z = n('c+Xe'),
-      V = n('wgJM'),
+      V = n('BU3w'),
+      H = n('c+Xe'),
+      z = n('wgJM'),
       W = 0,
       q = {};
     function K(e) {
@@ -944,12 +944,12 @@
         n = W++,
         r = t;
       function o() {
-        (r -= 1), r <= 0 ? (e(), delete q[n]) : (q[n] = Object(V['a'])(o));
+        (r -= 1), r <= 0 ? (e(), delete q[n]) : (q[n] = Object(z['a'])(o));
       }
-      return (q[n] = Object(V['a'])(o)), n;
+      return (q[n] = Object(z['a'])(o)), n;
     }
     (K.cancel = function (e) {
-      void 0 !== e && (V['a'].cancel(q[e]), delete q[e]);
+      void 0 !== e && (z['a'].cancel(q[e]), delete q[e]);
     }),
       (K.ids = q);
     var G,
@@ -1002,7 +1002,7 @@
                       : null !== (o = s.firstChild) && void 0 !== o
                       ? o
                       : s;
-                G = Object(H['a'])(
+                G = Object(V['a'])(
                   '\n      ['
                     .concat(
                       l(''),
@@ -1076,7 +1076,7 @@
             if (((e.csp = n), !a['isValidElement'](r))) return r;
             var o = e.containerRef;
             return (
-              Object(z['c'])(r) && (o = Object(z['a'])(r.ref, e.containerRef)),
+              Object(H['c'])(r) && (o = Object(H['a'])(r.ref, e.containerRef)),
               Object(Y['a'])(r, { ref: o })
             );
           }),
@@ -1312,31 +1312,31 @@
           F = a['useContext'](R['b']),
           U = F.getPrefixCls,
           B = F.autoInsertSpaceInButton,
-          H = F.direction,
-          z = t || a['createRef'](),
-          V = a['useRef'](),
+          V = F.direction,
+          H = t || a['createRef'](),
+          z = a['useRef'](),
           W = function () {
             return 1 === a['Children'].count(m) && !b && !fe(f);
           },
           q = function () {
-            if (z && z.current && !1 !== B) {
-              var e = z.current.textContent;
+            if (H && H.current && !1 !== B) {
+              var e = H.current.textContent;
               W() && ue(e) ? L || D(!0) : L && D(!1);
             }
           };
         (i = 'object' === Object(P['a'])(l) && l.delay ? l.delay || !0 : !!l),
           a['useEffect'](
             function () {
-              clearTimeout(V.current),
+              clearTimeout(z.current),
                 'number' === typeof i
-                  ? (V.current = window.setTimeout(function () {
+                  ? (z.current = window.setTimeout(function () {
                       M(i);
                     }, i))
                   : M(i);
             },
             [i],
           ),
-          a['useEffect'](q, [z]);
+          a['useEffect'](q, [H]);
         var K = function (t) {
           var n,
             r = e.onClick,
@@ -1384,7 +1384,7 @@
             Object(o['a'])(n, ''.concat(G, '-two-chinese-chars'), L && Y),
             Object(o['a'])(n, ''.concat(G, '-block'), x),
             Object(o['a'])(n, ''.concat(G, '-dangerous'), !!d),
-            Object(o['a'])(n, ''.concat(G, '-rtl'), 'rtl' === H),
+            Object(o['a'])(n, ''.concat(G, '-rtl'), 'rtl' === V),
             n),
             v,
           ),
@@ -1401,13 +1401,13 @@
         if (void 0 !== re.href)
           return a['createElement'](
             'a',
-            Object(r['a'])({}, re, { className: J, onClick: K, ref: z }),
+            Object(r['a'])({}, re, { className: J, onClick: K, ref: H }),
             te,
             ne,
           );
         var oe = a['createElement'](
           'button',
-          Object(r['a'])({}, E, { type: j, className: J, onClick: K, ref: z }),
+          Object(r['a'])({}, E, { type: j, className: J, onClick: K, ref: H }),
           te,
           ne,
         );
@@ -1516,13 +1516,13 @@
           F = a['createElement'](be, { type: l, icon: E }),
           U = C([D, F]),
           B = Object(y['a'])(U, 2),
-          H = B[0],
-          z = B[1];
+          V = B[0],
+          H = B[1];
         return a['createElement'](
           we,
           Object(r['a'])({}, _, { className: u()(I, h) }),
-          H,
-          a['createElement'](je, L, z),
+          V,
+          a['createElement'](je, L, H),
         );
       };
     (Oe.__ANT_BUTTON = !0),
@@ -1875,17 +1875,17 @@
       Fe = De,
       Ue = n('PpiC'),
       Be = n('H4Hi'),
-      He = n.n(Be),
-      ze = n('9kvl'),
-      Ve = n('Ty5D'),
+      Ve = n.n(Be),
+      He = n('9kvl'),
+      ze = n('Ty5D'),
       We = n('nKUr');
-    t['a'] = Object(Ve['g'])(function (e) {
+    t['a'] = Object(ze['g'])(function (e) {
       var t = e.title,
         n = e.showBack,
         r = void 0 === n || n,
         o = Object(Ue['a'])(e, ['title', 'showBack']),
         i = () => {
-          ze['a'].goBack();
+          He['a'].goBack();
         },
         c = () => {
           var e,
@@ -1933,14 +1933,14 @@
       return Object(We['jsxs'])(a['Fragment'], {
         children: [
           Object(We['jsx'])('section', {
-            className: He.a.top,
+            className: Ve.a.top,
             children: Object(We['jsxs'])('div', {
-              className: He.a.content,
+              className: Ve.a.content,
               children: [
                 Object(We['jsx'])('h1', { children: t }),
                 r &&
                   Object(We['jsx'])('div', {
-                    className: He.a.back,
+                    className: Ve.a.back,
                     onClick: i,
                     children: 'RETURN',
                   }),
@@ -1948,7 +1948,7 @@
             }),
           }),
           Object(We['jsx'])('section', {
-            className: He.a.breadcrumb,
+            className: Ve.a.breadcrumb,
             children: Object(We['jsxs'])(Fe, {
               children: [
                 Object(We['jsx'])(Fe.Item, {
@@ -3093,9 +3093,10 @@
       'li-style': 'li-style___1ENYn',
       contact_us: 'contact_us___3kwlr',
       topic: 'topic___2tB3r',
-      above: 'above___2Okbq',
       wrap: 'wrap___3kGJR',
+      company: 'company___2pgGB',
       content: 'content___2bekV',
+      big: 'big___Y9MjE',
       address: 'address___3daMT',
       tel: 'tel___2460T',
       email: 'email___3yLVe',
@@ -3336,13 +3337,13 @@
       F = A.getterFor(I),
       U = f,
       B = u.TypeError,
-      H = u.document,
-      z = u.process,
-      V = s('fetch'),
+      V = u.document,
+      H = u.process,
+      z = s('fetch'),
       W = T.f,
       q = W,
-      K = 'process' == g(z),
-      G = !!(H && H.createEvent && u.dispatchEvent),
+      K = 'process' == g(H),
+      G = !!(V && V.createEvent && u.dispatchEvent),
       Y = 'unhandledrejection',
       $ = 'rejectionhandled',
       Q = 0,
@@ -3419,7 +3420,7 @@
       ie = function (e, t, n) {
         var r, o;
         G
-          ? ((r = H.createEvent('Event')),
+          ? ((r = V.createEvent('Event')),
             (r.promise = t),
             (r.reason = n),
             r.initEvent(e, !1, !0),
@@ -3437,7 +3438,7 @@
           if (
             o &&
             ((n = P(function () {
-              K ? z.emit('unhandledRejection', r, e) : ie(Y, e, r);
+              K ? H.emit('unhandledRejection', r, e) : ie(Y, e, r);
             })),
             (t.rejection = K || ce(t) ? ee : Z),
             n.error)
@@ -3450,7 +3451,7 @@
       },
       le = function (e, t) {
         j.call(u, function () {
-          K ? z.emit('rejectionHandled', e) : ie($, e, t.value);
+          K ? H.emit('rejectionHandled', e) : ie($, e, t.value);
         });
       },
       ue = function (e, t, n, r) {
@@ -3516,7 +3517,7 @@
           return (
             (r.ok = 'function' != typeof e || e),
             (r.fail = 'function' == typeof t && t),
-            (r.domain = K ? z.domain : void 0),
+            (r.domain = K ? H.domain : void 0),
             (n.parent = !0),
             n.reactions.push(r),
             n.state != Q && oe(this, n, !1),
@@ -3552,12 +3553,12 @@
           },
           { unsafe: !0 },
         ),
-        'function' == typeof V &&
+        'function' == typeof z &&
           c(
             { global: !0, enumerable: !0, forced: !0 },
             {
               fetch: function (e) {
-                return S(U, V.apply(u, arguments));
+                return S(U, z.apply(u, arguments));
               },
             },
           ))),
@@ -4246,9 +4247,9 @@
       F = 0.16,
       U = 0.05,
       B = 0.05,
-      H = 0.15,
-      z = 5,
-      V = 4,
+      V = 0.15,
+      H = 5,
+      z = 4,
       W = [
         { index: 7, opacity: 0.15 },
         { index: 6, opacity: 0.25 },
@@ -4301,9 +4302,9 @@
     function $(e, t, n) {
       return 0 === e.h && 0 === e.s
         ? e.s
-        : ((r = n ? e.s - F * t : t === V ? e.s + F : e.s + U * t),
+        : ((r = n ? e.s - F * t : t === z ? e.s + F : e.s + U * t),
           r > 1 && (r = 1),
-          n && t === z && r > 0.1 && (r = 0.1),
+          n && t === H && r > 0.1 && (r = 0.1),
           r < 0.06 && (r = 0.06),
           Number(r.toFixed(2)));
       var r;
@@ -4311,7 +4312,7 @@
     function Q(e, t, n) {
       var r;
       return (
-        (r = n ? e.v + B * t : e.v - H * t),
+        (r = n ? e.v + B * t : e.v - V * t),
         r > 1 && (r = 1),
         Number(r.toFixed(2))
       );
@@ -4322,7 +4323,7 @@
             arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
           n = [],
           r = T(e),
-          o = z;
+          o = H;
         o > 0;
         o -= 1
       ) {
@@ -4331,7 +4332,7 @@
         n.push(a);
       }
       n.push(K(r));
-      for (var c = 1; c <= V; c += 1) {
+      for (var c = 1; c <= z; c += 1) {
         var l = q(r),
           u = K(T({ h: Y(l, c), s: $(l, c), v: Q(l, c) }));
         n.push(u);
@@ -4794,7 +4795,7 @@
   },
   '8BOu': function (e) {
     e.exports = JSON.parse(
-      "[{\"code\":\"100001\",\"title\":\"(IgM/IgG/Neutralizing antibody) Rapid Test (Colloidal Gold)\",\"avatar\":\"/images/100001.JPG\",\"category\":[\"0\",\"10001\",\"20001\"],\"content\":\"<p>The first three antibody reagent to enter the WHO FIND catalog and the first three antibody reagent to enter the export whitelist of the Ministry of Commerce of China.<br/>Using NAb to block the ACE2+RBD binding principle, more targeted detection of functional NAb, compared with indirect method,<br/>capture method, and sandwich method, it simulates the working principle of natural neutralizing antibody in vitro, which is more<br/>scientific and reasonable<br/>Detection principle, NAB competition to block the binding of RBD to the human ACE2 receptor method, all vaccine produced NAB <br/>can be evaluated.</p><p><br/></p><p>Product Advantage<br/>Three antibody whole process monitoring, vaccine effect evaluation is more comprehensive</p><ul class=' list-paddingleft-2' style='list-style-type: circle;'><li><p>Easy to operate, no pressure on multiple occasions:</p></li><li><p>Get test results within 15min</p></li><li><p>No equipment, no color chart, transportation at room temperature</p></li><li><p>Feature Pack: Contains all experimental materials</p></li><li><p>Adapt to vaccination site, clinic NAB screening</p></li></ul>\"},{\"code\":\"100002\",\"title\":\"Ventilator\",\"avatar\":\"/images/100002.png\",\"category\":[\"0\",\"10001\",\"20002\"],\"content\":\"<p><strong>3-Diff Fully Automatic Hematology Analyzer</strong></p><p><br/></p><p><strong>Parameters</strong><br/>21 reportable parameters: WBC, Gran#, Lym#, Mid#, <br/>Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH, MCHC, <br/>RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, P-LCR, P-LCC<br/>3 histograms for WBC, RBC and PLT</p><p><br/></p><p><strong>Principles </strong><br/>Impedance method for WBC, RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p><br/></p><p><strong>Throughput</strong><br/>Up to 60 tests per hour</p><p><br/></p>\"},{\"code\":\"100003\",\"title\":\"High Flow Heated Respiratory Humidifier\",\"avatar\":\"/images/100003.png\",\"category\":[\"0\",\"10001\",\"20003\"],\"content\":\"<p>Oxygen therapy is a form of non \u2013 invasive respiratory support, which comprises an air oxygen blender,an active humidifier,a single heated circuit and a nasal cannula.</p><p>It delivers adequately heated and humidified medical gas up to 60L/min,and is considered to have a number of physiological effects : reduction of anatomical dead space,PEEP effect,constant fraction of inspired oxygen and good humidification.<br/>It is widely used in RICU and ICU.</p><p>Specification</p><p>Mild respiratory distress (respiratory rate &gt;24 bpm)<br/>ARDS and other Type I Respiratory Failure <br/>&nbsp;(100 mmHg \u2264 PaO2/FiO2 &lt; 300 mmHg) <br/>Type II Respiratory Failure <br/>Invasive Ventilation Weaning</p><p><br/></p><table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specification of Adult HFNC machine</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Adjustment Method of Oxygen Concentration</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Merchanical</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>FiO2</td><td width='484' valign='top' style='-ms-word-break: break-all;'>21%-100%</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Flow</td><td width='484' valign='top' style='-ms-word-break: break-all;'>6-60LPM</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Pressure of gas source</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Air/Oxygen@0.3-0.4 Mpa</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Blender Alarm</td><td width='484' valign='top' style='-ms-word-break: break-all;'>When gas supply pressure difference &gt; 0.1 Mpa</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Blender Alarm Noise</td><td width='484' valign='top' style='-ms-word-break: break-all;'>&gt;57 dB(A)</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Accuracy of FiO2</td><td width='484' valign='top' style='-ms-word-break: break-all;'>3%</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Humidifier Supply Voltage/Frequency</td><td width='484' valign='top' style='-ms-word-break: break-all;'>220V/ 110V 50/60Hz</td></tr><tr><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>Humidifier Temperature monitoring</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>0-75\u2103</td></tr><tr><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>Humidifier Heater Plate Over-temperature Cut Off</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>95\xb15\u2103</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Heater Wire(Max.)</td><td width='484' valign='top' style='-ms-word-break: break-all;'>&nbsp;22V-,2.73A, 60W, 50/60Hz</td></tr></tbody></table><p>&nbsp;</p><p>&nbsp;</p>\"},{\"code\":\"100004\",\"title\":\"Oxygen Concentrator\",\"avatar\":\"/images/100004.png\",\"category\":[\"0\",\"10001\",\"20004\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='3'>Specification<br/></td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Type<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-5L<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-10L<br/></td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Flow</td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-5L/Min</td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-10L/Min</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Oxygen Purity</td><td width='316' valign='top' style='-ms-word-break: break-all;'>90%</td><td width='316' valign='top' style='-ms-word-break: break-all;'>93%</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Power</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u2264360VA</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u2264750VA</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Output pressure</td><td width='316' valign='top' style='-ms-word-break: break-all;'>30-70k Pa</td><td width='316' valign='top' style='-ms-word-break: break-all;'>30-70k Pa</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Gross weight</td><td width='316' valign='top' style='-ms-word-break: break-all;'>18&nbsp;KG</td><td width='316' valign='top' style='-ms-word-break: break-all;'>23 KG</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Noice</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u226452dB</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u226460dB</td></tr><tr><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>Functions</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Power off alarm, Overload protection, High/Low pressure alarm, Temperature alarm, Error code indication, Nebulizer, Oxygen purity alarm.</td></tr></tbody></table><p>&nbsp;</p>\"},{\"code\":\"100005\",\"title\":\"Fingertip pulse oximeter\",\"avatar\":\"/images/100005.JPG\",\"category\":[\"0\",\"10001\",\"20005\"],\"content\":\"<p>Speciofication</p><p>SpO2: Detection scope: 35%-100%<br/>Accuracy:\xb12%\uff0880%-100%\uff09; \xb13%\uff0870%-79%\uff09<br/>PR Range: 25-250BPM</p><p>Accuracy:\xb12bpm</p><p>Resolution:1bpm<br/>Operation evironment temperature:5-40\u2103<br/>Related humidity:15%-80% <br/>Air pressure:860hPa-1060hPa</p>\"},{\"code\":\"100006\",\"title\":\"Virus transport and preservation medium \",\"avatar\":\"/images/100006.JPG\",\"category\":[\"0\",\"10001\",\"20006\"],\"content\":\"<p>Universal transport and preservation medium for virus, Chlamydia ,mycoplasma and Ureaplasma sample. Avoid aerosol infection.</p>\"},{\"code\":\"100007\",\"title\":\"3-Part Hematology Analyzer\",\"avatar\":\"/images/100007.png\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p>Parameters<br/>21 reportable parameters: WBC, Gran#, Lym#, Mid#, <br/>Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH, MCHC, <br/>RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, P-LCR, P-LCC<br/>3 histograms for WBC, RBC and PLT</p><p>Principles <br/>Impedance method for WBC, RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to 60 tests per hour</p>\"},{\"code\":\"100008\",\"title\":\"Mini 5-Part Hematology Analyzer\",\"avatar\":\"/images/100008.png\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p>Parameters<br/>23 reportable parameters:<br/>WBC, Neu#, Lym#, Mon#, Eos#, Bas#, Neu%, Lym%, <br/>Mon%, Eos%, Bas%, RBC, HGB, HCT, MCV, MCH, <br/>MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Four 2D scattergrams for WBC differention</p><p>Principles<br/>Flow Cytometry (FCM) + Tri-angle laser scatter + <br/>Chemical staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to 60 tests per hour</p>\"},{\"code\":\"100009\",\"title\":\"5-Part Hematology Analyzer\",\"avatar\":\"/images/100009.jpg\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p>Parameters<br/>25 reportable parameters: WBC, Neu#, Lym#, Mon#, Eos#, <br/>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC, HGB, HCT, <br/>MCV, MCH, MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, <br/>P-LCR, P-LCC<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Three DIFF scattergrams and one BASO scattergram for <br/>WBC differention</p><p>Principles<br/>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical <br/>staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to 60 tests per hour</p>\"},{\"code\":\"100041\",\"title\":\"Fully Autometic 5-Part Hematology Analyzer\",\"avatar\":\"/images/100041.png\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p>Parameters<br/>25 reportable parameters: WBC, Neu#, Lym#, Mon#, Eos#, <br/>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC, HGB, HCT, <br/>MCV, MCH, MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, <br/>P-LCR, P-LCC<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Three DIFF scattergrams and one BASO scattergram for <br/>WBC differention</p><p>Principles<br/>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical <br/>staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p>Throughput<br/>Up to&nbsp;90 tests per hour</p>\"},{\"code\":\"100010\",\"title\":\"Hematology reagent\",\"avatar\":\"/images/100010.jpg\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p>Mindray, Sysmex, Coulter, NIHON KOHDEN</p>\"},{\"code\":\"100011\",\"title\":\"Semi auto chemistry analyzer\",\"avatar\":\"/images/100011.png\",\"category\":[\"0\",\"10002\",\"20008\"],\"content\":\"<p>7&quot; inch true color touch screen<br/>Flow cell&amp;cuvette testing mode<br/>Multifunctional incubator &amp; blood coagulation function<br/>Huge storage of more ythan 300 programs &amp; 200000 sample results</p>\"},{\"code\":\"100012\",\"title\":\"Fully auto chemistry analyzer\",\"avatar\":\"/images/100012.PNG\",\"category\":[\"0\",\"10002\",\"20008\"],\"content\":\"<p>Throughput: 120/200/400/800 T/H<br/>Automatic liquid level sensing, anti-collision protection.<br/>Integrated full closed optical system, multi wavelength simultaneous detection.</p>\"},{\"code\":\"100013\",\"title\":\"HD-U120 Urine analyzer\",\"avatar\":\"/images/100013.png\",\"category\":[\"0\",\"10002\",\"20009\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specifications</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Test&nbsp;items<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>Glucose(GLU), Bilirubin(BIL), specific gravity(SG), PH, Ketone(KET), Occult blood (BLD), Protein(PRO), Urobilinogen (URO), Nitrite (NIT), Leucocyte (LEU), ascorbic acid(VC), Calcium(CA), Creatinine(CRE), Microalbuminuria(MCA)</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Applicable test strips</td><td width='484' valign='top' style='-ms-word-break: break-all;'>10 items, 11 items, 14 items</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'>120&nbsp;T/H, 60T/H, manually treggered</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Storage capacity</td><td width='484' valign='top' style='-ms-word-break: break-all;'>1000 tests</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power supply</td><td width='484' valign='top' style='-ms-word-break: break-all;'>AC100-240V, 50/60 Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Dimensions</td><td width='484' valign='top' style='-ms-word-break: break-all;'>253mm\xd7237mm\xd7171mm</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Weight</td><td width='484' valign='top' style='-ms-word-break: break-all;'>3KG</td></tr></tbody></table><p>&nbsp;</p>\"},{\"code\":\"100014\",\"title\":\"HD-U500 Urine analyzer\",\"avatar\":\"/images/100014.png\",\"category\":[\"0\",\"10002\",\"20009\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specifications</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Test&nbsp;items<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>Specific Gravity, Ketones, Leukocytes, Microalbumin, Calcium, Glucose, Bilirubin, Occult Blood, Protein,Urobilinogen, Nitrite, PH, Ascorbic Acid, Micro Albumin, Creatinine, etc.</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Applicable test strips</td><td width='484' valign='top' style='-ms-word-break: break-all;'>10 items, 11 items, 14 items</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'>500 T/H</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Storage capacity</td><td width='484' valign='top' style='-ms-word-break: break-all;'>2000 tests</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power supply</td><td width='484' valign='top' style='-ms-word-break: break-all;'>AC100-240V, 50/60 Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Dimensions</td><td width='484' valign='top' style='-ms-word-break: break-all;'>300*330*210 mm</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Weight</td><td width='484' valign='top' style='-ms-word-break: break-all;'>7KG</td></tr></tbody></table><p>&nbsp;</p>\"},{\"code\":\"100015\",\"title\":\"Urine strips\",\"avatar\":\"/images/100015.png\",\"category\":[\"0\",\"10002\",\"20009\"],\"content\":\"<p>Test items: Specific Gravity, Ketones, Leukocytes, Microalbumin, Calcium, Glucose, Bilirubin, Occult Blood, Protein,Urobilinogen, Nitrite, PH, Ascorbic Acid, Micro Albumin, Creatinine, etc. (customized items on request)</p>\"},{\"code\":\"100016\",\"title\":\"HD-1200 Pro\",\"avatar\":\"/images/100016.png\",\"category\":[\"0\",\"10003\",\"20010\"],\"content\":\"<p>Specification<br/>Applicable area: 150 m\xb2<br/>Sterilization Principle: UVC + H13 HEPA<br/>Filters: H13 HEPA filter+honeycomb activated carbon filter+ Primary filter<br/>Electric parameter:100-127V~ 60Hz(146W),220-240V~ 50Hz (110W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Noise: \u226465 dB&nbsp;&nbsp;&nbsp;&nbsp; <br/>Bacterial Interception Area: About 18M\xb2<br/>Machine Size: 1335*575*335mm&nbsp;&nbsp; <br/>Net Weight: 39KGS<br/>Control Method: Touch Screen, Remote control</p><p>Performance <br/>Virus removal rate: &gt; 99.9%<br/>Bacterial removal rate: &gt; 99.9%<br/>Air volume(PM CADR): 1200m\xb3 /H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>CFM: 720<br/>Ultraviolet wavelength: 254nm<br/>UV illumination: 95uw/CM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>UV leakage: &lt; 1uw/CM<br/>Extinction rate of air natural bacteria: &gt; 90%<br/>Per Hour Ozone concentration: &lt; 0.012mg/m3</p><p></p>\"},{\"code\":\"100017\",\"title\":\"HD-1000\",\"avatar\":\"/images/100017.png\",\"category\":[\"0\",\"10003\",\"20010\"],\"content\":\"<p>Specification<br/>Applicable area: 120 m\xb2<br/>Sterilization Principle: UVC + H13 HEPA<br/>Filters: HEPA filter+honeycomb activated carbon filter+ Prefilter<br/>Electric parameter:100-127V~60Hz(145W)&nbsp; 220-240V~50Hz(163W)&nbsp;&nbsp; <br/>Noise: \uff1c68 dB<br/>Bacterial Interception Area: About 12M\xb2<br/>Machine Size: 870*490*365 mm&nbsp;&nbsp;</p><p>Net Weight: 39.6KGS<br/>Control Method: Touch Screen, Remote control<br/><br/>Performance <br/>Virus removal rate: &gt; 99.9%<br/>Bacterial removal rate: &gt; 99.9%<br/>Air volume(PM CADR): 1000m\xb3 /H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>CFM: 600<br/>Ultraviolet wavelength: 254nm<br/>UV illumination: 95uw/CM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>UV leakage: &lt; 1uw/CM<br/>Extinction rate of air natural bacteria: &gt; 90%<br/>Per Hour Ozone concentration: &lt; 0.005mg/m3 &nbsp; &nbsp;</p><p></p>\"},{\"code\":\"100018\",\"title\":\"HD-20\",\"avatar\":\"/images/100018.png\",\"category\":[\"0\",\"10003\",\"20010\"],\"content\":\"<p>Specification<br/>Applicable area: 40 m\xb2<br/>Sterilization Principle: UVC + HEPA +plasma<br/>Filters: HEPA filter+honeycomb activated carbon filter+ Primary filter+Tio2 filter<br/>Power: 45W&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Voltage: 220V 50 Hz //100-120V 60hz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Noise: \uff1c60dB<br/>Machine Size: 630*380*200mm&nbsp;</p><p>Net Weight: 8.5KGS<br/>Control Method: Touch Screen, Remote control<br/><br/>Performance <br/>Virus removal rate: &gt; 99.9%<br/>Bacterial removal rate: &gt; 99.9%<br/>Air volume(PM CADR): 320M /H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>CFM: 200<br/>Ultraviolet wavelength: 254nm<br/>UV illumination: 95uw/CM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>UV leakage: &lt; 1uw/CM<br/>Extinction rate of air natural bacteria: &gt; 90%<br/>Per Hour Ozone concentration: &lt; 0.005mg/m3 &nbsp; &nbsp;</p><p>&nbsp;&nbsp;</p><p></p>\"},{\"code\":\"100019\",\"title\":\"Wheelchair\",\"avatar\":\"/images/100019.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p>Specification</p><p>Handicappedmanual control</p><p>Standard&amp; Extra Wide,Easy to use</p><p>Low maintenance</p><p>Tubular design and high quality craftsmanshipfor commercialuse</p><p>Extra wide heavy duty chairs available</p><p>Low cost alternativeto ECV</p><p>Front wheels: 8&quot; solid</p><p>Rear wheels: 24&quot; spoke</p><p>Brakes:Parking/progressive</p><p>Max User weight: 135kg</p><p>Folding wheelchair,pediatric wheelchair</p>\"},{\"code\":\"100020\",\"title\":\"Medical bed\",\"avatar\":\"/images/100020.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p>Variety of hospital beds :<br/>Electric hospital bed/<br/>Electric home care bed/<br/>manual bed</p>\"},{\"code\":\"100042\",\"title\":\"Examining light\",\"avatar\":\"/images/100042.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"\"},{\"code\":\"100021\",\"title\":\"Examining light\",\"avatar\":\"/images/100021.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"\"},{\"code\":\"100022\",\"title\":\"IV Stand\",\"avatar\":\"/images/100022.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"\"},{\"code\":\"100024\",\"title\":\"Infant weighing scale\",\"avatar\":\"/images/100024.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p>Specification</p><p>Equiped with high precision strain gauge sensor, full ABS design<br/>Product size: 550*330*45mm<br/>Capacity:20kg Division:10kg<br/>LCD display size :70*23mm<br/>Auto one-step on for weight function<br/>Auto zero-auto off<br/>Low battery/over load indication<br/>Power:4*AAA-LOR03 1.5 volts(alkaline preferably)<br/>Unit:kg/lb</p>\"},{\"code\":\"100025\",\"title\":\"Adult weighing scale\",\"avatar\":\"/images/100025.PNG\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p>Specification</p><p>Weight range:0.2kg-200kg<br/>Division value:10g-100g<br/>Unit conversion KG/LB<br/>Power and voltage: lithium battery 3.7V(3.7V-4.2V)<br/>Average working current\u226450mA<br/></p>\"},{\"code\":\"100026\",\"title\":\"Floor-mounted Digital X-ray System\",\"avatar\":\"/images/100026.png\",\"category\":[\"0\",\"10003\",\"20013\"],\"content\":\"<p>High-frequency power meets all kinds of large volume, thick position radiography. High-voltage generator outputs more stable kV. Large-heat capacity of X-ray tube supports long time and large dose of continuous working. Fast anode rotation ensures great heat dissipation and long service life.</p>\"},{\"code\":\"100027\",\"title\":\"Mobile DR\",\"avatar\":\"/images/100027.jpg\",\"category\":[\"0\",\"10003\",\"20013\"],\"content\":\"<p>This mobil DRsystem could achiveve high-frequency&amp;high-voltage generator, large heat capacity of X-ray tube, battey storage and motorizeddrive unit, with abundant external interface. It can be widely used in radiology, orthopedic, medical examination department, emergency room, ICU, operating room and meonatal pediatrice, and fully meet the meand of hospital digital radiography.</p>\"},{\"code\":\"100028\",\"title\":\"Low Speed Centrifuge\",\"avatar\":\"/images/100028.png\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p>Specification</p><p>Max. Speed: 4000rp<br/>Max. RCF: 1880\xd7g<br/>Max. Capacity: 8\xd720ml<br/>Time Range: 0~99min<br/>RPM/RCF Convert: Yes<br/>Noise (dB) \u2264 55<br/>Acc/Dec: 10 Kinds<br/>Speed Accuracy: \xb120r/min<br/>Voltage(V/Hz): AC 220V/110V 50HZ/60HZ<br/>Size (W x D x Hmm): 310\xd7270\xd7220mm</p>\"},{\"code\":\"100029\",\"title\":\"High Speed Centrifuge\",\"avatar\":\"/images/100029.png\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p>Specification</p><p>Max. Speed: 16000rpm <br/>Max. RCF: 20600\xd7g <br/>Max. Capacity: 6\xd7100ml <br/>Time Range: 0~99min <br/>RPM/RCF Convert :Yes <br/>Noise (dB) \u2264 65 <br/>Acc/Dec: 10 Kinds <br/>Speed Accuracy: \xb120r/min <br/>Temperature Accuracy: \xb11\u2103 <br/>Voltage(V/Hz) AC: 220V/110V 50HZ/60HZ <br/>Size (L x W x Hmm): 513\xd7370\xd7320mm</p>\"},{\"code\":\"100030\",\"title\":\"Hematocrit Centrifuge\",\"avatar\":\"/images/100030.png\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p>Specification</p><p>Max. Speed:12000rpm<br/>Max. Capacity: 24pcs Capillary<br/>Time Range: 0~99min59s<br/>RPM/RCF Convert :Yes<br/>Noise (dB) \u2264 55<br/>Acc/Dec: 10 Kinds<br/>Speed Accuracy: \xb120r/min<br/>Voltage(V/Hz) AC: 220V/110V 50HZ/60HZ<br/>Size (W x D x Hmm): 355\xd7270\xd7205mm</p><p><br/></p>\"},{\"code\":\"100031\",\"title\":\"Refrigerated centrifuge\",\"avatar\":\"/images/100031.JPG\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p>Specification</p><p>Max. Speed: 7000rpm<br/>Max. RCF: 11650\xd7g<br/>Max. Capacity: 6\xd72400ml(12*500ml blood bag\uff09<br/>Time Range: 1~9h59min<br/>RPM/RCF Convert: Yes<br/>6.Noise (dB) \u2264 65<br/>Temperature: -20~40\u2103<br/>Acc/Dec: 10 Kinds<br/>Speed Accuracy: \xb120r/min<br/>Temperature Accuracy: \xb11\u2103<br/>Voltage(V/Hz): AC 380V 50HZ/60HZ<br/>Size (W x D x Hmm): 940\xd7890\xd71000mm<br/>Net Weight(Kg): 570KG</p>\"},{\"code\":\"100032\",\"title\":\"UV Sterilizer\",\"avatar\":\"/images/100032.png\",\"category\":[\"0\",\"10004\",\"20015\"],\"content\":\"<table><tbody><tr class='ue-table-interlace-color-single firstRow'><td width='316' valign='top' style='-ms-word-break: break-all;'>Type<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>Regular</td><td width='316' valign='top' style='-ms-word-break: break-all;'>Smart</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Timing<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-120min</td><td width='316' valign='top' style='-ms-word-break: break-all;'>1-150min</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>Wavelength<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Ozone-free type253.7nm / Ozone type 185nm</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Material<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Carbon steel plastic spraying / Stainless steel</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>Input power<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>160VA</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>UV lamp power<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>2*30W</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>UV lamp irradiance<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>\u2265110\u03bcw/cm<sup>2</sup></td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Voltage<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>220V</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>Lamp arm folding<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>915mm</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Length after folding</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>1070mm</td></tr><tr class='ue-table-interlace-color-single'><td valign='top' rowspan='1' colspan='1'>Optional</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Remote control, negative ion, infrared sensor, numerical control display</td></tr></tbody></table><p>&nbsp;</p><p></p><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 539px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 533.66px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 524.33px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 496.32px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 483.66px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div>\"},{\"code\":\"100033\",\"title\":\"Electronic balance\",\"avatar\":\"/images/100033.png\",\"category\":[\"0\",\"10004\",\"20016\"],\"content\":\"<p>Specification</p><p>Pan: 165\xd7165 mm (Stainless Iron 304)<br/>Display: LCD (white back-light)&nbsp; (L\xd7W) 95\xd725 mm<br/>Interface: RS232<br/>Power: AC<br/>Units: g, kg, oz, ct, lb, GN</p><p>Value stable time: 0.5&nbsp;<br/>More functions: counting, last remember, %, full range tare, over-load protection, zero tracking, low-battery indicator<br/>\"},{\"code\":\"100034\",\"title\":\"PH Meter\",\"avatar\":\"/images/100034.png\",\"category\":[\"0\",\"10004\",\"20017\"],\"content\":\"<table width='361'><colgroup><col width='271' style='width: 181px;'/><col width='252' style='width: 168px;'/><col width='259' style='width: 173px;'/><col width='244' style='width: 163px;'/><col width='324' style='width: 216px;'/></colgroup><tbody><tr class='firstRow' style='height: 24px;'><td width='901' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: transparent;' colspan='2'><span style='font-family: Arial Black;'>PRODUCT DETAILS</span></td></tr><tr style='height: 27px;'><td width='181' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Rank</span></td><td width='168' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>0.05</span></td></tr><tr style='height: 28px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>pH (Range)</span></td><td width='168' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>(0.00~14.00) pH</span></td></tr><tr style='height: 28px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>mV (Range)</span></td><td width='168' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>(0~1599) mV</span></td></tr><tr style='height: 31px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>pH (Resolution)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>0.01 pH</span></td></tr><tr style='height: 29px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>mV (Range)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>1 mV</span></td></tr><tr style='height: 31px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>pH (Error)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\xb10.01 pH\xb11d</span></td></tr><tr style='height: 31px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>mV (Error)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\xb11% FS</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Input Impedance</span></td><td width='155' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\u22651\xd71012 \u03a9</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Input Current</span></td><td width='155' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\u22651\xd71012 A</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Stability</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>(\xb10.05pH\xb11d)/3h</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Power</span></td><td width='155' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: transparent;' colspan='1'><span style='font-family: Arial;'>DC (12V /1.0A)</span></td></tr></tbody></table>\"},{\"code\":\"100035\",\"title\":\"Autoclave\",\"avatar\":\"/images/100035.png\",\"category\":[\"0\",\"10004\",\"20018\"],\"content\":\"<p>Specification</p><p>Capacity: 24L</p><p>Serilization class: class N</p><p>Sterilization Temp:121\u2103, 134\u2103</p><p>Dring procedure: heating dry</p><p>Display: LED&nbsp;</p><p>Control precision: temperature:1\u2103, pressure:0.1 bar</p><p>Max working pressure:0.22Mpa</p><p>Safety system: pressure lock system, hand lock door, relief valve in case of over pressure</p><p>Water supply system: bulid in water tank</p><p>Water consumption: 0.16L-0.18L in one cycle</p><p>Power supply: AC110/220V\xb110%, 50/69Hz&nbsp;\"},{\"code\":\"100036\",\"title\":\"Hot Air Drying Oven\",\"avatar\":\"/images/100036.png\",\"category\":[\"0\",\"10004\",\"20019\"],\"content\":\"<p>Specification</p><p>Capacity: 105L</p><p>Temp range: RT+10-250\u2103</p><p>Temp precision:0.1\u2103</p><p>Ambient temp: 5-40\u2103</p><p>Timing range:1-9999min</p><p>Shelves No.:2pcs</p><p>Power consumption:1600w</p><p>Power supply: AC110/220V\xb110%, 50/69Hz\"},{\"code\":\"100037\",\"title\":\"Blood collection tube\",\"avatar\":\"/images/100037.png\",\"category\":[\"0\",\"10004\",\"20020\"],\"content\":\"<p>Plain Tube (tube without additives)</p><p>Serum Separating Tube</p><p>Pro-Coagulation Tube</p><p>EDTA TubePlasma Separate Tube</p><p>Micro Blood Collection Tubes</p><p>Glucose Tube</p><p>ESR Tube</p>\"},{\"code\":\"100039\",\"title\":\"3-Part Auto Hematology Analyzer for Vet\",\"avatar\":\"/images/100039.png\",\"category\":[\"0\",\"10005\",\"20022\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specification</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Parameters<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>19 reportable parameters: WBC, Gran#, Lym#, Mid#,Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH,MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT,3 histograms for WBC, RBC and PLT</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Up to 40 tests per hour</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample volume</td><td width='484' valign='top' style='-ms-word-break: break-all;'>17\xb5L</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample mode</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Whole blood mode and pre-diluted mode</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power requirement</td><td width='484' valign='top' style='-ms-word-break: break-all;'>100V-240V~, 50/60Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Principles</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Impedance method for WBC, RBC and PLT test, Cyanide free colorimetry for HGB test</td></tr></tbody></table><p></p>\"},{\"code\":\"100040\",\"title\":\"5-Part Auto Hematology Analyzer for Vet\",\"avatar\":\"/images/100040.jpg\",\"category\":[\"0\",\"10005\",\"20022\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specification</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Parameters<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>23 parameters: WBC, Neu#, Lym#, Mon#, Eos#,</p><p>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC,</p><p>HGB, HCT, MCV, MCH, MCHC, RDW-SD,</p><p>RDW-CV, PLT, MPV, PDW, PCT</p><p>3 histograms for WBC, RBC, and PLT,</p><p>4 scattergrams for WBC differentiation</p></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>Up to 60 tests per hour</p></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample volume</td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>20\u03bcL</p></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample mode</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Whole blood mode and pre-diluted mode</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power requirement</td><td width='484' valign='top' style='-ms-word-break: break-all;'>100V-240V~, 50/60Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Principles</td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical staining. Method for WBC differentiation Impedance method for RBC and PLT test Cyanide free colorimetry for HGB test</p></td></tr></tbody></table><p></p>\"}]",
+      "[{\"code\":\"100001\",\"title\":\"COVID-19 IgM/IgG/Neutralizing antibody Rapid Test (Colloidal Gold)\",\"avatar\":\"/images/100001.JPG\",\"category\":[\"0\",\"10001\",\"20001\"],\"content\":\"<p>The first three antibody reagent to enter the WHO FIND catalog and the first three antibody reagent to enter the export whitelist of the Ministry of Commerce of China.<br/>Using NAb to block the ACE2+RBD binding principle, more targeted detection of functional NAb, compared with indirect method,<br/>capture method, and sandwich method, it simulates the working principle of natural neutralizing antibody in vitro, which is more<br/>scientific and reasonable<br/>Detection principle, NAB competition to block the binding of RBD to the human ACE2 receptor method, all vaccine produced NAB <br/>can be evaluated.</p><p><br/></p><p><strong>Product Advantage</strong><br/>Three antibody whole process monitoring, vaccine effect evaluation is more comprehensive</p><ul class=' list-paddingleft-2' style='list-style-type: circle;'><li><p>Easy to operate, no pressure on multiple occasions:</p></li><li><p>Get test results within 15min</p></li><li><p>No equipment, no color chart, transportation at room temperature</p></li><li><p>Feature Pack: Contains all experimental materials</p></li><li><p>Adapt to vaccination site, clinic NAB screening</p></li></ul>\"},{\"code\":\"100002\",\"title\":\"Ventilator\",\"avatar\":\"/images/100002.png\",\"category\":[\"0\",\"10001\",\"20002\"],\"content\":\"<p><br/></p><p><br/></p><table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'><strong>Specification</strong></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Patient Type<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>Adult, Pediatric, Neonatal (Optional)</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Invasive Ventilation Mode<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>VCV (Volume Control Ventilation) <br/>PCV (Pressure Control Ventilation) <br/>VSIMV (Volume Synchronized Intermittent Mandatory Ventilation) <br/>PSIMV (Pressure Synchronized Intermittent Mandatory Ventilation) <br/>CPAP/PSV (Continuous Positive Airway Pressure/Pressure Support Ventilation) <br/>PRVC (Pressure Regulated Volume Control) <br/>V+SIMV (PRVC+SIMV)<br/>BPAP (Bilevel Positive Airway Pressure)<br/>APRV (Airway Pressure Release Ventilation)<br/>Apnea Ventilation<br/></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Non-invasive Ventilation Mode<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>CPAP (Continuous Positive Airway Pressure)<br/>PCV (Pressure Control Ventilator)<br/>PPS (Proportional Pressure Support)<br/>S/T (Spontanous and Timed) <br/>VS (Volume Support)</td></tr></tbody></table><p><br/></p>\"},{\"code\":\"100003\",\"title\":\"High Flow Heated Respiratory Humidifier\",\"avatar\":\"/images/100003.png\",\"category\":[\"0\",\"10001\",\"20003\"],\"content\":\"<p>Oxygen therapy is a form of non \u2013 invasive respiratory support, which comprises an air oxygen blender,an active humidifier,a single heated circuit and a nasal cannula.</p><p>It delivers adequately heated and humidified medical gas up to 60L/min,and is considered to have a number of physiological effects : reduction of anatomical dead space,PEEP effect,constant fraction of inspired oxygen and good humidification.<br/>It is widely used in RICU and ICU.</p><p><strong>Specification</strong></p><p>Mild respiratory distress (respiratory rate &gt;24 bpm)<br/>ARDS and other Type I Respiratory Failure <br/>&nbsp;(100 mmHg \u2264 PaO2/FiO2 &lt; 300 mmHg) <br/>Type II Respiratory Failure <br/>Invasive Ventilation Weaning</p><p><br/></p><table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'><strong>Specification of Adult HFNC machine</strong></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Adjustment Method of Oxygen Concentration</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Merchanical</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>FiO2</td><td width='484' valign='top' style='-ms-word-break: break-all;'>21%-100%</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Flow</td><td width='484' valign='top' style='-ms-word-break: break-all;'>6-60LPM</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Pressure of gas source</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Air/Oxygen@0.3-0.4 Mpa</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Blender Alarm</td><td width='484' valign='top' style='-ms-word-break: break-all;'>When gas supply pressure difference &gt; 0.1 Mpa</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Blender Alarm Noise</td><td width='484' valign='top' style='-ms-word-break: break-all;'>&gt;57 dB(A)</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Accuracy of FiO2</td><td width='484' valign='top' style='-ms-word-break: break-all;'>3%</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Humidifier Supply Voltage/Frequency</td><td width='484' valign='top' style='-ms-word-break: break-all;'>220V/ 110V 50/60Hz</td></tr><tr><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>Humidifier Temperature monitoring</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>0-75\u2103</td></tr><tr><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>Humidifier Heater Plate Over-temperature Cut Off</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>95\xb15\u2103</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Heater Wire(Max.)</td><td width='484' valign='top' style='-ms-word-break: break-all;'>&nbsp;22V-,2.73A, 60W, 50/60Hz</td></tr></tbody></table><p>&nbsp;</p><p>&nbsp;</p>\"},{\"code\":\"100004\",\"title\":\"Oxygen Concentrator\",\"avatar\":\"/images/100004.png\",\"category\":[\"0\",\"10001\",\"20004\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='3'><strong>Specification</strong><br/></td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Type<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-5L<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-10L<br/></td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Flow</td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-5L/Min</td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-10L/Min</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Oxygen Purity</td><td width='316' valign='top' style='-ms-word-break: break-all;'>90%</td><td width='316' valign='top' style='-ms-word-break: break-all;'>93%</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Power</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u2264360VA</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u2264750VA</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Output pressure</td><td width='316' valign='top' style='-ms-word-break: break-all;'>30-70k Pa</td><td width='316' valign='top' style='-ms-word-break: break-all;'>30-70k Pa</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Gross weight</td><td width='316' valign='top' style='-ms-word-break: break-all;'>18&nbsp;KG</td><td width='316' valign='top' style='-ms-word-break: break-all;'>23 KG</td></tr><tr><td width='316' valign='top' style='-ms-word-break: break-all;'>Noice</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u226452dB</td><td width='316' valign='top' style='-ms-word-break: break-all;'>\u226460dB</td></tr><tr><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='1'>Functions</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Power off alarm, Overload protection, High/Low pressure alarm, Temperature alarm, Error code indication, Nebulizer, Oxygen purity alarm.</td></tr></tbody></table><p>&nbsp;</p>\"},{\"code\":\"100005\",\"title\":\"Fingertip pulse oximeter\",\"avatar\":\"/images/100005.JPG\",\"category\":[\"0\",\"10001\",\"20005\"],\"content\":\"<p>Speciofication</p><p>SpO2: Detection scope: 35%-100%<br/>Accuracy:\xb12%\uff0880%-100%\uff09; \xb13%\uff0870%-79%\uff09<br/>PR Range: 25-250BPM</p><p>Accuracy:\xb12bpm</p><p>Resolution:1bpm<br/>Operation evironment temperature:5-40\u2103<br/>Related humidity:15%-80% <br/>Air pressure:860hPa-1060hPa</p>\"},{\"code\":\"100006\",\"title\":\"Virus transport and preservation medium \",\"avatar\":\"/images/100006.JPG\",\"category\":[\"0\",\"10001\",\"20006\"],\"content\":\"<p>Universal transport and preservation medium for virus, Chlamydia ,mycoplasma and Ureaplasma sample. Avoid aerosol infection.</p>\"},{\"code\":\"100007\",\"title\":\"3-Part Hematology Analyzer\",\"avatar\":\"/images/100007.png\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p><strong>Parameters</strong><br/>21 reportable parameters: WBC, Gran#, Lym#, Mid#, <br/>Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH, MCHC, <br/>RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, P-LCR, P-LCC<br/>3 histograms for WBC, RBC and PLT</p><p><strong>Principles </strong><br/>Impedance method for WBC, RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p><strong>Throughput</strong><br/>Up to 60 tests per hour</p>\"},{\"code\":\"100008\",\"title\":\"Mini 5-Part Hematology Analyzer\",\"avatar\":\"/images/100008.png\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p><strong>Parameters</strong><br/>23 reportable parameters:<br/>WBC, Neu#, Lym#, Mon#, Eos#, Bas#, Neu%, Lym%, <br/>Mon%, Eos%, Bas%, RBC, HGB, HCT, MCV, MCH, <br/>MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Four 2D scattergrams for WBC differention</p><p><strong>Principles</strong><br/>Flow Cytometry (FCM) + Tri-angle laser scatter + <br/>Chemical staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p><strong>Throughput</strong><br/>Up to 60 tests per hour</p>\"},{\"code\":\"100009\",\"title\":\"5-Part Hematology Analyzer\",\"avatar\":\"/images/100009.jpg\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p><strong>Parameters</strong><br/>25 reportable parameters: WBC, Neu#, Lym#, Mon#, Eos#, <br/>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC, HGB, HCT, <br/>MCV, MCH, MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, <br/>P-LCR, P-LCC<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Three DIFF scattergrams and one BASO scattergram for <br/>WBC differention</p><p><strong>Principles</strong><br/>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical <br/>staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p><strong>Throughput</strong><br/>Up to 60 tests per hour</p>\"},{\"code\":\"100041\",\"title\":\"Fully Autometic 5-Part Hematology Analyzer\",\"avatar\":\"/images/100041.png\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p><strong>Parameters</strong><br/>25 reportable parameters: WBC, Neu#, Lym#, Mon#, Eos#, <br/>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC, HGB, HCT, <br/>MCV, MCH, MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT, <br/>P-LCR, P-LCC<br/>4 research parameters: ALY#,ALY%,LIC#,LIC%<br/>3 histograms for WBC, RBC and PLT<br/>Three DIFF scattergrams and one BASO scattergram for <br/>WBC differention</p><p><strong>Principles</strong><br/>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical <br/>staining method for WBC differention<br/>Impedance method for RBC and PLT test<br/>Cyanide free colorimetry for HGB test</p><p><strong>Throughput</strong><br/>Up to&nbsp;90 tests per hour</p>\"},{\"code\":\"100010\",\"title\":\"Hematology reagent\",\"avatar\":\"/images/100010.jpg\",\"category\":[\"0\",\"10002\",\"20007\"],\"content\":\"<p>Mindray\uff1aBC1800, BC2300, BC2800, BC3000, BC3200, BC3200, BC-5100, BC-5180, BC-5300, BC-5300, BC-5300, BC-5310, BC-5380, etc.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Sysmex:&nbsp;KX-21, KX-21N, POCH-100i, XS-500i, XS-800i,&nbsp;XS-900i, XS-1000i, XT-1800i&nbsp;, XT-2000i, XT-4000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Coulter:&nbsp;MAXM/HNX,&nbsp;STKS/GENS,&nbsp;LH750/LH780,LH500,&nbsp;AC.T 5DIFF&nbsp;&nbsp;</p><p></p>\"},{\"code\":\"100011\",\"title\":\"Semi auto chemistry analyzer\",\"avatar\":\"/images/100011.png\",\"category\":[\"0\",\"10002\",\"20008\"],\"content\":\"<p>7&quot; inch true color touch screen<br/>Flow cell&amp;cuvette testing mode<br/>Multifunctional incubator &amp; blood coagulation function<br/>Huge storage of more ythan 300 programs &amp; 200000 sample results</p>\"},{\"code\":\"100012\",\"title\":\"Fully auto chemistry analyzer\",\"avatar\":\"/images/100012.PNG\",\"category\":[\"0\",\"10002\",\"20008\"],\"content\":\"<p>Throughput: 120/200/400/800 T/H<br/>Automatic liquid level sensing, anti-collision protection.<br/>Integrated full closed optical system, multi wavelength simultaneous detection.</p>\"},{\"code\":\"100013\",\"title\":\"HD-U120 Urine analyzer\",\"avatar\":\"/images/100013.png\",\"category\":[\"0\",\"10002\",\"20009\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'><strong>Specifications</strong></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Test&nbsp;items<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>Glucose(GLU), Bilirubin(BIL), specific gravity(SG), PH, Ketone(KET), Occult blood (BLD), Protein(PRO), Urobilinogen (URO), Nitrite (NIT), Leucocyte (LEU), ascorbic acid(VC), Calcium(CA), Creatinine(CRE), Microalbuminuria(MCA)</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Applicable test strips</td><td width='484' valign='top' style='-ms-word-break: break-all;'>10 items, 11 items, 14 items</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'>120&nbsp;T/H, 60T/H, manually treggered</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Storage capacity</td><td width='484' valign='top' style='-ms-word-break: break-all;'>1000 tests</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power supply</td><td width='484' valign='top' style='-ms-word-break: break-all;'>AC100-240V, 50/60 Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Dimensions</td><td width='484' valign='top' style='-ms-word-break: break-all;'>253mm\xd7237mm\xd7171mm</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Weight</td><td width='484' valign='top' style='-ms-word-break: break-all;'>3KG</td></tr></tbody></table><p>&nbsp;</p>\"},{\"code\":\"100014\",\"title\":\"HD-U500 Urine analyzer\",\"avatar\":\"/images/100014.png\",\"category\":[\"0\",\"10002\",\"20009\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'><strong>Specifications</strong></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Test&nbsp;items<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>Specific Gravity, Ketones, Leukocytes, Microalbumin, Calcium, Glucose, Bilirubin, Occult Blood, Protein,Urobilinogen, Nitrite, PH, Ascorbic Acid, Micro Albumin, Creatinine, etc.</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Applicable test strips</td><td width='484' valign='top' style='-ms-word-break: break-all;'>10 items, 11 items, 14 items</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'>500 T/H</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Storage capacity</td><td width='484' valign='top' style='-ms-word-break: break-all;'>2000 tests</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power supply</td><td width='484' valign='top' style='-ms-word-break: break-all;'>AC100-240V, 50/60 Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Dimensions</td><td width='484' valign='top' style='-ms-word-break: break-all;'>300*330*210 mm</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Weight</td><td width='484' valign='top' style='-ms-word-break: break-all;'>7KG</td></tr></tbody></table><p>&nbsp;</p>\"},{\"code\":\"100015\",\"title\":\"Urine strips\",\"avatar\":\"/images/100015.png\",\"category\":[\"0\",\"10002\",\"20009\"],\"content\":\"<p>Test items: Specific Gravity, Ketones, Leukocytes, Microalbumin, Calcium, Glucose, Bilirubin, Occult Blood, Protein,Urobilinogen, Nitrite, PH, Ascorbic Acid, Micro Albumin, Creatinine, etc. (customized items on request)</p>\"},{\"code\":\"100016\",\"title\":\"HD-1200 Pro\",\"avatar\":\"/images/100016.png\",\"category\":[\"0\",\"10003\",\"20010\"],\"content\":\"<p><strong>Specification</strong><br/>Applicable area: 150 m\xb2<br/>Sterilization Principle: UVC + H13 HEPA<br/>Filters: H13 HEPA filter+honeycomb activated carbon filter+ Primary filter<br/>Electric parameter:100-127V~ 60Hz(146W),220-240V~ 50Hz (110W)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Noise: \u226465 dB&nbsp;&nbsp;&nbsp;&nbsp; <br/>Bacterial Interception Area: About 18M\xb2<br/>Machine Size: 1335*575*335mm&nbsp;&nbsp; <br/>Net Weight: 39KGS<br/>Control Method: Touch Screen, Remote control</p><p><strong>Performance </strong><br/>Virus removal rate: &gt; 99.9%<br/>Bacterial removal rate: &gt; 99.9%<br/>Air volume(PM CADR): 1200m\xb3 /H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>CFM: 720<br/>Ultraviolet wavelength: 254nm<br/>UV illumination: 95uw/CM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>UV leakage: &lt; 1uw/CM<br/>Extinction rate of air natural bacteria: &gt; 90%<br/>Per Hour Ozone concentration: &lt; 0.012mg/m3</p><p>&nbsp;</p>\"},{\"code\":\"100017\",\"title\":\"HD-1000\",\"avatar\":\"/images/100017.png\",\"category\":[\"0\",\"10003\",\"20010\"],\"content\":\"<p><strong>Specification</strong><br/>Applicable area: 120 m\xb2<br/>Sterilization Principle: UVC + H13 HEPA<br/>Filters: HEPA filter+honeycomb activated carbon filter+ Prefilter<br/>Electric parameter:100-127V~60Hz(145W)&nbsp; 220-240V~50Hz(163W)&nbsp;&nbsp; <br/>Noise: \uff1c68 dB<br/>Bacterial Interception Area: About 12M\xb2<br/>Machine Size: 870*490*365 mm&nbsp;&nbsp;</p><p>Net Weight: 39.6KGS<br/>Control Method: Touch Screen, Remote control<br/><br/><strong>Performance </strong><br/>Virus removal rate: &gt; 99.9%<br/>Bacterial removal rate: &gt; 99.9%<br/>Air volume(PM CADR): 1000m\xb3 /H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>CFM: 600<br/>Ultraviolet wavelength: 254nm<br/>UV illumination: 95uw/CM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>UV leakage: &lt; 1uw/CM<br/>Extinction rate of air natural bacteria: &gt; 90%<br/>Per Hour Ozone concentration: &lt; 0.005mg/m3 &nbsp; &nbsp;</p><p>&nbsp;</p>\"},{\"code\":\"100018\",\"title\":\"HD-20\",\"avatar\":\"/images/100018.png\",\"category\":[\"0\",\"10003\",\"20010\"],\"content\":\"<p><strong>Specification</strong><br/>Applicable area: 40 m\xb2<br/>Sterilization Principle: UVC + HEPA +plasma<br/>Filters: HEPA filter+honeycomb activated carbon filter+ Primary filter+Tio2 filter<br/>Power: 45W&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Voltage: 220V 50 Hz //100-120V 60hz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Noise: \uff1c60dB<br/>Machine Size: 630*380*200mm&nbsp;</p><p>Net Weight: 8.5KGS<br/>Control Method: Touch Screen, Remote control<br/><br/><strong>Performance </strong><br/>Virus removal rate: &gt; 99.9%<br/>Bacterial removal rate: &gt; 99.9%<br/>Air volume(PM CADR): 320M /H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>CFM: 200<br/>Ultraviolet wavelength: 254nm<br/>UV illumination: 95uw/CM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>UV leakage: &lt; 1uw/CM<br/>Extinction rate of air natural bacteria: &gt; 90%<br/>Per Hour Ozone concentration: &lt; 0.005mg/m3 &nbsp; &nbsp;</p><p>&nbsp;&nbsp;</p><p>&nbsp;</p>\"},{\"code\":\"100019\",\"title\":\"Wheelchair\",\"avatar\":\"/images/100019.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p><strong>Specification</strong><br/>Handicappedmanual control<br/>Standard&amp; Extra Wide,Easy to use<br/>Low maintenance<br/>Tubular design and high quality craftsmanshipfor commercialuse<br/>Extra wide heavy duty chairs available<br/>Low cost alternativeto ECV<br/>Front wheels: 8&quot; solid<br/>Rear wheels: 24&quot; spoke<br/>Brakes:Parking/progressive<br/>Max User weight: 135kg<br/>Folding wheelchair,pediatric wheelchair</p>\"},{\"code\":\"100020\",\"title\":\"Medical bed\",\"avatar\":\"/images/100020.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p>Variety of hospital beds :<br/>Electric hospital bed/<br/>Electric home care bed/<br/>manual bed</p>\"},{\"code\":\"100042\",\"title\":\"Nurse chair\",\"avatar\":\"/images/100042.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"\"},{\"code\":\"100021\",\"title\":\"Examining light\",\"avatar\":\"/images/100021.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"\"},{\"code\":\"100022\",\"title\":\"IV Stand\",\"avatar\":\"/images/100022.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"\"},{\"code\":\"100024\",\"title\":\"Infant weighing scale\",\"avatar\":\"/images/100024.png\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p><strong>Specification</strong></p><p>Equiped with high precision strain gauge sensor, full ABS design<br/>Product size: 550*330*45mm<br/>Capacity:20kg Division:10kg<br/>LCD display size :70*23mm<br/>Auto one-step on for weight function<br/>Auto zero-auto off<br/>Low battery/over load indication<br/>Power:4*AAA-LOR03 1.5 volts(alkaline preferably)<br/>Unit:kg/lb</p>\"},{\"code\":\"100025\",\"title\":\"Adult weighing scale\",\"avatar\":\"/images/100025.PNG\",\"category\":[\"0\",\"10003\",\"20011\"],\"content\":\"<p><strong>Specification</strong></p><p>Weight range:0.2kg-200kg<br/>Division value:10g-100g<br/>Unit conversion KG/LB<br/>Power and voltage: lithium battery 3.7V(3.7V-4.2V)<br/>Average working current\u226450mA<br/></p>\"},{\"code\":\"100026\",\"title\":\"Floor-mounted Digital X-ray System\",\"avatar\":\"/images/100026.png\",\"category\":[\"0\",\"10003\",\"20013\"],\"content\":\"<p>High-frequency power meets all kinds of large volume, thick position radiography. High-voltage generator outputs more stable kV. Large-heat capacity of X-ray tube supports long time and large dose of continuous working. Fast anode rotation ensures great heat dissipation and long service life.</p>\"},{\"code\":\"100027\",\"title\":\"Mobile DR\",\"avatar\":\"/images/100027.jpg\",\"category\":[\"0\",\"10003\",\"20013\"],\"content\":\"<p>This mobil DRsystem could achiveve high-frequency&amp;high-voltage generator, large heat capacity of X-ray tube, battey storage and motorizeddrive unit, with abundant external interface. It can be widely used in radiology, orthopedic, medical examination department, emergency room, ICU, operating room and meonatal pediatrice, and fully meet the meand of hospital digital radiography.</p>\"},{\"code\":\"100028\",\"title\":\"Low Speed Centrifuge\",\"avatar\":\"/images/100028.png\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p><strong>Specification</strong></p><p>Max. Speed: 4000rp<br/>Max. RCF: 1880\xd7g<br/>Max. Capacity: 8\xd720ml<br/>Time Range: 0~99min<br/>RPM/RCF Convert: Yes<br/>Noise (dB) \u2264 55<br/>Acc/Dec: 10 Kinds<br/>Speed Accuracy: \xb120r/min<br/>Voltage(V/Hz): AC 220V/110V 50HZ/60HZ<br/>Size (W x D x Hmm): 310\xd7270\xd7220mm</p>\"},{\"code\":\"100029\",\"title\":\"High Speed Centrifuge\",\"avatar\":\"/images/100029.png\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p><strong>Specification</strong></p><p>Max. Speed: 16000rpm <br/>Max. RCF: 20600\xd7g <br/>Max. Capacity: 6\xd7100ml <br/>Time Range: 0~99min <br/>RPM/RCF Convert :Yes <br/>Noise (dB) \u2264 65 <br/>Acc/Dec: 10 Kinds <br/>Speed Accuracy: \xb120r/min <br/>Temperature Accuracy: \xb11\u2103 <br/>Voltage(V/Hz) AC: 220V/110V 50HZ/60HZ <br/>Size (L x W x Hmm): 513\xd7370\xd7320mm</p>\"},{\"code\":\"100030\",\"title\":\"Hematocrit Centrifuge\",\"avatar\":\"/images/100030.png\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p><strong>Specification</strong></p><p>Max. Speed:12000rpm<br/>Max. Capacity: 24pcs Capillary<br/>Time Range: 0~99min59s<br/>RPM/RCF Convert :Yes<br/>Noise (dB) \u2264 55<br/>Acc/Dec: 10 Kinds<br/>Speed Accuracy: \xb120r/min<br/>Voltage(V/Hz) AC: 220V/110V 50HZ/60HZ<br/>Size (W x D x Hmm): 355\xd7270\xd7205mm</p><p><br/></p>\"},{\"code\":\"100031\",\"title\":\"Refrigerated centrifuge\",\"avatar\":\"/images/100031.JPG\",\"category\":[\"0\",\"10004\",\"20014\"],\"content\":\"<p><strong>Specification</strong></p><p>Max. Speed: 7000rpm<br/>Max. RCF: 11650\xd7g<br/>Max. Capacity: 6\xd72400ml(12*500ml blood bag\uff09<br/>Time Range: 1~9h59min<br/>RPM/RCF Convert: Yes<br/>6.Noise (dB) \u2264 65<br/>Temperature: -20~40\u2103<br/>Acc/Dec: 10 Kinds<br/>Speed Accuracy: \xb120r/min<br/>Temperature Accuracy: \xb11\u2103<br/>Voltage(V/Hz): AC 380V 50HZ/60HZ<br/>Size (W x D x Hmm): 940\xd7890\xd71000mm<br/>Net Weight(Kg): 570KG</p>\"},{\"code\":\"100032\",\"title\":\"UV Sterilizer\",\"avatar\":\"/images/100032.png\",\"category\":[\"0\",\"10004\",\"20015\"],\"content\":\"<table><tbody><tr class='ue-table-interlace-color-single firstRow'><td width='316' valign='top' style='-ms-word-break: break-all;'>Type<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>Regular</td><td width='316' valign='top' style='-ms-word-break: break-all;'>Smart</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Timing<br/></td><td width='316' valign='top' style='-ms-word-break: break-all;'>0-120min</td><td width='316' valign='top' style='-ms-word-break: break-all;'>1-150min</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>Wavelength<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Ozone-free type253.7nm / Ozone type 185nm</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Material<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Carbon steel plastic spraying / Stainless steel</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>Input power<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>160VA</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>UV lamp power<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>2*30W</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>UV lamp irradiance<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>\u2265110\u03bcw/cm<sup>2</sup></td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Voltage<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>220V</td></tr><tr class='ue-table-interlace-color-single'><td width='316' valign='top' style='-ms-word-break: break-all;'>Lamp arm folding<br/></td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>915mm</td></tr><tr class='ue-table-interlace-color-double'><td width='316' valign='top' style='-ms-word-break: break-all;'>Length after folding</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>1070mm</td></tr><tr class='ue-table-interlace-color-single'><td valign='top' rowspan='1' colspan='1'>Optional</td><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Remote control, negative ion, infrared sensor, numerical control display</td></tr></tbody></table><p>&nbsp;</p><p></p><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 539px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 533.66px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 524.33px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 496.32px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div><div style='margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 483.66px; position: absolute; opacity: 0; background-image: none; background-color: blue;'></div>\"},{\"code\":\"100033\",\"title\":\"Electronic balance\",\"avatar\":\"/images/100033.png\",\"category\":[\"0\",\"10004\",\"20016\"],\"content\":\"<p><strong>Specification</strong></p><p>Pan: 165\xd7165 mm (Stainless Iron 304)<br/>Display: LCD (white back-light)&nbsp; (L\xd7W) 95\xd725 mm<br/>Interface: RS232<br/>Power: AC<br/>Units: g, kg, oz, ct, lb, GN</p><p>Value stable time: 0.5&nbsp;<br/>More functions: counting, last remember, %, full range tare, over-load protection, zero tracking, low-battery indicator<br/>\"},{\"code\":\"100034\",\"title\":\"PH Meter\",\"avatar\":\"/images/100034.png\",\"category\":[\"0\",\"10004\",\"20017\"],\"content\":\"<table width='361'><colgroup><col width='271' style='width: 181px;'/><col width='252' style='width: 168px;'/><col width='259' style='width: 173px;'/><col width='244' style='width: 163px;'/><col width='324' style='width: 216px;'/></colgroup><tbody><tr class='firstRow' style='height: 24px;'><td width='901' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: transparent;' colspan='2'><span style='font-family: Arial Black;'>PRODUCT DETAILS</span></td></tr><tr style='height: 27px;'><td width='181' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Rank</span></td><td width='168' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>0.05</span></td></tr><tr style='height: 28px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>pH (Range)</span></td><td width='168' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>(0.00~14.00) pH</span></td></tr><tr style='height: 28px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>mV (Range)</span></td><td width='168' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>(0~1599) mV</span></td></tr><tr style='height: 31px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>pH (Resolution)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>0.01 pH</span></td></tr><tr style='height: 29px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>mV (Range)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>1 mV</span></td></tr><tr style='height: 31px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>pH (Error)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\xb10.01 pH\xb11d</span></td></tr><tr style='height: 31px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>mV (Error)</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\xb11% FS</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Input Impedance</span></td><td width='155' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\u22651\xd71012 \u03a9</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Input Current</span></td><td width='155' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>\u22651\xd71012 A</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Stability</span></td><td width='146' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);' colspan='1'><span style='font-family: Arial;'>(\xb10.05pH\xb11d)/3h</span></td></tr><tr style='height: 20px;'><td class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: rgb(255, 255, 255);'><span style='font-family: Arial;'>Power</span></td><td width='155' class='selectTdClass' style='border: 1px solid rgb(0, 0, 0); border-image: none; background-color: transparent;' colspan='1'><span style='font-family: Arial;'>DC (12V /1.0A)</span></td></tr></tbody></table>\"},{\"code\":\"100035\",\"title\":\"Autoclave\",\"avatar\":\"/images/100035.png\",\"category\":[\"0\",\"10004\",\"20018\"],\"content\":\"<p><strong>Specification</strong></p><p>Capacity: 24L</p><p>Serilization class: class N</p><p>Sterilization Temp:121\u2103, 134\u2103</p><p>Dring procedure: heating dry</p><p>Display: LED&nbsp;</p><p>Control precision: temperature:1\u2103, pressure:0.1 bar</p><p>Max working pressure:0.22Mpa</p><p>Safety system: pressure lock system, hand lock door, relief valve in case of over pressure</p><p>Water supply system: bulid in water tank</p><p>Water consumption: 0.16L-0.18L in one cycle</p><p>Power supply: AC110/220V\xb110%, 50/69Hz&nbsp;\"},{\"code\":\"100036\",\"title\":\"Hot Air Drying Oven\",\"avatar\":\"/images/100036.png\",\"category\":[\"0\",\"10004\",\"20019\"],\"content\":\"<p><strong>Specification</strong></p><p>Capacity: 105L</p><p>Temp range: RT+10-250\u2103</p><p>Temp precision:0.1\u2103</p><p>Ambient temp: 5-40\u2103</p><p>Timing range:1-9999min</p><p>Shelves No.:2pcs</p><p>Power consumption:1600w</p><p>Power supply: AC110/220V\xb110%, 50/69Hz\"},{\"code\":\"100037\",\"title\":\"Blood collection tube\",\"avatar\":\"/images/100037.png\",\"category\":[\"0\",\"10004\",\"20020\"],\"content\":\"<p>Plain Tube (tube without additives)</p><p>Serum Separating Tube</p><p>Pro-Coagulation Tube</p><p>EDTA TubePlasma Separate Tube</p><p>Micro Blood Collection Tubes</p><p>Glucose Tube</p><p>ESR Tube</p>\"},{\"code\":\"100039\",\"title\":\"3-Part Auto Hematology Analyzer for Vet\",\"avatar\":\"/images/100039.png\",\"category\":[\"0\",\"10005\",\"20022\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specification</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Parameters<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'>19 reportable parameters: WBC, Gran#, Lym#, Mid#,Gran%, Lym%, Mid%, RBC, HGB, HCT, MCV, MCH,MCHC, RDW-SD, RDW-CV, PLT, MPV, PDW, PCT,3 histograms for WBC, RBC and PLT</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Up to 40 tests per hour</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample volume</td><td width='484' valign='top' style='-ms-word-break: break-all;'>17\xb5L</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample mode</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Whole blood mode and pre-diluted mode</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power requirement</td><td width='484' valign='top' style='-ms-word-break: break-all;'>100V-240V~, 50/60Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Principles</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Impedance method for WBC, RBC and PLT test, Cyanide free colorimetry for HGB test</td></tr></tbody></table><p></p>\"},{\"code\":\"100040\",\"title\":\"5-Part Auto Hematology Analyzer for Vet\",\"avatar\":\"/images/100040.jpg\",\"category\":[\"0\",\"10005\",\"20022\"],\"content\":\"<table><tbody><tr class='firstRow'><td valign='top' style='-ms-word-break: break-all;' rowspan='1' colspan='2'>Specification</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Parameters<br/></td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>23 parameters: WBC, Neu#, Lym#, Mon#, Eos#,</p><p>Bas#, Neu%, Lym%, Mon%, Eos%, Bas%, RBC,</p><p>HGB, HCT, MCV, MCH, MCHC, RDW-SD,</p><p>RDW-CV, PLT, MPV, PDW, PCT</p><p>3 histograms for WBC, RBC, and PLT,</p><p>4 scattergrams for WBC differentiation</p></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Throughput</td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>Up to 60 tests per hour</p></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample volume</td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>20\u03bcL</p></td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Sample mode</td><td width='484' valign='top' style='-ms-word-break: break-all;'>Whole blood mode and pre-diluted mode</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Power requirement</td><td width='484' valign='top' style='-ms-word-break: break-all;'>100V-240V~, 50/60Hz</td></tr><tr><td width='484' valign='top' style='-ms-word-break: break-all;'>Principles</td><td width='484' valign='top' style='-ms-word-break: break-all;'><p>Flow Cytometry (FCM) + Tri-angle laser scatter + Chemical staining. Method for WBC differentiation Impedance method for RBC and PLT test Cyanide free colorimetry for HGB test</p></td></tr></tbody></table><p></p>\"}]",
     );
   },
   '8GlL': function (e, t, n) {
@@ -5000,9 +5001,9 @@
         );
       },
       B = [R, N, M, _],
-      H = !1,
-      z = !0;
-    function V(e) {
+      V = !1,
+      H = !0;
+    function z(e) {
       return e === M || e === _;
     }
     var W = function (e, t) {
@@ -5024,7 +5025,7 @@
                 var e = B.indexOf(o),
                   n = B[e + 1],
                   r = t(o);
-                r === H
+                r === V
                   ? a(n)
                   : s(function (e) {
                       function t() {
@@ -5167,7 +5168,7 @@
         de = W($, function (e) {
           if (e === R) {
             var t = fe[R];
-            return t ? t(ie()) : H;
+            return t ? t(ie()) : V;
           }
           var n;
           ve in fe &&
@@ -5184,13 +5185,13 @@
                 (ne.current = setTimeout(function () {
                   ce({ deadline: !0 });
                 }, h)))),
-            z
+            H
           );
         }),
         pe = Object(i['a'])(de, 2),
         he = pe[0],
         ve = pe[1],
-        me = V(ve);
+        me = z(ve);
       (ae.current = me),
         D(
           function () {
@@ -5297,7 +5298,7 @@
             var F, U;
             T === R
               ? (U = 'prepare')
-              : V(T)
+              : z(T)
               ? (U = 'active')
               : T === N && (U = 'start'),
               (I = v(
@@ -7841,10 +7842,10 @@
         _ = R(null),
         I = Object(d['a'])(_, 2),
         B = I[0],
-        H = I[1],
-        z = B || 0,
-        V = R(new Map()),
-        W = Object(d['a'])(V, 2),
+        V = I[1],
+        H = B || 0,
+        z = R(new Map()),
+        W = Object(d['a'])(z, 2),
         q = W[0],
         K = W[1],
         G = R(0),
@@ -7888,7 +7889,7 @@
             return (
               we
                 ? (e =
-                    null === B && M ? a : a.slice(0, Math.min(a.length, z / m)))
+                    null === B && M ? a : a.slice(0, Math.min(a.length, H / m)))
                 : 'number' === typeof w && (e = a.slice(0, w)),
               e
             );
@@ -7925,7 +7926,7 @@
         de(e), t || (ye(e < a.length - 1), null === T || void 0 === T || T(e));
       }
       function Te(e, t) {
-        H(t.clientWidth);
+        V(t.clientWidth);
       }
       function Pe(e, t) {
         K(function (n) {
@@ -7944,7 +7945,7 @@
       }
       l['useLayoutEffect'](
         function () {
-          if (z && ge && ke) {
+          if (H && ge && ke) {
             var e = re,
               t = ke.length,
               n = t - 1;
@@ -7957,20 +7958,20 @@
               }
               if (
                 ((e += o),
-                (0 === n && e <= z) || (r === n - 1 && e + Ne(n) <= z))
+                (0 === n && e <= H) || (r === n - 1 && e + Ne(n) <= H))
               ) {
                 Ce(n), le(null);
                 break;
               }
-              if (e + ge > z) {
+              if (e + ge > H) {
                 Ce(r - 1), le(e - o - re + Z);
                 break;
               }
             }
-            k && Ne(0) + re > z && le(null);
+            k && Ne(0) + re > H && le(null);
           }
         },
-        [z, q, Z, re, Ee, ke],
+        [H, q, Z, re, Ee, ke],
       );
       var Me = me && !!je.length,
         _e = {};
@@ -8055,13 +8056,13 @@
       );
       return we && (Be = l['createElement'](S, { onResize: Te }, Be)), Be;
     }
-    var H = l['forwardRef'](B);
-    (H.displayName = 'Overflow'),
-      (H.Item = I),
-      (H.RESPONSIVE = D),
-      (H.INVALIDATE = F);
-    var z = H,
-      V = z,
+    var V = l['forwardRef'](B);
+    (V.displayName = 'Overflow'),
+      (V.Item = I),
+      (V.RESPONSIVE = D),
+      (V.INVALIDATE = F);
+    var H = V,
+      z = H,
       W = {
         MAC_ENTER: 3,
         BACKSPACE: 8,
@@ -8369,7 +8370,7 @@
                     '`attribute` of Menu.Item is deprecated. Please pass attribute directly.',
                   ),
                   l['createElement'](
-                    V.Item,
+                    z.Item,
                     Object(r['a'])(
                       {},
                       n,
@@ -8440,9 +8441,9 @@
           F = X(i, _, m, y),
           U = F.active,
           B = Object(p['a'])(F, ['active']),
-          H = P.includes(i),
-          z = ee(I.length),
-          V = function (e) {
+          V = P.includes(i),
+          H = ee(I.length),
+          z = function (e) {
             if (!_) {
               var t = L(e);
               null === b || void 0 === b || b(J(t)), E(t);
@@ -8459,7 +8460,7 @@
           },
           G = {};
         return (
-          'option' === e.role && (G['aria-selected'] = H),
+          'option' === e.role && (G['aria-selected'] = V),
           l['createElement'](
             se,
             Object(r['a'])(
@@ -8476,17 +8477,17 @@
               {
                 component: 'li',
                 'aria-disabled': a,
-                style: Object(s['a'])(Object(s['a'])({}, z), n),
+                style: Object(s['a'])(Object(s['a'])({}, H), n),
                 className: v()(
                   R,
                   ((t = {}),
                   Object(u['a'])(t, ''.concat(R, '-active'), U),
-                  Object(u['a'])(t, ''.concat(R, '-selected'), H),
+                  Object(u['a'])(t, ''.concat(R, '-selected'), V),
                   Object(u['a'])(t, ''.concat(R, '-disabled'), _),
                   t),
                   o,
                 ),
-                onClick: V,
+                onClick: z,
                 onKeyDown: W,
                 onFocus: K,
               },
@@ -8496,7 +8497,7 @@
               props: Object(s['a'])(
                 Object(s['a'])({}, e),
                 {},
-                { isSelected: H },
+                { isSelected: V },
               ),
               icon: D,
             }),
@@ -8806,8 +8807,8 @@
         F = T.onItemClick,
         U = T.onOpenChange,
         B = T.onActive,
-        H = l['useContext'](ae),
-        z = H.isSubPathKey,
+        V = l['useContext'](ae),
+        H = V.isSubPathKey,
         W = ie(),
         q = ''.concat(P, '-submenu'),
         K = N || c,
@@ -8817,7 +8818,7 @@
         ne = y || D,
         re = R.includes(a),
         oe = !M && re,
-        ce = z(I, a),
+        ce = H(I, a),
         le = X(a, K, j, E),
         se = le.active,
         fe = Object(p['a'])(le, ['active']),
@@ -8836,9 +8837,9 @@
         },
         Oe = l['useMemo'](
           function () {
-            return se || ('inline' !== A && (he || z([_], a)));
+            return se || ('inline' !== A && (he || H([_], a)));
           },
-          [A, se, _, he, a, z],
+          [A, se, _, he, a, H],
         ),
         xe = ee(W.length),
         ke = function (e) {
@@ -8923,7 +8924,7 @@
           expandIcon: ne,
         },
         l['createElement'](
-          V.Item,
+          z.Item,
           Object(r['a'])({ role: 'none' }, S, {
             component: 'li',
             style: n,
@@ -9056,7 +9057,7 @@
           return null;
       }
     }
-    function He(e) {
+    function Ve(e) {
       var t = e;
       while (t) {
         if (t.getAttribute('data-menu-list')) return t;
@@ -9064,7 +9065,7 @@
       }
       return null;
     }
-    function ze(e, t) {
+    function He(e, t) {
       var n = e || document.activeElement;
       while (n) {
         if (t.has(n)) return n;
@@ -9072,7 +9073,7 @@
       }
       return null;
     }
-    function Ve(e, t) {
+    function ze(e, t) {
       var n = Ne(e, !0);
       return n.filter(function (e) {
         return t.has(e);
@@ -9082,7 +9083,7 @@
       var r =
         arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1;
       if (!e) return null;
-      var o = Ve(e, t),
+      var o = ze(e, t),
         i = o.length,
         a = o.findIndex(function (e) {
           return n === e;
@@ -9127,7 +9128,7 @@
               };
             b();
             var g = m.get(t),
-              w = ze(g, v),
+              w = He(g, v),
               O = y.get(w),
               x = Be(e, 1 === a(O, !0).length, n, h);
             if (!x) return;
@@ -9149,7 +9150,7 @@
             };
             if (x.sibling || !w) {
               var j;
-              j = w && 'inline' !== e ? He(w) : o.current;
+              j = w && 'inline' !== e ? Ve(w) : o.current;
               var E = We(j, v, w, x.offset);
               k(E);
             } else if (x.inlineTrigger) u(O);
@@ -9311,8 +9312,8 @@
           F = e.multiple,
           U = void 0 !== F && F,
           B = e.defaultSelectedKeys,
-          H = e.selectedKeys,
-          z = e.onSelect,
+          V = e.selectedKeys,
+          H = e.onSelect,
           W = e.onDeselect,
           q = e.inlineIndent,
           K = void 0 === q ? 24 : q,
@@ -9412,21 +9413,21 @@
           },
           Ue = l['useState'](Le),
           Be = Object(d['a'])(Ue, 2),
-          He = Be[0],
-          ze = Be[1],
-          Ve = 'inline' === Se,
+          Ve = Be[0],
+          He = Be[1],
+          ze = 'inline' === Se,
           We = l['useRef'](!1);
         l['useEffect'](
           function () {
-            Ve && ze(Le);
+            ze && He(Le);
           },
           [Le],
         ),
           l['useEffect'](
             function () {
-              We.current ? (Ve ? De(He) : Fe(tt)) : (We.current = !0);
+              We.current ? (ze ? De(Ve) : Fe(tt)) : (We.current = !0);
             },
-            [Ve],
+            [ze],
           );
         var Ke = et(),
           Ge = Ke.registerPath,
@@ -9474,7 +9475,7 @@
             ut(void 0);
           }),
           dt = b(B || [], {
-            value: H,
+            value: V,
             postState: function (e) {
               return Array.isArray(e)
                 ? e
@@ -9506,7 +9507,7 @@
               );
               r
                 ? null === W || void 0 === W || W(o)
-                : null === z || void 0 === z || z(o);
+                : null === H || void 0 === H || H(o);
             }
             !U && Le.length && 'inline' !== Se && Fe(tt);
           },
@@ -9546,7 +9547,7 @@
                   );
                 }),
           kt = l['createElement'](
-            V,
+            z,
             Object(r['a'])(
               {
                 id: O,
@@ -9588,7 +9589,7 @@
                   );
                 },
                 maxCount:
-                  'horizontal' !== Se || S ? V.INVALIDATE : V.RESPONSIVE,
+                  'horizontal' !== Se || S ? z.INVALIDATE : z.RESPONSIVE,
                 ssr: 'full',
                 'data-menu-list': !0,
                 onVisibleChange: function (e) {
@@ -10080,7 +10081,7 @@
         }
         return n;
       },
-      Ht = function (e, t) {
+      Vt = function (e, t) {
         var n = {},
           o = Object(r['a'])({}, e);
         return (
@@ -10090,8 +10091,8 @@
           { picked: n, omitted: o }
         );
       },
-      zt = new RegExp('^('.concat(Nt.join('|'), ')(-inverse)?$'));
-    function Vt(e, t) {
+      Ht = new RegExp('^('.concat(Nt.join('|'), ')(-inverse)?$'));
+    function zt(e, t) {
       var n = e.type;
       if (
         (!0 === n.__ANT_BUTTON ||
@@ -10100,7 +10101,7 @@
           'button' === e.type) &&
         e.props.disabled
       ) {
-        var o = Ht(e.props.style, [
+        var o = Vt(e.props.style, [
             'position',
             'left',
             'right',
@@ -10201,7 +10202,7 @@
         M = p;
       !('visible' in e) && m() && (M = !1);
       var _,
-        I = Vt(Object(pt['b'])(A) ? A : l['createElement']('span', null, A), R),
+        I = zt(Object(pt['b'])(A) ? A : l['createElement']('span', null, A), R),
         L = I.props,
         D = v()(
           L.className,
@@ -10211,13 +10212,13 @@
           C,
           ((n = {}),
           Object(u['a'])(n, ''.concat(R, '-rtl'), 'rtl' === c),
-          Object(u['a'])(n, ''.concat(R, '-').concat(T), T && zt.test(T)),
+          Object(u['a'])(n, ''.concat(R, '-').concat(T), T && Ht.test(T)),
           n),
         ),
         U = P;
       return (
         T &&
-          !zt.test(T) &&
+          !Ht.test(T) &&
           ((U = Object(r['a'])(Object(r['a'])({}, P), { background: T })),
           (_ = { background: T })),
         l['createElement'](
@@ -10528,15 +10529,15 @@
         var B = function (e, t) {
             'collapsed' in P || I(e), null === C || void 0 === C || C(e, t);
           },
-          H = Object(l['useRef'])();
-        (H.current = function (e) {
+          V = Object(l['useRef'])();
+        (V.current = function (e) {
           U(e.matches),
             null === T || void 0 === T || T(e.matches),
             _ !== e.matches && B(e.matches, 'responsive');
         }),
           Object(l['useEffect'])(function () {
             function e(e) {
-              return H.current(e);
+              return V.current(e);
             }
             var t;
             if ('undefined' !== typeof window) {
@@ -10571,11 +10572,11 @@
               }
             );
           }, []);
-        var z = function () {
+        var H = function () {
             B(!_, 'clickTrigger');
           },
-          V = Object(l['useContext'])(At['b']),
-          W = V.getPrefixCls,
+          z = Object(l['useContext'])(At['b']),
+          W = z.getPrefixCls,
           q = function () {
             var e,
               c = W('layout-sider', n),
@@ -10587,7 +10588,7 @@
                   ? l['createElement'](
                       'span',
                       {
-                        onClick: z,
+                        onClick: H,
                         className: v()(
                           ''.concat(c, '-zero-width-trigger'),
                           ''
@@ -10616,7 +10617,7 @@
                       'div',
                       {
                         className: ''.concat(c, '-trigger'),
-                        onClick: z,
+                        onClick: H,
                         style: { width: d },
                       },
                       i || O,
@@ -11036,9 +11037,9 @@
       o = n.n(r),
       i = n('nKUr'),
       a = [{ name: 'Sales', email: 'sales@holdoormedical.com' }];
-    function c() {
+    function c(e) {
       return Object(i['jsxs'])('section', {
-        className: o.a.content,
+        className: ''.concat(o.a.content, ' ').concat(o.a[e.size]),
         children: [
           Object(i['jsx'])('div', {
             className: o.a.address,
@@ -12711,7 +12712,7 @@
   },
   IpS4: function (e) {
     e.exports = JSON.parse(
-      '[{"code":"0","title":"PRODUCTS","children":[{"code":"10001","title":"COVID-19","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-hematology.svg","color":"#fd3125","children":[{"code":"20001","title":"NAB Rapid Test"},{"code":"20002","title":"Ventilator"},{"code":"20003","title":"HFNC"},{"code":"20004","title":"Oxygen Concentrator"},{"code":"20005","title":"Fingertip pulse oximeter"},{"code":"20006","title":"VTM tube"}]},{"code":"10002","title":"IVD PRODUCT","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-electrolyte.svg","color":"#4db0e0","children":[{"code":"20007","title":"Hematology"},{"code":"20008","title":"Biochemistry"},{"code":"20009","title":"Urine chemistry"}]},{"code":"10003","title":"HEALTHCARE & MONITORING","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-chemistry.svg","color":"#d176b8","children":[{"code":"20010","title":"Medical grade HEPA"},{"code":"20011","title":"Nursing Series"},{"code":"20013","title":"X-ray"}]},{"code":"10004","title":"LABORATORY EQUIPMENTS","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-protein.svg","color":"#feb445","children":[{"code":"20014","title":"Centrifuge"},{"code":"20015","title":"UV Sterilizer"},{"code":"20016","title":"Electronic balance"},{"code":"20017","title":"PH Meter"},{"code":"20018","title":"Autoclave"},{"code":"20019","title":"Hot Air Drying Oven"},{"code":"20020","title":"Blood collection tube"},{"code":"20021","title":"Safety shower"}]},{"code":"10005","title":"VETERINARY","image":"https://www.hycel-medical.com/wp-content/uploads/2021/02/icon-semi-auto-system.svg","color":"#be794a","children":[{"code":"20022","title":"Hematology Analyzer for Vet"}]}]}]',
+      '[{"code":"0","title":"PRODUCTS","children":[{"code":"10001","title":"COVID-19","image":"/images/icon/COVID-19.PNG","color":"#1faead","children":[{"code":"20001","title":"COVID-19 Combined Rapid Test"},{"code":"20002","title":"Ventilator"},{"code":"20003","title":"HFNC"},{"code":"20004","title":"Oxygen Concentrator"},{"code":"20005","title":"Fingertip pulse oximeter"},{"code":"20006","title":"VTM tube"}]},{"code":"10002","title":"IVD PRODUCT","image":"/images/icon/IVD  PRODUCT.PNG","color":"#1faead","children":[{"code":"20007","title":"Hematology"},{"code":"20008","title":"Biochemistry"},{"code":"20009","title":"Urine chemistry"}]},{"code":"10003","title":"HEALTHCARE & MONITORING","image":"/images/icon/HEALTHCARE& MONITORING.PNG","color":"#1faead","children":[{"code":"20010","title":"Medical grade HEPA"},{"code":"20011","title":"Nursing Series"},{"code":"20013","title":"X-ray"}]},{"code":"10004","title":"LABORATORY EQUIPMENTS","image":"/images/icon/LABORATORY EQUIPMENT.PNG","color":"#1faead","children":[{"code":"20014","title":"Centrifuge"},{"code":"20015","title":"UV Sterilizer"},{"code":"20016","title":"Electronic balance"},{"code":"20017","title":"PH Meter"},{"code":"20018","title":"Autoclave"},{"code":"20019","title":"Hot Air Drying Oven"},{"code":"20020","title":"Blood collection tube"}]},{"code":"10005","title":"VETERINARY","image":"/images/icon/VETERINARY.PNG","color":"#1faead","children":[{"code":"20022","title":"Hematology Analyzer for Vet"}]}]}]',
     );
   },
   IyRk: function (e, t) {
@@ -12999,37 +13000,37 @@
     }
     function N(e) {
       return (
-        '[object Array]' === V(e) && (!P || !('object' === typeof e && P in e))
+        '[object Array]' === z(e) && (!P || !('object' === typeof e && P in e))
       );
     }
     function M(e) {
       return (
-        '[object Date]' === V(e) && (!P || !('object' === typeof e && P in e))
+        '[object Date]' === z(e) && (!P || !('object' === typeof e && P in e))
       );
     }
     function _(e) {
       return (
-        '[object RegExp]' === V(e) && (!P || !('object' === typeof e && P in e))
+        '[object RegExp]' === z(e) && (!P || !('object' === typeof e && P in e))
       );
     }
     function I(e) {
       return (
-        '[object Error]' === V(e) && (!P || !('object' === typeof e && P in e))
+        '[object Error]' === z(e) && (!P || !('object' === typeof e && P in e))
       );
     }
     function L(e) {
       return (
-        '[object String]' === V(e) && (!P || !('object' === typeof e && P in e))
+        '[object String]' === z(e) && (!P || !('object' === typeof e && P in e))
       );
     }
     function D(e) {
       return (
-        '[object Number]' === V(e) && (!P || !('object' === typeof e && P in e))
+        '[object Number]' === z(e) && (!P || !('object' === typeof e && P in e))
       );
     }
     function F(e) {
       return (
-        '[object Boolean]' === V(e) &&
+        '[object Boolean]' === z(e) &&
         (!P || !('object' === typeof e && P in e))
       );
     }
@@ -13052,13 +13053,13 @@
     e.exports = function e(t, n, r, o) {
       var c = n || {};
       if (
-        z(c, 'quoteStyle') &&
+        H(c, 'quoteStyle') &&
         'single' !== c.quoteStyle &&
         'double' !== c.quoteStyle
       )
         throw new TypeError('option "quoteStyle" must be "single" or "double"');
       if (
-        z(c, 'maxStringLength') &&
+        H(c, 'maxStringLength') &&
         ('number' === typeof c.maxStringLength
           ? c.maxStringLength < 0 && c.maxStringLength !== 1 / 0
           : null !== c.maxStringLength)
@@ -13066,13 +13067,13 @@
         throw new TypeError(
           'option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`',
         );
-      var l = !z(c, 'customInspect') || c.customInspect;
+      var l = !H(c, 'customInspect') || c.customInspect;
       if ('boolean' !== typeof l && 'symbol' !== l)
         throw new TypeError(
           'option "customInspect", if provided, must be `true`, `false`, or `\'symbol\'`',
         );
       if (
-        z(c, 'indent') &&
+        H(c, 'indent') &&
         null !== c.indent &&
         '\t' !== c.indent &&
         !(parseInt(c.indent, 10) === c.indent && c.indent > 0)
@@ -13100,7 +13101,7 @@
         if ((n && ((o = o.slice()), o.push(n)), i)) {
           var a = { depth: c.depth };
           return (
-            z(c, 'quoteStyle') && (a.quoteStyle = c.quoteStyle),
+            H(c, 'quoteStyle') && (a.quoteStyle = c.quoteStyle),
             e(t, a, r + 1, o)
           );
         }
@@ -13164,12 +13165,12 @@
         );
       }
       if ($(t)) {
-        var H = [];
+        var V = [];
         return (
           s.call(t, function (e) {
-            H.push(p(e, t));
+            V.push(p(e, t));
           }),
-          ne('Set', u.call(t), H, d)
+          ne('Set', u.call(t), V, d)
         );
       }
       if (G(t)) return te('WeakMap');
@@ -13187,7 +13188,7 @@
           le = t instanceof Object ? '' : 'null prototype',
           ue =
             !ce && P && Object(t) === t && P in t
-              ? V(t).slice(8, -1)
+              ? z(t).slice(8, -1)
               : le
               ? 'Object'
               : '',
@@ -13210,15 +13211,15 @@
       }
       return String(t);
     };
-    var H =
+    var V =
       Object.prototype.hasOwnProperty ||
       function (e) {
         return e in this;
       };
-    function z(e, t) {
-      return H.call(e, t);
+    function H(e, t) {
+      return V.call(e, t);
     }
-    function V(e) {
+    function z(e) {
       return b.call(e);
     }
     function W(e) {
@@ -13347,7 +13348,7 @@
         r = [];
       if (n) {
         r.length = e.length;
-        for (var o = 0; o < e.length; o++) r[o] = z(e, o) ? t(e[o], e) : '';
+        for (var o = 0; o < e.length; o++) r[o] = H(e, o) ? t(e[o], e) : '';
       }
       var i,
         a = 'function' === typeof x ? x(e) : [];
@@ -13356,7 +13357,7 @@
         for (var c = 0; c < a.length; c++) i['$' + a[c]] = a[c];
       }
       for (var l in e)
-        z(e, l) &&
+        H(e, l) &&
           ((n && String(Number(l)) === l && l < e.length) ||
             (j && i['$' + l] instanceof Symbol) ||
             (/[^\w$]/.test(l)
@@ -13906,7 +13907,7 @@
         }
         n(i);
       }
-      function H(e, t, n, r, o) {
+      function V(e, t, n, r, o) {
         var i = [],
           a = e.required || (!e.required && r.hasOwnProperty(e.field));
         if (a) {
@@ -13915,13 +13916,13 @@
         }
         n(i);
       }
-      var z = 'enum';
-      function V(e, t, n, r, o) {
+      var H = 'enum';
+      function z(e, t, n, r, o) {
         var i = [],
           a = e.required || (!e.required && r.hasOwnProperty(e.field));
         if (a) {
           if (v(t) && !e.required) return n();
-          N.required(e, t, r, i, o), void 0 !== t && N[z](e, t, r, i, o);
+          N.required(e, t, r, i, o), void 0 !== t && N[H](e, t, r, i, o);
         }
         n(i);
       }
@@ -13980,8 +13981,8 @@
         integer: F,
         float: U,
         array: B,
-        object: H,
-        enum: V,
+        object: V,
+        enum: z,
         pattern: W,
         date: q,
         url: G,
@@ -14298,15 +14299,15 @@
       F = /[\u0000\u0009\u000A\u000D #/:?@[\\]]/,
       U = /^[\u0000-\u001F ]+|[\u0000-\u001F ]+$/g,
       B = /[\u0009\u000A\u000D]/g,
-      H = function (e, t) {
+      V = function (e, t) {
         var n, r, o;
         if ('[' == t.charAt(0)) {
           if (']' != t.charAt(t.length - 1)) return T;
-          if (((n = V(t.slice(1, -1))), !n)) return T;
+          if (((n = z(t.slice(1, -1))), !n)) return T;
           e.host = n;
         } else if (J(e)) {
           if (((t = v(t)), D.test(t))) return T;
-          if (((n = z(t)), null === n)) return T;
+          if (((n = H(t)), null === n)) return T;
           e.host = n;
         } else {
           if (F.test(t)) return T;
@@ -14314,7 +14315,7 @@
           e.host = n;
         }
       },
-      z = function (e) {
+      H = function (e) {
         var t,
           n,
           r,
@@ -14350,7 +14351,7 @@
         for (c = n.pop(), r = 0; r < n.length; r++) c += n[r] * E(256, 3 - r);
         return c;
       },
-      V = function (e) {
+      z = function (e) {
         var t,
           n,
           r,
@@ -14717,14 +14718,14 @@
                 ) {
                   if (J(e) && '' == d) return T;
                   if (n && '' == d && (Z(e) || null !== e.port)) return;
-                  if (((l = H(e, d)), l)) return l;
+                  if (((l = V(e, d)), l)) return l;
                   if (((d = ''), (u = xe), n)) return;
                   continue;
                 }
                 '[' == a ? (v = !0) : ']' == a && (v = !1), (d += a);
               } else {
                 if ('' == d) return T;
-                if (((l = H(e, d)), l)) return l;
+                if (((l = V(e, d)), l)) return l;
                 if (((d = ''), (u = be), n == ye)) return;
               }
               break;
@@ -14802,7 +14803,7 @@
                   if (((e.host = ''), n)) return;
                   u = xe;
                 } else {
-                  if (((l = H(e, d)), l)) return l;
+                  if (((l = V(e, d)), l)) return l;
                   if (('localhost' == e.host && (e.host = ''), n)) return;
                   (d = ''), (u = xe);
                 }
@@ -14897,7 +14898,7 @@
             (r.pathname = Fe.call(r)),
             (r.search = Ue.call(r)),
             (r.searchParams = Be.call(r)),
-            (r.hash = He.call(r)));
+            (r.hash = Ve.call(r)));
       },
       Pe = Te.prototype,
       Ae = function () {
@@ -14973,29 +14974,29 @@
       Be = function () {
         return k(this).searchParams;
       },
-      He = function () {
+      Ve = function () {
         var e = k(this).fragment;
         return e ? '#' + e : '';
       },
-      ze = function (e, t) {
+      He = function (e, t) {
         return { get: e, set: t, configurable: !0, enumerable: !0 };
       };
     if (
       (i &&
         l(Pe, {
-          href: ze(Ae, function (e) {
+          href: He(Ae, function (e) {
             var t = k(this),
               n = String(e),
               r = Ce(t, n);
             if (r) throw TypeError(r);
             O(t.searchParams).updateSearchParams(t.query);
           }),
-          origin: ze(Re),
-          protocol: ze(Ne, function (e) {
+          origin: He(Re),
+          protocol: He(Ne, function (e) {
             var t = k(this);
             Ce(t, String(e) + ':', ae);
           }),
-          username: ze(Me, function (e) {
+          username: He(Me, function (e) {
             var t = k(this),
               n = p(String(e));
             if (!ee(t)) {
@@ -15003,7 +15004,7 @@
               for (var r = 0; r < n.length; r++) t.username += Q(n[r], $);
             }
           }),
-          password: ze(_e, function (e) {
+          password: He(_e, function (e) {
             var t = k(this),
               n = p(String(e));
             if (!ee(t)) {
@@ -15011,24 +15012,24 @@
               for (var r = 0; r < n.length; r++) t.password += Q(n[r], $);
             }
           }),
-          host: ze(Ie, function (e) {
+          host: He(Ie, function (e) {
             var t = k(this);
             t.cannotBeABaseURL || Ce(t, String(e), me);
           }),
-          hostname: ze(Le, function (e) {
+          hostname: He(Le, function (e) {
             var t = k(this);
             t.cannotBeABaseURL || Ce(t, String(e), ye);
           }),
-          port: ze(De, function (e) {
+          port: He(De, function (e) {
             var t = k(this);
             ee(t) ||
               ((e = String(e)), '' == e ? (t.port = null) : Ce(t, e, be));
           }),
-          pathname: ze(Fe, function (e) {
+          pathname: He(Fe, function (e) {
             var t = k(this);
             t.cannotBeABaseURL || ((t.path = []), Ce(t, e + '', xe));
           }),
-          search: ze(Ue, function (e) {
+          search: He(Ue, function (e) {
             var t = k(this);
             (e = String(e)),
               '' == e
@@ -15038,8 +15039,8 @@
                   Ce(t, e, Ee)),
               O(t.searchParams).updateSearchParams(t.query);
           }),
-          searchParams: ze(Be),
-          hash: ze(He, function (e) {
+          searchParams: He(Be),
+          hash: He(Ve, function (e) {
             var t = k(this);
             (e = String(e)),
               '' != e
@@ -15067,11 +15068,11 @@
       ),
       g)
     ) {
-      var Ve = g.createObjectURL,
+      var ze = g.createObjectURL,
         We = g.revokeObjectURL;
-      Ve &&
+      ze &&
         u(Te, 'createObjectURL', function (e) {
-          return Ve.apply(g, arguments);
+          return ze.apply(g, arguments);
         }),
         We &&
           u(Te, 'revokeObjectURL', function (e) {
@@ -16870,9 +16871,9 @@
           l((r = r.apply(e, t || [])).next());
         });
       },
-      H = {},
-      z = 4.5,
-      V = 24,
+      V = {},
+      H = 4.5,
+      z = 24,
       W = 24,
       q = '',
       K = 'topRight',
@@ -16886,17 +16887,17 @@
         a = e.closeIcon,
         c = e.prefixCls;
       void 0 !== c && (q = c),
-        void 0 !== t && (z = t),
+        void 0 !== t && (H = t),
         void 0 !== n ? (K = n) : e.rtl && (K = 'topLeft'),
         void 0 !== r && (W = r),
-        void 0 !== o && (V = o),
+        void 0 !== o && (z = o),
         void 0 !== i && (D = i),
         void 0 !== a && (F = a),
         void 0 !== e.rtl && (G = e.rtl);
     }
     function $(e) {
       var t,
-        n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : V,
+        n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : z,
         r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : W;
       switch (e) {
         case 'topLeft':
@@ -16928,7 +16929,7 @@
         y = v.getPrefixCls,
         b = y('notification', p || q),
         g = ''.concat(b, '-').concat(r),
-        w = H[g];
+        w = V[g];
       if (w)
         Promise.resolve(w).then(function (e) {
           t({ prefixCls: ''.concat(b, '-notice'), instance: e });
@@ -16944,7 +16945,7 @@
             ''.concat(b, '-').concat(r),
             Object(o['a'])({}, ''.concat(b, '-rtl'), !0 === G),
           );
-        H[g] = new Promise(function (e) {
+        V[g] = new Promise(function (e) {
           l['a'].newInstance(
             {
               prefixCls: b,
@@ -16973,7 +16974,7 @@
         d = e.key,
         p = e.style,
         h = e.className,
-        v = void 0 === n ? z : n,
+        v = void 0 === n ? H : n,
         y = null;
       r
         ? (y = c['createElement'](
@@ -17030,19 +17031,19 @@
     var ee = {
       open: Z,
       close: function (e) {
-        Object.keys(H).forEach(function (t) {
-          return Promise.resolve(H[t]).then(function (t) {
+        Object.keys(V).forEach(function (t) {
+          return Promise.resolve(V[t]).then(function (t) {
             t.removeNotice(e);
           });
         });
       },
       config: Y,
       destroy: function () {
-        Object.keys(H).forEach(function (e) {
-          Promise.resolve(H[e]).then(function (e) {
+        Object.keys(V).forEach(function (e) {
+          Promise.resolve(V[e]).then(function (e) {
             e.destroy();
           }),
-            delete H[e];
+            delete V[e];
         });
       },
     };
@@ -17178,7 +17179,9 @@
     );
   },
   Twpp: function (e) {
-    e.exports = JSON.parse('{}');
+    e.exports = JSON.parse(
+      '{"banner":[{"text":"We strive to provide innovative and cost-effective healthcare solutions enabling people live healthier lives."},{"text":"To become the most trusted partner in delivering expectations and solutions to our stakeholders."},{"text":"To provide efficient, reliable products and services that is client-friendly, personalized and professional while maintaining a competitive edge for total client satisfaction."}],"contact":[]}',
+    );
   },
   Ty5D: function (e, t, n) {
     'use strict';
@@ -17519,9 +17522,10 @@
       'left-arrow': 'left-arrow___3ySpa',
       'right-arrow': 'right-arrow___15uvq',
       carousel: 'carousel___2jSv5',
+      item: 'item___v3ktc',
+      wrap: 'wrap___3zPNM',
       contact: 'contact___2Fre2',
       category: 'category___Oy07k',
-      item: 'item___v3ktc',
       img: 'img___2uFMT',
       title: 'title___3IJjE',
     };
@@ -19094,7 +19098,7 @@
         var r = F.indexOf(e.key);
         -1 === r && (r = 0);
         var o = n - r;
-        o && ((_ = !0), z(o));
+        o && ((_ = !0), H(o));
       }
       var D = v(A()),
         F = [D.key];
@@ -19121,7 +19125,7 @@
           }
         });
       }
-      function H(e, r) {
+      function V(e, r) {
         var o = 'REPLACE',
           i = w(e, r, b(), Q.location);
         O.confirmTransitionTo(i, o, u, function (e) {
@@ -19140,14 +19144,14 @@
           }
         });
       }
-      function z(e) {
+      function H(e) {
         t.go(e);
       }
-      function V() {
-        z(-1);
+      function z() {
+        H(-1);
       }
       function W() {
-        z(1);
+        H(1);
       }
       var q = 0;
       function K(e) {
@@ -19185,9 +19189,9 @@
         location: D,
         createHref: U,
         push: B,
-        replace: H,
-        go: z,
-        goBack: V,
+        replace: V,
+        go: H,
+        goBack: z,
         goForward: W,
         block: Y,
         listen: $,
@@ -19334,17 +19338,17 @@
       B = function (e) {
         return _(e, 23, 4);
       },
-      H = function (e) {
+      V = function (e) {
         return _(e, 52, 8);
       },
-      z = function (e, t) {
+      H = function (e, t) {
         y(e[E], t, {
           get: function () {
             return O(this)[t];
           },
         });
       },
-      V = function (e, t, n, r) {
+      z = function (e, t, n, r) {
         var o = d(n),
           i = O(e);
         if (o + t > i.byteLength) throw M(C);
@@ -19419,45 +19423,45 @@
               ((this.buffer = e), (this.byteLength = n), (this.byteOffset = i));
         }),
         o &&
-          (z(P, 'byteLength'),
-          z(A, 'buffer'),
-          z(A, 'byteLength'),
-          z(A, 'byteOffset')),
+          (H(P, 'byteLength'),
+          H(A, 'buffer'),
+          H(A, 'byteLength'),
+          H(A, 'byteOffset')),
         c(A[E], {
           getInt8: function (e) {
-            return (V(this, 1, e)[0] << 24) >> 24;
+            return (z(this, 1, e)[0] << 24) >> 24;
           },
           getUint8: function (e) {
-            return V(this, 1, e)[0];
+            return z(this, 1, e)[0];
           },
           getInt16: function (e) {
-            var t = V(this, 2, e, arguments.length > 1 ? arguments[1] : void 0);
+            var t = z(this, 2, e, arguments.length > 1 ? arguments[1] : void 0);
             return (((t[1] << 8) | t[0]) << 16) >> 16;
           },
           getUint16: function (e) {
-            var t = V(this, 2, e, arguments.length > 1 ? arguments[1] : void 0);
+            var t = z(this, 2, e, arguments.length > 1 ? arguments[1] : void 0);
             return (t[1] << 8) | t[0];
           },
           getInt32: function (e) {
             return U(
-              V(this, 4, e, arguments.length > 1 ? arguments[1] : void 0),
+              z(this, 4, e, arguments.length > 1 ? arguments[1] : void 0),
             );
           },
           getUint32: function (e) {
             return (
-              U(V(this, 4, e, arguments.length > 1 ? arguments[1] : void 0)) >>>
+              U(z(this, 4, e, arguments.length > 1 ? arguments[1] : void 0)) >>>
               0
             );
           },
           getFloat32: function (e) {
             return I(
-              V(this, 4, e, arguments.length > 1 ? arguments[1] : void 0),
+              z(this, 4, e, arguments.length > 1 ? arguments[1] : void 0),
               23,
             );
           },
           getFloat64: function (e) {
             return I(
-              V(this, 8, e, arguments.length > 1 ? arguments[1] : void 0),
+              z(this, 8, e, arguments.length > 1 ? arguments[1] : void 0),
               52,
             );
           },
@@ -19483,7 +19487,7 @@
             W(this, 4, e, B, t, arguments.length > 2 ? arguments[2] : void 0);
           },
           setFloat64: function (e, t) {
-            W(this, 8, e, H, t, arguments.length > 2 ? arguments[2] : void 0);
+            W(this, 8, e, V, t, arguments.length > 2 ? arguments[2] : void 0);
           },
         });
     g(P, k), g(A, j), (e.exports = { ArrayBuffer: P, DataView: A });
@@ -20316,10 +20320,10 @@
           '[object Date]' === Object.prototype.toString.call(e)
         );
       }
-      function H(e) {
+      function V(e) {
         return null !== e && 'object' === a(e);
       }
-      function z(e, t) {
+      function H(e, t) {
         if (e)
           if (('object' !== a(e) && (e = [e]), F(e)))
             for (var n = 0; n < e.length; n++) t.call(null, e[n], n, e);
@@ -20328,7 +20332,7 @@
               Object.prototype.hasOwnProperty.call(e, r) &&
                 t.call(null, e[r], r, e);
       }
-      function V(e) {
+      function z(e) {
         return U(e)
           ? Object(r['parse'])(e.toString(), { strictNullHandling: !0 })
           : 'string' === typeof e
@@ -20347,7 +20351,7 @@
           {},
           {
             headers: i(i({}, e.headers), t.headers),
-            params: i(i({}, V(e.params)), V(t.params)),
+            params: i(i({}, z(e.params)), z(t.params)),
             method: (t.method || e.method || 'get').toLowerCase(),
           },
         );
@@ -20554,15 +20558,15 @@
           else if (U(e)) n = e.toString();
           else if (F(e))
             (r = []),
-              z(e, function (e) {
+              H(e, function (e) {
                 null === e || 'undefined' === typeof e
                   ? r.push(e)
-                  : r.push(H(e) ? JSON.stringify(e) : e);
+                  : r.push(V(e) ? JSON.stringify(e) : e);
               }),
               (n = W(r));
           else {
             (r = {}),
-              z(e, function (e, t) {
+              H(e, function (e, t) {
                 var n = e;
                 null === e || 'undefined' === typeof e
                   ? (r[t] = e)
@@ -20570,7 +20574,7 @@
                   ? (n = e.toISOString())
                   : F(e)
                   ? (n = e)
-                  : H(e) && (n = JSON.stringify(e)),
+                  : V(e) && (n = JSON.stringify(e)),
                   (r[t] = n);
               });
             var o = W(r);
@@ -22889,14 +22893,14 @@
       F = c.TYPED_ARRAY_TAG,
       U = c.TypedArray,
       B = c.TypedArrayPrototype,
-      H = c.aTypedArrayConstructor,
-      z = c.isTypedArray,
-      V = 'BYTES_PER_ELEMENT',
+      V = c.aTypedArrayConstructor,
+      H = c.isTypedArray,
+      z = 'BYTES_PER_ELEMENT',
       W = 'Wrong length',
       q = function (e, t) {
         var n = 0,
           r = t.length,
-          o = new (H(e))(r);
+          o = new (V(e))(r);
         while (r > n) o[n] = t[n++];
         return o;
       },
@@ -22917,7 +22921,7 @@
       },
       Y = function (e, t) {
         return (
-          z(e) && 'symbol' != typeof t && t in e && String(+t) == String(t)
+          H(e) && 'symbol' != typeof t && t in e && String(+t) == String(t)
         );
       },
       $ = function (e, t) {
@@ -22988,7 +22992,7 @@
                             : void 0 !== n
                             ? new v(t, h(n, i))
                             : new v(t)
-                          : z(t)
+                          : H(t)
                           ? q(m, t)
                           : x.call(m, t)
                         : new v(p(t));
@@ -23011,7 +23015,7 @@
                   s = 0,
                   f = 0;
                 if (b(t)) {
-                  if (!G(t)) return z(t) ? q(m, t) : x.call(m, t);
+                  if (!G(t)) return H(t) ? q(m, t) : x.call(m, t);
                   (o = t), (f = h(n, i));
                   var v = t.byteLength;
                   if (void 0 === r) {
@@ -23035,8 +23039,8 @@
             F && f(y, F, c),
             (E[c] = m),
             r({ global: !0, forced: m != v, sham: !D }, E),
-            V in m || f(m, V, i),
-            V in y || f(y, V, i),
+            z in m || f(m, z, i),
+            z in y || f(y, z, i),
             j(c);
         }))
       : (e.exports = function () {});
@@ -24275,7 +24279,7 @@
     'use strict';
     n.r(t),
       n.d(t, 'default', function () {
-        return Se;
+        return Ce;
       });
     n('cIOH'), n('6/k+');
     var r = n('rePB'),
@@ -24705,14 +24709,14 @@
           switch (y) {
             case 'left':
             case 'up':
-              (w = O + z(t)),
-                (g = s ? H(t, w) : w),
+              (w = O + H(t)),
+                (g = s ? V(t, w) : w),
                 (b['currentDirection'] = 0);
               break;
             case 'right':
             case 'down':
-              (w = O - z(t)),
-                (g = s ? H(t, w) : w),
+              (w = O - H(t)),
+                (g = s ? V(t, w) : w),
                 (b['currentDirection'] = 1);
               break;
             default:
@@ -24738,7 +24742,7 @@
             (r += Math.min(e.slidesToScroll, e.slidesToShow));
         return o;
       },
-      H = function (e, t) {
+      V = function (e, t) {
         var n = B(e),
           r = 0;
         if (t > n[n.length - 1]) t = n[n.length - 1];
@@ -24752,7 +24756,7 @@
           }
         return t;
       },
-      z = function (e) {
+      H = function (e) {
         var t = e.centerMode
           ? e.slideWidth * Math.floor(e.slidesToShow / 2)
           : 0;
@@ -24778,7 +24782,7 @@
         }
         return e.slidesToScroll;
       },
-      V = function (e, t) {
+      z = function (e, t) {
         return t.reduce(function (t, n) {
           return t && e.hasOwnProperty(n);
         }, !0)
@@ -24787,7 +24791,7 @@
       },
       W = function (e) {
         var t, n;
-        V(e, [
+        z(e, [
           'left',
           'variableWidth',
           'slideCount',
@@ -24827,7 +24831,7 @@
         );
       },
       q = function (e) {
-        V(e, [
+        z(e, [
           'left',
           'variableWidth',
           'slideCount',
@@ -24850,7 +24854,7 @@
       },
       K = function (e) {
         if (e.unslick) return 0;
-        V(e, [
+        z(e, [
           'slideIndex',
           'trackRef',
           'infinite',
@@ -26410,13 +26414,14 @@
         );
       }),
       we = ge,
-      Oe = (n('Twpp'), n('IpS4')),
-      xe = n('9kvl'),
-      ke = n('U0+B'),
-      je = n.n(ke),
-      Ee = n('nKUr');
-    function Se() {
-      var e = Oe[0].children,
+      Oe = n('Twpp'),
+      xe = n('IpS4'),
+      ke = n('9kvl'),
+      je = n('U0+B'),
+      Ee = n.n(je),
+      Se = n('nKUr');
+    function Ce() {
+      var e = xe[0].children,
         t = a.a.useRef(),
         n = () => {
           t.current.next();
@@ -26424,75 +26429,75 @@
         r = () => {
           t.current.prev();
         };
-      return Object(Ee['jsxs'])('div', {
+      return Object(Se['jsxs'])('div', {
         children: [
-          Object(Ee['jsxs'])('section', {
-            className: je.a.banner,
+          Object(Se['jsxs'])('section', {
+            className: Ee.a.banner,
             children: [
-              Object(Ee['jsx'])('div', { className: je.a.bg }),
-              Object(Ee['jsxs'])('div', {
-                className: je.a.carousel,
+              Object(Se['jsx'])('div', { className: Ee.a.bg }),
+              Object(Se['jsxs'])('div', {
+                className: Ee.a.carousel,
                 children: [
-                  Object(Ee['jsx'])('span', {
-                    className: je.a['left-arrow'],
+                  Object(Se['jsx'])('span', {
+                    className: Ee.a['left-arrow'],
                     onClick: r,
                   }),
-                  Object(Ee['jsx'])('span', {
-                    className: je.a['right-arrow'],
+                  Object(Se['jsx'])('span', {
+                    className: Ee.a['right-arrow'],
                     onClick: n,
                   }),
-                  Object(Ee['jsxs'])(we, {
-                    autoplay: !0,
+                  Object(Se['jsx'])(we, {
                     ref: t,
-                    children: [
-                      Object(Ee['jsx'])('div', {
-                        children: Object(Ee['jsx'])('h3', { children: '1' }),
-                      }),
-                      Object(Ee['jsx'])('div', {
-                        children: Object(Ee['jsx'])('h3', { children: '2' }),
-                      }),
-                      Object(Ee['jsx'])('div', {
-                        children: Object(Ee['jsx'])('h3', { children: '3' }),
-                      }),
-                      Object(Ee['jsx'])('div', {
-                        children: Object(Ee['jsx'])('h3', { children: '4' }),
-                      }),
-                    ],
+                    children: Oe.banner.map((e, t) =>
+                      Object(Se['jsx'])(
+                        'div',
+                        {
+                          className: Ee.a.item,
+                          children: Object(Se['jsx'])('div', {
+                            className: Ee.a.wrap,
+                            children: Object(Se['jsx'])('h3', {
+                              children: e.text,
+                            }),
+                          }),
+                        },
+                        t,
+                      ),
+                    ),
                   }),
                 ],
               }),
             ],
           }),
-          Object(Ee['jsx'])('section', {
-            className: je.a.contact,
-            children: Object(Ee['jsxs'])('div', {
-              className: je.a.container,
+          Object(Se['jsx'])('section', {
+            className: Ee.a.contact,
+            children: Object(Se['jsxs'])('div', {
+              className: Ee.a.container,
               children: [
-                Object(Ee['jsxs'])('div', {
+                Object(Se['jsxs'])('div', {
                   children: [
                     'We provide high quality medical instruments worldwide.',
                     ' ',
-                    Object(Ee['jsx'])('a', {
+                    Object(Se['jsx'])('a', {
                       href: '/category/0',
                       children: 'more',
                     }),
                   ],
                 }),
-                Object(Ee['jsxs'])('div', {
+                Object(Se['jsxs'])('div', {
                   children: [
                     'Have a question? Call us today!',
-                    Object(Ee['jsx'])('br', {}),
-                    Object(Ee['jsx'])('a', {
+                    Object(Se['jsx'])('br', {}),
+                    Object(Se['jsx'])('a', {
                       href: 'tel:+8613245638872',
                       children: '+86 13245638872',
                     }),
                   ],
                 }),
-                Object(Ee['jsxs'])('div', {
+                Object(Se['jsxs'])('div', {
                   children: [
                     'Need support? Send us an E-mail',
-                    Object(Ee['jsx'])('br', {}),
-                    Object(Ee['jsx'])('a', {
+                    Object(Se['jsx'])('br', {}),
+                    Object(Se['jsx'])('a', {
                       href: 'mailto:sales@holdoormedical.com',
                       children: 'sales@holdoormedical.com',
                     }),
@@ -26501,21 +26506,21 @@
               ],
             }),
           }),
-          Object(Ee['jsx'])('section', {
-            className: je.a.category,
+          Object(Se['jsx'])('section', {
+            className: Ee.a.category,
             children: e.map((e, t) =>
-              Object(Ee['jsxs'])(
+              Object(Se['jsxs'])(
                 'a',
                 {
-                  className: je.a.item,
-                  onClick: () => xe['a'].push('/category/'.concat(e.code)),
+                  className: Ee.a.item,
+                  onClick: () => ke['a'].push('/category/'.concat(e.code)),
                   children: [
-                    Object(Ee['jsx'])('div', {
-                      className: je.a.img,
-                      children: Object(Ee['jsx'])('img', { src: e.image }),
+                    Object(Se['jsx'])('div', {
+                      className: Ee.a.img,
+                      children: Object(Se['jsx'])('img', { src: e.image }),
                     }),
-                    Object(Ee['jsx'])('div', {
-                      className: je.a.title,
+                    Object(Se['jsx'])('div', {
+                      className: Ee.a.title,
                       style: { color: e.color },
                       children: e.title,
                     }),
@@ -26692,10 +26697,10 @@
       B = function (e) {
         (this.entries.length = 0), U(this.entries, e);
       },
-      H = function (e, t) {
+      V = function (e, t) {
         if (e < t) throw TypeError('Not enough arguments');
       },
-      z = u(
+      H = u(
         function (e, t) {
           C(this, { type: S, iterator: g(T(e).entries), kind: t });
         },
@@ -26717,8 +26722,8 @@
           );
         },
       ),
-      V = function () {
-        f(this, V, E);
+      z = function () {
+        f(this, z, E);
         var e,
           t,
           n,
@@ -26765,17 +26770,17 @@
                 : u + '',
             );
       },
-      W = V.prototype;
+      W = z.prototype;
     c(
       W,
       {
         append: function (e, t) {
-          H(arguments.length, 2);
+          V(arguments.length, 2);
           var n = T(this);
           n.entries.push({ key: e + '', value: t + '' }), n.updateURL();
         },
         delete: function (e) {
-          H(arguments.length, 1);
+          V(arguments.length, 1);
           var t = T(this),
             n = t.entries,
             r = e + '',
@@ -26784,13 +26789,13 @@
           t.updateURL();
         },
         get: function (e) {
-          H(arguments.length, 1);
+          V(arguments.length, 1);
           for (var t = T(this).entries, n = e + '', r = 0; r < t.length; r++)
             if (t[r].key === n) return t[r].value;
           return null;
         },
         getAll: function (e) {
-          H(arguments.length, 1);
+          V(arguments.length, 1);
           for (
             var t = T(this).entries, n = e + '', r = [], o = 0;
             o < t.length;
@@ -26800,7 +26805,7 @@
           return r;
         },
         has: function (e) {
-          H(arguments.length, 1);
+          V(arguments.length, 1);
           var t = T(this).entries,
             n = e + '',
             r = 0;
@@ -26808,7 +26813,7 @@
           return !1;
         },
         set: function (e, t) {
-          H(arguments.length, 1);
+          V(arguments.length, 1);
           for (
             var n,
               r = T(this),
@@ -26849,13 +26854,13 @@
           while (o < n.length) (t = n[o++]), r(t.value, t.key, this);
         },
         keys: function () {
-          return new z(this, 'keys');
+          return new H(this, 'keys');
         },
         values: function () {
-          return new z(this, 'values');
+          return new H(this, 'values');
         },
         entries: function () {
-          return new z(this, 'entries');
+          return new H(this, 'entries');
         },
       },
       { enumerable: !0 },
@@ -26875,8 +26880,8 @@
         },
         { enumerable: !0 },
       ),
-      l(V, E),
-      r({ global: !0, forced: !i }, { URLSearchParams: V }),
+      l(z, E),
+      r({ global: !0, forced: !i }, { URLSearchParams: z }),
       i ||
         'function' != typeof x ||
         'function' != typeof k ||
@@ -26907,7 +26912,7 @@
             },
           },
         ),
-      (e.exports = { URLSearchParams: V, getState: T });
+      (e.exports = { URLSearchParams: z, getState: T });
   },
   mGKP: function (e, t, n) {
     var r = n('EdiO');
@@ -27863,11 +27868,11 @@
       F = n('tycR').forEach,
       U = A('hidden'),
       B = 'Symbol',
-      H = 'prototype',
-      z = M('toPrimitive'),
-      V = D.set,
+      V = 'prototype',
+      H = M('toPrimitive'),
+      z = D.set,
       W = D.getterFor(B),
-      q = Object[H],
+      q = Object[V],
       K = o.Symbol,
       G = i('JSON', 'stringify'),
       Y = j.f,
@@ -27880,7 +27885,7 @@
       te = P('symbol-to-string-registry'),
       ne = P('wks'),
       re = o.QObject,
-      oe = !re || !re[H] || !re[H].findChild,
+      oe = !re || !re[V] || !re[V].findChild,
       ie =
         c &&
         s(function () {
@@ -27901,9 +27906,9 @@
             }
           : $,
       ae = function (e, t) {
-        var n = (J[e] = g(K[H]));
+        var n = (J[e] = g(K[V]));
         return (
-          V(n, { type: B, tag: e, description: t }), c || (n.description = t), n
+          z(n, { type: B, tag: e, description: t }), c || (n.description = t), n
         );
       },
       ce = u
@@ -27996,7 +28001,7 @@
             };
           return c && oe && ie(q, t, { configurable: !0, set: n }), ae(t, e);
         }),
-        T(K[H], 'toString', function () {
+        T(K[V], 'toString', function () {
           return W(this).tag;
         }),
         T(K, 'withoutSetter', function (e) {
@@ -28011,7 +28016,7 @@
           return ae(M(e), e);
         }),
         c &&
-          ($(K[H], 'description', {
+          ($(K[V], 'description', {
             configurable: !0,
             get: function () {
               return W(this).description;
@@ -28105,7 +28110,7 @@
         },
       );
     }
-    K[H][z] || C(K[H], z, K[H].valueOf), L(K, B), (R[U] = !0);
+    K[V][H] || C(K[V], H, K[V].valueOf), L(K, B), (R[U] = !0);
   },
   pSRY: function (e, t, n) {
     var r = n('QkVE');
@@ -29052,17 +29057,17 @@
           );
         },
         B = null,
-        H = function (e) {
+        V = function (e) {
           B && F(B),
             e.defer
               ? (B = D(function () {
-                  z(e, function () {
+                  H(e, function () {
                     B = null;
                   });
                 }))
-              : (z(e), (B = null));
+              : (H(e), (B = null));
         },
-        z = function (e, t) {
+        H = function (e, t) {
           var n = e.baseTag,
             r = e.bodyAttributes,
             o = e.htmlAttributes,
@@ -29094,13 +29099,13 @@
             t && t(),
             l(e, v, m);
         },
-        V = function (e) {
+        z = function (e) {
           return Array.isArray(e) ? e.join('') : e;
         },
         W = function (e, t) {
           'undefined' !== typeof e &&
             document.title !== e &&
-            (document.title = V(e)),
+            (document.title = z(e)),
             q(p.TITLE, t);
         },
         q = function (e, t) {
@@ -29176,7 +29181,7 @@
         },
         Y = function (e, t, n, r) {
           var o = G(n),
-            i = V(t);
+            i = z(t);
           return o
             ? '<' +
                 e +
@@ -29497,7 +29502,7 @@
         re = function () {
           return null;
         },
-        oe = i()(_, H, te)(re),
+        oe = i()(_, V, te)(re),
         ie = ne(oe);
       ie.renderStatic = ie.rewind;
     }.call(this, n('IyRk')));
@@ -31263,7 +31268,7 @@
         n
       );
     }
-    function H(e) {
+    function V(e) {
       var t = { loading: !1, loaded: {}, error: null },
         n = [];
       try {
@@ -31295,11 +31300,11 @@
         t
       );
     }
-    function z(e) {
+    function H(e) {
       return e && e.__esModule ? e.default : e;
     }
-    function V(e, t) {
-      return Object(a['createElement'])(z(e), t);
+    function z(e, t) {
+      return Object(a['createElement'])(H(e), t);
     }
     function W(e, t) {
       var n = Object.assign(
@@ -31308,7 +31313,7 @@
             loading: null,
             delay: 200,
             timeout: null,
-            render: V,
+            render: z,
             webpack: null,
             modules: null,
           },
@@ -31483,7 +31488,7 @@
         throw new Error(
           'LoadableMap requires a `render(loaded, props)` function',
         );
-      return W(H, e);
+      return W(V, e);
     }
     function Y(e, t) {
       var n = [];
@@ -32167,7 +32172,7 @@
             {
               path: '/category/20001',
               component: n('qDys').default,
-              title: 'NAB Rapid Test',
+              title: 'COVID-19 Combined Rapid Test',
               exact: !0,
             },
             {
@@ -32297,12 +32302,6 @@
               exact: !0,
             },
             {
-              path: '/category/20021',
-              component: n('qDys').default,
-              title: 'Safety shower',
-              exact: !0,
-            },
-            {
               path: '/category/10005',
               component: n('qDys').default,
               title: 'VETERINARY',
@@ -32318,7 +32317,7 @@
               path: '/product/100001',
               component: n('rNos').default,
               title:
-                '(IgM/IgG/Neutralizing antibody) Rapid Test (Colloidal Gold)',
+                'COVID-19 IgM/IgG/Neutralizing antibody Rapid Test (Colloidal Gold)',
               exact: !0,
             },
             {
@@ -32444,7 +32443,7 @@
             {
               path: '/product/100042',
               component: n('rNos').default,
-              title: 'Examining light',
+              title: 'Nurse chair',
               exact: !0,
             },
             {
@@ -32926,7 +32925,7 @@
     'use strict';
     n.r(t),
       n.d(t, 'getKeyThenIncreaseKey', function () {
-        return V;
+        return z;
       }),
       n.d(t, 'attachTypeApi', function () {
         return X;
@@ -33063,7 +33062,7 @@
           var a = i.prefixCls,
             c = n('message', a),
             l = n(),
-            s = i.key || V(),
+            s = i.key || z(),
             f = new Promise(function (n) {
               var a = function () {
                 return 'function' === typeof i.onClose && i.onClose(), n(!0);
@@ -33127,9 +33126,9 @@
       F = 1,
       U = '',
       B = 'move-up',
-      H = !1,
-      z = !1;
-    function V() {
+      V = !1,
+      H = !1;
+    function z() {
       return F++;
     }
     function W(e) {
@@ -33138,9 +33137,9 @@
         void 0 !== e.prefixCls && (U = e.prefixCls),
         void 0 !== e.getContainer && (_ = e.getContainer),
         void 0 !== e.transitionName &&
-          ((B = e.transitionName), (N = null), (H = !0)),
+          ((B = e.transitionName), (N = null), (V = !0)),
         void 0 !== e.maxCount && ((I = e.maxCount), (N = null)),
-        void 0 !== e.rtl && (z = e.rtl);
+        void 0 !== e.rtl && (H = e.rtl);
     }
     function q(e, t) {
       var n = e.prefixCls,
@@ -33153,7 +33152,7 @@
       else {
         var u = {
           prefixCls: a,
-          transitionName: H ? B : ''.concat(c, '-').concat(B),
+          transitionName: V ? B : ''.concat(c, '-').concat(B),
           style: { top: M },
           getContainer: _,
           maxCount: I,
@@ -33174,7 +33173,7 @@
           ''.concat(t, '-custom-content'),
           ((n = {}),
           Object(o['a'])(n, ''.concat(t, '-').concat(e.type), e.type),
-          Object(o['a'])(n, ''.concat(t, '-rtl'), !0 === z),
+          Object(o['a'])(n, ''.concat(t, '-rtl'), !0 === H),
           n),
         );
       return {
@@ -33554,7 +33553,7 @@
       );
     }
     var B = { Webkit: '-webkit-', Moz: '-moz-', ms: '-ms-', O: '-o-' };
-    function H() {
+    function V() {
       if (void 0 !== M) return M;
       M = '';
       var e = document.createElement('p').style,
@@ -33562,28 +33561,28 @@
       for (var n in B) n + t in e && (M = n);
       return M;
     }
-    function z() {
-      return H() ? ''.concat(H(), 'TransitionProperty') : 'transitionProperty';
+    function H() {
+      return V() ? ''.concat(V(), 'TransitionProperty') : 'transitionProperty';
     }
-    function V() {
-      return H() ? ''.concat(H(), 'Transform') : 'transform';
+    function z() {
+      return V() ? ''.concat(V(), 'Transform') : 'transform';
     }
     function W(e, t) {
-      var n = z();
+      var n = H();
       n &&
         ((e.style[n] = t),
         'transitionProperty' !== n && (e.style.transitionProperty = t));
     }
     function q(e, t) {
-      var n = V();
+      var n = z();
       n && ((e.style[n] = t), 'transform' !== n && (e.style.transform = t));
     }
     function K(e) {
-      return e.style.transitionProperty || e.style[z()];
+      return e.style.transitionProperty || e.style[H()];
     }
     function G(e) {
       var t = window.getComputedStyle(e, null),
-        n = t.getPropertyValue('transform') || t.getPropertyValue(V());
+        n = t.getPropertyValue('transform') || t.getPropertyValue(z());
       if (n && 'none' !== n) {
         var r = n.replace(/[^0-9\-.,]/g, '').split(',');
         return {
@@ -33597,7 +33596,7 @@
       $ = /matrix3d\((.*)\)/;
     function Q(e, t) {
       var n = window.getComputedStyle(e, null),
-        r = n.getPropertyValue('transform') || n.getPropertyValue(V());
+        r = n.getPropertyValue('transform') || n.getPropertyValue(z());
       if (r && 'none' !== r) {
         var o,
           i = r.match(Y);
@@ -33787,7 +33786,7 @@
       }
       n.useCssRight || n.useCssBottom
         ? be(e, t, n)
-        : n.useCssTransform && V() in document.body.style
+        : n.useCssTransform && z() in document.body.style
         ? ge(e, t)
         : be(e, t, n);
     }
@@ -34040,7 +34039,7 @@
         ? n
         : null;
     }
-    function He(e, t, n, r) {
+    function Ve(e, t, n, r) {
       var o = Ie.clone(e),
         i = { width: t.width, height: t.height };
       return (
@@ -34063,7 +34062,7 @@
         Ie.mix(o, i)
       );
     }
-    function ze(e) {
+    function He(e) {
       var t, n, r;
       if (Ie.isWindow(e) || 9 === e.nodeType) {
         var o = Ie.getWindow(e);
@@ -34077,7 +34076,7 @@
         (t = Ie.offset(e)), (n = Ie.outerWidth(e)), (r = Ie.outerHeight(e));
       return (t.width = n), (t.height = r), t;
     }
-    function Ve(e, t) {
+    function ze(e, t) {
       var n = t.charAt(0),
         r = t.charAt(1),
         o = e.width,
@@ -34091,8 +34090,8 @@
       );
     }
     function We(e, t, n, r, o) {
-      var i = Ve(t, n[1]),
-        a = Ve(e, n[0]),
+      var i = ze(t, n[1]),
+        a = ze(e, n[0]),
         c = [a.left - i.left, a.top - i.top];
       return {
         left: Math.round(e.left - c[0] + r[0] - o[0]),
@@ -34150,7 +34149,7 @@
         s = 0,
         f = !(!c || !c.alwaysByViewport),
         d = Be(l, f),
-        p = ze(l);
+        p = He(l);
       Je(i, p), Je(a, t);
       var h = We(p, t, o, i, a),
         v = Ie.merge(p, h);
@@ -34182,7 +34181,7 @@
         }
         (u.adjustX = c.adjustX && j),
           (u.adjustY = c.adjustY && E),
-          (u.adjustX || u.adjustY) && (v = He(h, p, d, u));
+          (u.adjustX || u.adjustY) && (v = Ve(h, p, d, u));
       }
       return (
         v.width !== p.width &&
@@ -34204,7 +34203,7 @@
     }
     function et(e, t) {
       var n = Be(e, t),
-        r = ze(e);
+        r = He(e);
       return (
         !n ||
         r.left + r.width <= n.left ||
@@ -34215,7 +34214,7 @@
     }
     function tt(e, t, n) {
       var r = n.target || t,
-        o = ze(r),
+        o = He(r),
         i = !et(r, n.overflow && n.overflow.alwaysByViewport);
       return Ze(e, o, n, i);
     }
@@ -34565,9 +34564,9 @@
         var F = wt(n, D),
           U = Object(C['a'])(F, 2),
           B = U[0],
-          H = U[1],
-          z = Object(s['useRef'])();
-        function V() {
+          V = U[1],
+          H = Object(s['useRef'])();
+        function z() {
           return v || m;
         }
         function W() {
@@ -34582,27 +34581,27 @@
                 ? Promise.resolve().then(function () {
                     W();
                   })
-                : H(function () {
+                : V(function () {
                     var e;
-                    null === (e = z.current) || void 0 === e || e.call(z);
+                    null === (e = H.current) || void 0 === e || e.call(H);
                   }),
               null === b || void 0 === b || b(e, t));
         }
         var K = Object(r['a'])({}, R(e));
         function G() {
           return new Promise(function (e) {
-            z.current = e;
+            H.current = e;
           });
         }
         ['onAppearEnd', 'onEnterEnd', 'onLeaveEnd'].forEach(function (e) {
           var t = K[e];
           K[e] = function (e, n) {
-            return H(), null === t || void 0 === t ? void 0 : t(e, n);
+            return V(), null === t || void 0 === t ? void 0 : t(e, n);
           };
         }),
           s['useEffect'](
             function () {
-              K.motionName || 'motion' !== B || H();
+              K.motionName || 'motion' !== B || V();
             },
             [K.motionName, B],
           ),
@@ -34655,7 +34654,7 @@
               return s['createElement'](
                 vt,
                 {
-                  target: V(),
+                  target: z(),
                   key: 'popup',
                   ref: j,
                   monitorWindowResize: !0,
@@ -36351,7 +36350,7 @@
       return (
         e &&
         e.some(function (e) {
-          return V(e, t);
+          return z(e, t);
         })
       );
     }
@@ -36362,19 +36361,19 @@
         Object.getPrototypeOf(e) === Object.prototype
       );
     }
-    function H(e, t) {
+    function V(e, t) {
       var n = Array.isArray(e) ? Object(u['a'])(e) : Object(l['a'])({}, e);
       return t
         ? (Object.keys(t).forEach(function (e) {
             var r = n[e],
               o = t[e],
               i = B(r) && B(o);
-            n[e] = i ? H(r, o || {}) : o;
+            n[e] = i ? V(r, o || {}) : o;
           }),
           n)
         : n;
     }
-    function z(e) {
+    function H(e) {
       for (
         var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1;
         r < t;
@@ -36382,10 +36381,10 @@
       )
         n[r - 1] = arguments[r];
       return n.reduce(function (e, t) {
-        return H(e, t);
+        return V(e, t);
       }, e);
     }
-    function V(e, t) {
+    function z(e, t) {
       return (
         !(!e || !t || e.length !== t.length) &&
         e.every(function (e, n) {
@@ -36516,7 +36515,7 @@
           t
         );
       }
-      return a(z({}, Y, e));
+      return a(H({}, Y, e));
     }
     function J(e, t, n, r, o) {
       return Z.apply(this, arguments);
@@ -37396,7 +37395,7 @@
             n.subscribable = e;
           }),
           (this.setInitialValues = function (e, t) {
-            (n.initialValues = e || {}), t && (n.store = z({}, e, n.store));
+            (n.initialValues = e || {}), t && (n.store = H({}, e, n.store));
           }),
           (this.getInitialValue = function (e) {
             return L(n.initialValues, e);
@@ -37627,7 +37626,7 @@
             var t = n.store;
             if (!e)
               return (
-                (n.store = z({}, n.initialValues)),
+                (n.store = H({}, n.initialValues)),
                 n.resetWithFieldInitialValue(),
                 void n.notifyObservers(t, null, { type: 'reset' })
               );
@@ -37698,7 +37697,7 @@
                 a.length &&
                   n.getFieldValue(a) !== c &&
                   n.fieldEntities.every(function (e) {
-                    return !V(e.getNamePath(), a);
+                    return !z(e.getNamePath(), a);
                   }) &&
                   (n.store = D(n.store, a, c, !0));
               }
@@ -37756,7 +37755,7 @@
           (this.setFieldsValue = function (e) {
             n.warningUnhooked();
             var t = n.store;
-            e && (n.store = z(n.store, e)),
+            e && (n.store = H(n.store, e)),
               n.notifyObservers(t, null, {
                 type: 'valueUpdate',
                 source: 'external',
@@ -38182,7 +38181,7 @@
       Fe = n('3Nzz'),
       Ue = n('tsqr'),
       Be = n('TeRw'),
-      He = [
+      Ve = [
         'getTargetContainer',
         'getPopupContainer',
         'renderEmpty',
@@ -38190,12 +38189,12 @@
         'input',
         'form',
       ],
-      ze = 'ant',
-      Ve = function (e) {
+      He = 'ant',
+      ze = function (e) {
         void 0 !== e.prefixCls && (Ie = e.prefixCls);
       };
     function We() {
-      return Ie || ze;
+      return Ie || He;
     }
     var qe = function () {
         return {
@@ -38246,7 +38245,7 @@
             dropdownMatchSelectWidth: v,
             getPrefixCls: g,
           });
-        He.forEach(function (t) {
+        Ve.forEach(function (t) {
           var n = e[t];
           n && (w[t] = n);
         });
@@ -38315,7 +38314,7 @@
           })
         );
       };
-    (Ge.ConfigContext = De['b']), (Ge.SizeContext = Fe['b']), (Ge.config = Ve);
+    (Ge.ConfigContext = De['b']), (Ge.SizeContext = Fe['b']), (Ge.config = ze);
   },
   'wF/u': function (e, t, n) {
     var r = n('e5cp'),
@@ -38810,29 +38809,29 @@
       F = 60128,
       U = 60129,
       B = 60130,
-      H = 60131;
+      V = 60131;
     if ('function' === typeof Symbol && Symbol.for) {
-      var z = Symbol.for;
-      (E = z('react.element')),
-        (S = z('react.portal')),
-        (C = z('react.fragment')),
-        (T = z('react.strict_mode')),
-        (P = z('react.profiler')),
-        (A = z('react.provider')),
-        (R = z('react.context')),
-        (N = z('react.forward_ref')),
-        (M = z('react.suspense')),
-        (_ = z('react.suspense_list')),
-        (I = z('react.memo')),
-        (L = z('react.lazy')),
-        (D = z('react.block')),
-        z('react.scope'),
-        (F = z('react.opaque.id')),
-        (U = z('react.debug_trace_mode')),
-        (B = z('react.offscreen')),
-        (H = z('react.legacy_hidden'));
+      var H = Symbol.for;
+      (E = H('react.element')),
+        (S = H('react.portal')),
+        (C = H('react.fragment')),
+        (T = H('react.strict_mode')),
+        (P = H('react.profiler')),
+        (A = H('react.provider')),
+        (R = H('react.context')),
+        (N = H('react.forward_ref')),
+        (M = H('react.suspense')),
+        (_ = H('react.suspense_list')),
+        (I = H('react.memo')),
+        (L = H('react.lazy')),
+        (D = H('react.block')),
+        H('react.scope'),
+        (F = H('react.opaque.id')),
+        (U = H('react.debug_trace_mode')),
+        (B = H('react.offscreen')),
+        (V = H('react.legacy_hidden'));
     }
-    var V,
+    var z,
       W = 'function' === typeof Symbol && Symbol.iterator;
     function q(e) {
       return null === e || 'object' !== typeof e
@@ -38841,14 +38840,14 @@
           'function' === typeof e ? e : null);
     }
     function K(e) {
-      if (void 0 === V)
+      if (void 0 === z)
         try {
           throw Error();
         } catch (n) {
           var t = n.stack.trim().match(/\n( *(at )?)/);
-          V = (t && t[1]) || '';
+          z = (t && t[1]) || '';
         }
-      return '\n' + V + e;
+      return '\n' + z + e;
     }
     var G = !1;
     function Y(e, t) {
@@ -39419,17 +39418,17 @@
     function Fe() {}
     var Ue = Le,
       Be = !1,
-      He = !1;
-    function ze() {
+      Ve = !1;
+    function He() {
       (null === Re && null === Ne) || (Fe(), Ie());
     }
-    function Ve(e, t, n) {
-      if (He) return e(t, n);
-      He = !0;
+    function ze(e, t, n) {
+      if (Ve) return e(t, n);
+      Ve = !0;
       try {
         return Ue(e, t, n);
       } finally {
-        (He = !1), ze();
+        (Ve = !1), He();
       }
     }
     function We(e, t) {
@@ -39821,7 +39820,7 @@
       Ft = _t('transitionend'),
       Ut = new Map(),
       Bt = new Map(),
-      Ht = [
+      Vt = [
         'abort',
         'abort',
         It,
@@ -39873,7 +39872,7 @@
         'waiting',
         'waiting',
       ];
-    function zt(e, t) {
+    function Ht(e, t) {
       for (var n = 0; n < e.length; n += 2) {
         var r = e[n],
           o = e[n + 1];
@@ -39883,8 +39882,8 @@
           u(o, [r]);
       }
     }
-    var Vt = i.unstable_now;
-    Vt();
+    var zt = i.unstable_now;
+    zt();
     var Wt = 8;
     function qt(e) {
       if (0 !== (1 & e)) return (Wt = 15), 1;
@@ -40057,7 +40056,7 @@
       try {
         De(o, e, t, n, r);
       } finally {
-        (Be = i) || ze();
+        (Be = i) || He();
       }
     }
     function un(e, t, n, r) {
@@ -40207,7 +40206,7 @@
         shiftKey: 0,
         altKey: 0,
         metaKey: 0,
-        getModifierState: Vn,
+        getModifierState: zn,
         button: 0,
         buttons: 0,
         relatedTarget: function (e) {
@@ -40299,20 +40298,20 @@
         145: 'ScrollLock',
         224: 'Meta',
       },
-      Hn = {
+      Vn = {
         Alt: 'altKey',
         Control: 'ctrlKey',
         Meta: 'metaKey',
         Shift: 'shiftKey',
       };
-    function zn(e) {
+    function Hn(e) {
       var t = this.nativeEvent;
       return t.getModifierState
         ? t.getModifierState(e)
-        : !!(e = Hn[e]) && !!t[e];
+        : !!(e = Vn[e]) && !!t[e];
     }
-    function Vn() {
-      return zn;
+    function zn() {
+      return Hn;
     }
     var Wn = o({}, En, {
         key: function (e) {
@@ -40334,7 +40333,7 @@
         metaKey: 0,
         repeat: 0,
         locale: 0,
-        getModifierState: Vn,
+        getModifierState: zn,
         charCode: function (e) {
           return 'keypress' === e.type ? mn(e) : 0;
         },
@@ -40371,7 +40370,7 @@
         metaKey: 0,
         ctrlKey: 0,
         shiftKey: 0,
-        getModifierState: Vn,
+        getModifierState: zn,
       }),
       $n = gn(Yn),
       Qn = o({}, kn, { propertyName: 0, elapsedTime: 0, pseudoElement: 0 }),
@@ -40526,7 +40525,7 @@
           try {
             Le(e, t);
           } finally {
-            (Be = !1), ze();
+            (Be = !1), He();
           }
         }
       }
@@ -40634,13 +40633,13 @@
     }
     var Ur = f && 'documentMode' in document && 11 >= document.documentMode,
       Br = null,
+      Vr = null,
       Hr = null,
-      zr = null,
-      Vr = !1;
+      zr = !1;
     function Wr(e, t, n) {
       var r =
         n.window === n ? n.document : 9 === n.nodeType ? n : n.ownerDocument;
-      Vr ||
+      zr ||
         null == Br ||
         Br !== ne(r) ||
         ((r = Br),
@@ -40656,27 +40655,27 @@
               focusNode: r.focusNode,
               focusOffset: r.focusOffset,
             })),
-        (zr && Mr(zr, r)) ||
-          ((zr = r),
-          (r = oo(Hr, 'onSelect')),
+        (Hr && Mr(Hr, r)) ||
+          ((Hr = r),
+          (r = oo(Vr, 'onSelect')),
           0 < r.length &&
             ((t = new jn('onSelect', 'select', null, t, n)),
             e.push({ event: t, listeners: r }),
             (t.target = Br))));
     }
-    zt(
+    Ht(
       'cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange'.split(
         ' ',
       ),
       0,
     ),
-      zt(
+      Ht(
         'drag drag dragenter dragEnter dragexit dragExit dragleave dragLeave dragover dragOver mousemove mouseMove mouseout mouseOut mouseover mouseOver pointermove pointerMove pointerout pointerOut pointerover pointerOver scroll scroll toggle toggle touchmove touchMove wheel wheel'.split(
           ' ',
         ),
         1,
       ),
-      zt(Ht, 2);
+      Ht(Vt, 2);
     for (
       var qr =
           'change selectionchange textInput compositionstart compositionend compositionupdate'.split(
@@ -40846,7 +40845,7 @@
           }
           r = r.return;
         }
-      Ve(function () {
+      ze(function () {
         var r = i,
           o = Pe(n),
           a = [];
@@ -41047,18 +41046,18 @@
           ) {
             case 'focusin':
               (pr(y) || 'true' === y.contentEditable) &&
-                ((Br = y), (Hr = r), (zr = null));
+                ((Br = y), (Vr = r), (Hr = null));
               break;
             case 'focusout':
-              zr = Hr = Br = null;
+              Hr = Vr = Br = null;
               break;
             case 'mousedown':
-              Vr = !0;
+              zr = !0;
               break;
             case 'contextmenu':
             case 'mouseup':
             case 'dragend':
-              (Vr = !1), Wr(a, n, o);
+              (zr = !1), Wr(a, n, o);
               break;
             case 'selectionchange':
               if (Ur) break;
@@ -41287,14 +41286,14 @@
     function Bo(e) {
       return (e = e.childContextTypes), null !== e && void 0 !== e;
     }
-    function Ho() {
+    function Vo() {
       Mo(Do), Mo(Lo);
     }
-    function zo(e, t, n) {
+    function Ho(e, t, n) {
       if (Lo.current !== Io) throw Error(a(168));
       _o(Lo, t), _o(Do, n);
     }
-    function Vo(e, t, n) {
+    function zo(e, t, n) {
       var r = e.stateNode;
       if (((e = t.childContextTypes), 'function' !== typeof r.getChildContext))
         return n;
@@ -41317,7 +41316,7 @@
       var r = e.stateNode;
       if (!r) throw Error(a(169));
       n
-        ? ((e = Vo(e, t, Fo)),
+        ? ((e = zo(e, t, Fo)),
           (r.__reactInternalMemoizedMergedChildContext = e),
           Mo(Do),
           Mo(Lo),
@@ -41694,7 +41693,7 @@
           Dl(e, r, n);
       },
     };
-    function Hi(e, t, n, r, o, i, a) {
+    function Vi(e, t, n, r, o, i, a) {
       return (
         (e = e.stateNode),
         'function' === typeof e.shouldComponentUpdate
@@ -41705,7 +41704,7 @@
             !Mr(o, i)
       );
     }
-    function zi(e, t, n) {
+    function Hi(e, t, n) {
       var r = !1,
         o = Io,
         i = t.contextType;
@@ -41728,7 +41727,7 @@
         t
       );
     }
-    function Vi(e, t, n, r) {
+    function zi(e, t, n, r) {
       (e = t.state),
         'function' === typeof t.componentWillReceiveProps &&
           t.componentWillReceiveProps(n, r),
@@ -42565,15 +42564,15 @@
       var t = Aa();
       return (e = { current: e }), (t.memoizedState = e);
     }
-    function Ha() {
+    function Va() {
       return Ra().memoizedState;
     }
-    function za(e, t, n, r) {
+    function Ha(e, t, n, r) {
       var o = Aa();
       (xa.flags |= e),
         (o.memoizedState = Ua(1 | t, n, void 0, void 0 === r ? null : r));
     }
-    function Va(e, t, n, r) {
+    function za(e, t, n, r) {
       var o = Ra();
       r = void 0 === r ? null : r;
       var i = void 0;
@@ -42585,13 +42584,13 @@
       (xa.flags |= e), (o.memoizedState = Ua(1 | t, n, i, r));
     }
     function Wa(e, t) {
-      return za(516, 4, e, t);
+      return Ha(516, 4, e, t);
     }
     function qa(e, t) {
-      return Va(516, 4, e, t);
+      return za(516, 4, e, t);
     }
     function Ka(e, t) {
-      return Va(4, 2, e, t);
+      return za(4, 2, e, t);
     }
     function Ga(e, t) {
       return 'function' === typeof t
@@ -42611,7 +42610,7 @@
     function Ya(e, t, n) {
       return (
         (n = null !== n && void 0 !== n ? n.concat([e]) : null),
-        Va(4, 2, Ga.bind(null, t, e), n)
+        za(4, 2, Ga.bind(null, t, e), n)
       );
     }
     function $a() {}
@@ -42706,11 +42705,11 @@
         useImperativeHandle: function (e, t, n) {
           return (
             (n = null !== n && void 0 !== n ? n.concat([e]) : null),
-            za(4, 2, Ga.bind(null, t, e), n)
+            Ha(4, 2, Ga.bind(null, t, e), n)
           );
         },
         useLayoutEffect: function (e, t) {
-          return za(4, 2, e, t);
+          return Ha(4, 2, e, t);
         },
         useMemo: function (e, t) {
           var n = Aa();
@@ -42813,7 +42812,7 @@
         useLayoutEffect: Ka,
         useMemo: Xa,
         useReducer: Ma,
-        useRef: Ha,
+        useRef: Va,
         useState: function () {
           return Ma(Na);
         },
@@ -42840,7 +42839,7 @@
         },
         useTransition: function () {
           var e = Ma(Na)[0];
-          return [Ha().current, e];
+          return [Va().current, e];
         },
         useMutableSource: Da,
         useOpaqueIdentifier: function () {
@@ -42857,7 +42856,7 @@
         useLayoutEffect: Ka,
         useMemo: Xa,
         useReducer: _a,
-        useRef: Ha,
+        useRef: Va,
         useState: function () {
           return _a(Na);
         },
@@ -42884,7 +42883,7 @@
         },
         useTransition: function () {
           var e = _a(Na)[0];
-          return [Ha().current, e];
+          return [Va().current, e];
         },
         useMutableSource: Da,
         useOpaqueIdentifier: function () {
@@ -42999,7 +42998,7 @@
       if ((Ti(t, o), null === t.stateNode))
         null !== e &&
           ((e.alternate = null), (t.alternate = null), (t.flags |= 2)),
-          zi(t, n, r),
+          Hi(t, n, r),
           Wi(t, n, r, o),
           (r = !0);
       else if (null === e) {
@@ -43018,7 +43017,7 @@
         f ||
           ('function' !== typeof a.UNSAFE_componentWillReceiveProps &&
             'function' !== typeof a.componentWillReceiveProps) ||
-          ((c !== r || l !== u) && Vi(t, a, r, u)),
+          ((c !== r || l !== u) && zi(t, a, r, u)),
           (Ai = !1);
         var d = t.memoizedState;
         (a.state = d),
@@ -43027,7 +43026,7 @@
           c !== r || d !== l || Do.current || Ai
             ? ('function' === typeof s &&
                 (Ui(t, n, s, r), (l = t.memoizedState)),
-              (c = Ai || Hi(t, n, c, r, d, l, u))
+              (c = Ai || Vi(t, n, c, r, d, l, u))
                 ? (f ||
                     ('function' !== typeof a.UNSAFE_componentWillMount &&
                       'function' !== typeof a.componentWillMount) ||
@@ -43063,7 +43062,7 @@
           'function' === typeof a.getSnapshotBeforeUpdate) ||
           ('function' !== typeof a.UNSAFE_componentWillReceiveProps &&
             'function' !== typeof a.componentWillReceiveProps) ||
-          ((c !== f || d !== l) && Vi(t, a, r, l)),
+          ((c !== f || d !== l) && zi(t, a, r, l)),
           (Ai = !1),
           (d = t.memoizedState),
           (a.state = d),
@@ -43071,7 +43070,7 @@
         var h = t.memoizedState;
         c !== f || d !== h || Do.current || Ai
           ? ('function' === typeof p && (Ui(t, n, p, r), (h = t.memoizedState)),
-            (u = Ai || Hi(t, n, u, r, d, h, l))
+            (u = Ai || Vi(t, n, u, r, d, h, l))
               ? (s ||
                   ('function' !== typeof a.UNSAFE_componentWillUpdate &&
                     'function' !== typeof a.componentWillUpdate) ||
@@ -43126,8 +43125,8 @@
     function vc(e) {
       var t = e.stateNode;
       t.pendingContext
-        ? zo(e, t.pendingContext, t.pendingContext !== t.context)
-        : t.context && zo(e, t.context, !1),
+        ? Ho(e, t.pendingContext, t.pendingContext !== t.context)
+        : t.context && Ho(e, t.context, !1),
         na(e, t.containerInfo);
     }
     var mc,
@@ -43377,7 +43376,7 @@
         case 14:
           return null;
         case 1:
-          return Bo(t.type) && Ho(), null;
+          return Bo(t.type) && Vo(), null;
         case 3:
           return (
             ra(),
@@ -43618,7 +43617,7 @@
                     : ((0 !== cl && 3 !== cl) || (cl = 4),
                       null === nl ||
                         (0 === (134217727 & sl) && 0 === (134217727 & fl)) ||
-                        Hl(nl, ol))),
+                        Vl(nl, ol))),
                 (r || n) && (t.flags |= 4),
                 null)
           );
@@ -43627,7 +43626,7 @@
         case 10:
           return Si(t), null;
         case 17:
-          return Bo(t.type) && Ho(), null;
+          return Bo(t.type) && Vo(), null;
         case 19:
           if ((Mo(aa), (r = t.memoizedState), null === r)) return null;
           if (((c = 0 !== (64 & t.flags)), (u = r.rendering), null === u))
@@ -43744,7 +43743,7 @@
     function Rc(e) {
       switch (e.tag) {
         case 1:
-          Bo(e.type) && Ho();
+          Bo(e.type) && Vo();
           var t = e.flags;
           return 4096 & t ? ((e.flags = (-4097 & t) | 64), e) : null;
         case 3:
@@ -44069,7 +44068,7 @@
       }
       throw Error(a(163));
     }
-    function Hc(e, t) {
+    function Vc(e, t) {
       for (var n = e; ; ) {
         if (5 === n.tag) {
           var r = n.stateNode;
@@ -44106,7 +44105,7 @@
         (n.sibling.return = n.return), (n = n.sibling);
       }
     }
-    function zc(e, t) {
+    function Hc(e, t) {
       if (Go && 'function' === typeof Go.onCommitFiberUnmount)
         try {
           Go.onCommitFiberUnmount(Ko, t);
@@ -44160,7 +44159,7 @@
           Yc(e, t);
       }
     }
-    function Vc(e) {
+    function zc(e) {
       (e.alternate = null),
         (e.child = null),
         (e.dependencies = null),
@@ -44275,7 +44274,7 @@
         }
         if (5 === o.tag || 6 === o.tag) {
           e: for (var c = e, l = o, u = l; ; )
-            if ((zc(c, u), null !== u.child && 4 !== u.tag))
+            if ((Hc(c, u), null !== u.child && 4 !== u.tag))
               (u.child.return = u), (u = u.child);
             else {
               if (u === l) break e;
@@ -44298,7 +44297,7 @@
               (o = o.child);
             continue;
           }
-        } else if ((zc(e, o), null !== o.child)) {
+        } else if ((Hc(e, o), null !== o.child)) {
           (o.child.return = o), (o = o.child);
           continue;
         }
@@ -44391,7 +44390,7 @@
           return;
         case 13:
           return (
-            null !== t.memoizedState && ((hl = di()), Hc(t.child, !0)),
+            null !== t.memoizedState && ((hl = di()), Vc(t.child, !0)),
             void Qc(t)
           );
         case 19:
@@ -44400,7 +44399,7 @@
           return;
         case 23:
         case 24:
-          return void Hc(t, null !== t.memoizedState);
+          return void Vc(t, null !== t.memoizedState);
       }
       throw Error(a(163));
     }
@@ -44488,11 +44487,11 @@
     function Dl(e, t, n) {
       if (50 < Tl) throw ((Tl = 0), (Pl = null), Error(a(185)));
       if (((e = Fl(e, t)), null === e)) return null;
-      Zt(e, t, n), e === nl && ((fl |= t), 4 === cl && Hl(e, ol));
+      Zt(e, t, n), e === nl && ((fl |= t), 4 === cl && Vl(e, ol));
       var r = pi();
       1 === t
         ? 0 !== (8 & tl) && 0 === (48 & tl)
-          ? zl(e)
+          ? Hl(e)
           : (Ul(e, n), 0 === tl && (ml(), yi()))
         : (0 === (4 & tl) ||
             (98 !== r && 99 !== r) ||
@@ -44544,11 +44543,11 @@
           n !== ai && Qo(n);
         }
         15 === t
-          ? ((n = zl.bind(null, e)),
+          ? ((n = Hl.bind(null, e)),
             null === li ? ((li = [n]), (ui = $o(ti, bi))) : li.push(n),
             (n = ai))
           : 14 === t
-          ? (n = mi(99, zl.bind(null, e)))
+          ? (n = mi(99, Hl.bind(null, e)))
           : ((n = Gt(t)), (n = mi(n, Bl.bind(null, e)))),
           (e.callbackPriority = t),
           (e.callbackNode = n);
@@ -44590,7 +44589,7 @@
             0 !== n && (r = Xl(e, n))),
           1 === r)
         )
-          throw ((t = ll), Yl(e, 0), Hl(e, n), Ul(e, di()), t);
+          throw ((t = ll), Yl(e, 0), Vl(e, n), Ul(e, di()), t);
         switch (
           ((e.finishedWork = e.current.alternate), (e.finishedLanes = n), r)
         ) {
@@ -44602,7 +44601,7 @@
             break;
           case 3:
             if (
-              (Hl(e, n),
+              (Vl(e, n),
               (62914560 & n) === n && ((r = hl + 500 - di()), 10 < r))
             ) {
               if (0 !== Yt(e, 0)) break;
@@ -44616,7 +44615,7 @@
             nu(e);
             break;
           case 4:
-            if ((Hl(e, n), (4186112 & n) === n)) break;
+            if ((Vl(e, n), (4186112 & n) === n)) break;
             for (r = e.eventTimes, o = -1; 0 < n; ) {
               var c = 31 - en(n);
               (i = 1 << c), (c = r[c]), c > o && (o = c), (n &= ~i);
@@ -44654,7 +44653,7 @@
       }
       return Ul(e, di()), e.callbackNode === t ? Bl.bind(null, e) : null;
     }
-    function Hl(e, t) {
+    function Vl(e, t) {
       for (
         t &= ~dl,
           t &= ~fl,
@@ -44669,7 +44668,7 @@
         (e[n] = -1), (t &= ~r);
       }
     }
-    function zl(e) {
+    function Hl(e) {
       if (0 !== (48 & tl)) throw Error(a(327));
       if ((iu(), e === nl && 0 !== (e.expiredLanes & ol))) {
         var t = ol,
@@ -44685,7 +44684,7 @@
           0 !== t && (n = Xl(e, t))),
         1 === n)
       )
-        throw ((n = ll), Yl(e, 0), Hl(e, t), Ul(e, di()), n);
+        throw ((n = ll), Yl(e, 0), Vl(e, t), Ul(e, di()), n);
       return (
         (e.finishedWork = e.current.alternate),
         (e.finishedLanes = t),
@@ -44694,7 +44693,7 @@
         null
       );
     }
-    function Vl() {
+    function zl() {
       if (null !== Cl) {
         var e = Cl;
         (Cl = null),
@@ -44737,7 +44736,7 @@
           switch (r.tag) {
             case 1:
               (r = r.type.childContextTypes),
-                null !== r && void 0 !== r && Ho();
+                null !== r && void 0 !== r && Vo();
               break;
             case 3:
               ra(), Mo(Do), Mo(Lo), ba();
@@ -45124,7 +45123,7 @@
                 case 8:
                   (l = bl), Yc(c, l);
                   var x = l.alternate;
-                  Vc(l), null !== x && Vc(x);
+                  zc(l), null !== x && zc(x);
               }
               bl = bl.nextEffect;
             }
@@ -45489,8 +45488,8 @@
             return (e = hu(19, n, t, o)), (e.elementType = _), (e.lanes = i), e;
           case B:
             return wu(n, o, i, t);
-          case H:
-            return (e = hu(24, n, t, o)), (e.elementType = H), (e.lanes = i), e;
+          case V:
+            return (e = hu(24, n, t, o)), (e.elementType = V), (e.lanes = i), e;
           default:
             if ('object' === typeof e && null !== e)
               switch (e.$$typeof) {
@@ -45608,7 +45607,7 @@
         if (1 === n.tag) {
           var u = n.type;
           if (Bo(u)) {
-            n = Vo(n, u, l);
+            n = zo(n, u, l);
             break e;
           }
         }
@@ -46030,7 +46029,7 @@
             (t.tag = 1),
             Bo(r) ? ((e = !0), Wo(t)) : (e = !1),
             Ti(t, n),
-            zi(t, r, o),
+            Hi(t, r, o),
             Wi(t, r, o, n),
             hc(null, t, r, !0, e, n)
           );
@@ -46115,7 +46114,7 @@
         }
       }),
       (Fe = function () {
-        0 === (49 & tl) && (Vl(), iu());
+        0 === (49 & tl) && (zl(), iu());
       }),
       (Ue = function (e, t) {
         var n = tl;
@@ -46333,19 +46332,23 @@
         className: o.a.contact_us,
         children: [
           Object(c['jsx'])(i['a'], { showBack: !1, title: 'Contact' }),
-          Object(c['jsxs'])('section', {
+          Object(c['jsx'])('section', {
             className: o.a.topic,
-            children: [
-              Object(c['jsx'])('div', {
-                className: o.a.above,
-                children: 'Contact',
-              }),
-              Object(c['jsx'])('h2', { children: 'Get in touch with us' }),
-            ],
+            children: Object(c['jsx'])('h2', {
+              children: 'Get in touch with us',
+            }),
           }),
           Object(c['jsx'])('div', {
             className: o.a.wrap,
-            children: Object(c['jsx'])(a['a'], {}),
+            children: Object(c['jsxs'])('div', {
+              children: [
+                Object(c['jsx'])('div', {
+                  className: o.a.company,
+                  children: 'Ningbo Holdoor Medical Co., Ltd',
+                }),
+                Object(c['jsx'])(a['a'], { size: 'big' }),
+              ],
+            }),
           }),
         ],
       });

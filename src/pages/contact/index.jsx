@@ -7,11 +7,13 @@ export default function ContactPage() {
     <div className={styles.contact_us}>
       <SubHeader showBack={false} title="Contact" />
       <section className={styles.topic}>
-        <div className={styles.above}>Contact</div>
         <h2>Get in touch with us</h2>
       </section>
       <div className={styles.wrap}>
-        <Contact />
+        <div>
+          <div className={styles.company}>Ningbo Holdoor Medical Co., Ltd</div>
+          <Contact size="big" />
+        </div>
       </div>
     </div>
   );

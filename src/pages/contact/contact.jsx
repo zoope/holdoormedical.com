@@ -8,9 +8,9 @@ const emails = [
   },
 ];
 
-export default function Contact() {
+export default function Contact(props) {
   return (
-    <section className={styles.content}>
+    <section className={`${styles.content} ${styles[props.size]}`}>
       <div className={styles.address}>
         Room 3-1-2, No.62 Haiwaitan Flower Garden, Ningbo City, China
       </div>
