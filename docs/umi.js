@@ -11049,11 +11049,11 @@
           }),
           Object(i['jsx'])('div', {
             className: o.a.tel,
-            children: 'Tel: +86-574-87026300',
+            children: '+86-574-87026300',
           }),
           Object(i['jsx'])('div', {
             className: o.a.phone,
-            children: 'Mobil: +86 13245638872',
+            children: '+86 13245638872',
           }),
           Object(i['jsx'])('div', {
             className: o.a.email,
