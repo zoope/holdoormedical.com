@@ -29689,7 +29689,7 @@
                 children: [
                   Object(c['jsx'])('div', {
                     className: o.a.title,
-                    children: 'Category',
+                    children: 'Contact us',
                   }),
                   Object(c['jsx'])(a['a'], {}),
                 ],
