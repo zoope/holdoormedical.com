@@ -11066,16 +11066,13 @@
           Object(i['jsx'])('div', {
             className: o.a.email,
             children: a.map((e) =>
-              Object(i['jsxs'])(
+              Object(i['jsx'])(
                 'div',
                 {
-                  children: [
-                    Object(i['jsx'])('div', { children: e.name }),
-                    Object(i['jsx'])('a', {
-                      href: 'mailto:'.concat(e.email),
-                      children: e.email,
-                    }),
-                  ],
+                  children: Object(i['jsx'])('a', {
+                    href: 'mailto:'.concat(e.email),
+                    children: e.email,
+                  }),
                 },
                 e.name,
               ),
