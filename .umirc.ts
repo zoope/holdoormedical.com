@@ -54,6 +54,11 @@ export default defineConfig({
           component: '@/pages/category/index',
           title: 'products',
         },
+        {
+          path: 'admin',
+          component: '@/pages/admin/index',
+          title: 'admin',
+        },
         ...categoriesRoutes,
         ...productsRoutes,
       ],

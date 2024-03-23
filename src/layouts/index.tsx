@@ -37,6 +37,8 @@ window.products = products;
 window.productsCfg = productsCfg;
 // @ts-ignore
 window.categoryCfg = categoryCfg;
+// @ts-ignore
+window.project = 'holdoormedical';
 
 export default (props: any) => {
   const { pathname } = props.location;
