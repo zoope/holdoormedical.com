@@ -47,6 +47,8 @@ export default (props: any) => {
   const [headerActive, setHeaderActive] = useState(false);
 
   const pushRoute = (path: string) => history.push(path);
+
+  const year = new Date().getFullYear();
   return (
     <>
       <header className={`${style.header} ${headerActive ? style.active : ''}`}>
@@ -95,7 +97,7 @@ export default (props: any) => {
       <div className={style.content}>{props.children}</div>
       <footer className={style.footer}>
         <div className={style.container}>
-          <span>HOLDOOR MEDICAL 2021</span>
+          <span>{`HOLDOOR MEDICAL ${year}`}</span>
         </div>
       </footer>
     </>

@@ -218,7 +218,8 @@
           u = Object(o['a'])(i, 2),
           d = u[0],
           p = u[1],
-          h = (e) => l['a'].push(e);
+          h = (e) => l['a'].push(e),
+          v = new Date().getFullYear();
         return Object(f['jsxs'])(f['Fragment'], {
           children: [
             Object(f['jsx'])('header', {
@@ -293,7 +294,7 @@
               children: Object(f['jsx'])('div', {
                 className: s.a.container,
                 children: Object(f['jsx'])('span', {
-                  children: 'HOLDOOR MEDICAL 2021',
+                  children: 'HOLDOOR MEDICAL '.concat(v),
                 }),
               }),
             }),
